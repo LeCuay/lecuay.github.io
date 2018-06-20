@@ -1,19 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Metadatos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <!-- Open Graph Protocol -->
-    <meta property="og:title" content="Cuay's Little Garden" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://cuaysplace.herokuapp.com/" />
-    <meta property="og:image" content="http://cuaysplace.herokuapp.com/static/images/front-image.jpg" />
-    <meta property="og:image:secure_url" content="https://cuaysplace.herokuapp.com/static/images/front-image.jpg" />
-    <meta property="og:image:alt" content="Personal Portfolio... Also Noodle" />
-    <meta property="og:description" content="Personal Portfolio">
 
     <!-- Iconos -->
     <link rel="stylesheet" href="static/icons/icons.css">
@@ -22,13 +12,7 @@
     <link rel="stylesheet" href="static/css/load_screen.css">
     <link rel="stylesheet" href="static/css/general.css">
 
-    <!-- Hojas de estilos propias -->
-    <link rel="stylesheet" href="static/css/index.css">
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/jpg" href="/static/images/front-image.jpg"/>
-    
-    <title>Cuay's Little Garden</title>
+    <title>Búsqueda</title>
 </head>
 <body>
     <div class="container">
@@ -39,13 +23,6 @@
             <div class="loader">
                 <div class="punto1"></div>
                 <div class="punto2"></div>
-            </div>
-        </div>
-
-        <!-- Imagen de Portada -->
-        <div class="img-iteration front-img">
-            <div class="front-text">
-                <p id="front-text" class="typing-animation">Cuay's Little Garden</p>
             </div>
         </div>
 
@@ -92,39 +69,9 @@
             </nav>
         </header>
 
-        <!-- Main -->
         <main>
-            <section class="main-content">
-                <h1>Escritor de código y de artículos</h1>
-                <article class="main-text">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit ultricies, quisque enim curae urna neque morbi
-                        semper risus, nibh et vitae cras a magnis pretium. Rutrum eget hendrerit turpis fames justo magnis 
-                        aliquet pharetra platea tempor urna enim, placerat nascetur nulla neque litora pellentesque feugiat 
-                        fringilla vehicula tellus sed. Imperdiet lobortis est ridiculus tristique in vivamus dignissim tempus, 
-                        augue netus sociosqu justo ut aenean urna pulvinar metus, arcu conubia ultricies nullam lacus dictum nibh.
-                        Litora nisl tellus mattis mi sagittis ornare nascetur, curae libero vel conubia pellentesque justo, 
-                        vestibulum diam id fames dis platea.
-                    </p>
-                    <div class="img-iteration img1"></div>
-                    <p>
-                        Placerat volutpat sociosqu ac nam quis sodales egestas sagittis velit, risus semper eget bibendum aliquam nisl 
-                        ultrices mi, duis commodo platea nulla vehicula urna senectus arcu. Risus eu sapien cras aptent vitae suspendisse 
-                        nisi curabitur per, hendrerit facilisis rhoncus morbi justo maecenas eros lectus fames, varius ultrices elementum 
-                        ullamcorper mi ad fringilla mattis. Fusce tristique aliquet sagittis platea scelerisque rhoncus magna diam suscipit 
-                        sodales aptent mattis iaculis dictumst luctus pharetra, aenean non feugiat eros posuere ligula convallis morbi magnis 
-                        lacus placerat eget donec penatibus fringilla.
-                    </p>
-                    <div class="img-iteration img2"></div>
-                    <p>
-                        Felis odio nunc curae diam suscipit vel nascetur, tempor montes lacinia potenti phasellus velit quam sed, nibh 
-                        lectus facilisi proin est viverra. Fusce fringilla dis vestibulum ac class elementum a, ut taciti velit tempus 
-                        varius nisi praesent nec, aliquet quis tortor iaculis malesuada diam. Ultrices felis velit hendrerit sapien congue 
-                        enim ligula a per, netus fusce natoque ad aenean venenatis mi duis ullamcorper, ante augue ut primis phasellus rhoncus 
-                        est montes.
-                    </p>
-                </article>
-            </section>
+            <h1>Has buscado <?php echo $_GET["search_name"]; ?> </h1>
+            <p>El sistema de búsqueda está en fase de pruebas, muchas gracias por su paciencia y espero finalizarlo pronto.</p>
         </main>
 
         <!-- Footer -->
@@ -152,6 +99,7 @@
                 </a>
             </div>
         </footer>
+
     </div>
 
     <!-- Libraries -->
