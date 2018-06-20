@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:title" content="Cuay's Little Garden" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://cuaysplace.000webhostapp.com/" />
+    <meta property="og:image" content="http://cuaysplace.000webhostapp.com/static/images/front-image.jpg" />
+    <meta property="og:image:secure_url" content="https://cuaysplace.000webhostapp.com/static/images/front-image.jpg" />
+    <meta property="og:image:alt" content="Personal Portfolio... Also Noodle" />
+    <meta property="og:description" content="Personal Portfolio">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="static/icons/icons.css">
+
+    <!-- Hojas de estilos -->
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/load_screen.css">
+    <link rel="stylesheet" href="static/css/general.css">
+    
+    <title>Cuay's Little Garden</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Load Screen -->
+        <div id="load_screen">
+            <p>Cargando...</p>
+            <div class="loader">
+                <div class="punto1"></div>
+                <div class="punto2"></div>
+            </div>
+        </div>
+
+        <!-- Imagen de Portada -->
+        <div class="img-iteration front-img">
+            <div class="front-text">
+                <p id="front-text" class="typing-animation">Cuay's Little Garden</p>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header id="header">
+            
+            <div id="menu_bar">
+                <a href="#" onclick="return false" id="bt_menu">
+                    <span class="icon-menu"></span>
+                </a>
+                <a href="/" id="bt_home">
+                    <span class="icon-home"></span>
+                </a>
+                <a class="search_engine" href="#" onclick="return false" id="bt_search">
+                    <span class="icon-magnifying-glass"></span>
+                </a>
+                <form id="search_section" action="search.php" method="get">
+                    <input type="search" placeholder="Búsqueda" name="search_name" id="search_engine">
+                    <div id="search_buttons">
+                        <input type="submit" value="OK" id="search_send">
+                        <a href="#" onclick="return false" id="search_cancel">
+                            <span class="icon-squared-cross"></span>
+                        </a>
+                    </div>
+                </form>
+            </div>
+            
+            <nav class="navigator" id="navigator">
+                <a class="menu-item" href="#"><span class="icon-home"></span>Texto Aleatorio 1</a>
+                <a class="menu-item" href="#"><span class="icon-book"></span>Texto Aleatorio 2</a>
+                <a class="menu-item" href="#"><span class="icon-bowl"></span>Texto Aleatorio 3</a>
+                <a class="menu-item" href="#"><span class="icon-message"></span>Texto Aleatorio 4</a>
+                <a class="menu-item search_engine" id="bt_search_xl" href="#" onclick="return false"><span class="icon-magnifying-glass"></span></a>
+                <span class="menu-item dummy"></span>
+                <form id="search_section_xl" action="search.php" method="get">
+                    <input type="search" placeholder="Búsqueda" name="search_name" id="search_engine_xl">
+                    <div id="search_buttons_xl">
+                        <input type="submit" value="OK" id="search_send_xl">
+                        <a href="#" onclick="return false" id="search_cancel_xl">
+                            <span class="icon-squared-cross"></span>
+                        </a>
+                    </div>
+                </form>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <main>
+            <section class="main-content">
+                <h1>Escritor de código y de artículos</h1>
+                <article class="main-text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit ultricies, quisque enim curae urna neque morbi
+                        semper risus, nibh et vitae cras a magnis pretium. Rutrum eget hendrerit turpis fames justo magnis 
+                        aliquet pharetra platea tempor urna enim, placerat nascetur nulla neque litora pellentesque feugiat 
+                        fringilla vehicula tellus sed. Imperdiet lobortis est ridiculus tristique in vivamus dignissim tempus, 
+                        augue netus sociosqu justo ut aenean urna pulvinar metus, arcu conubia ultricies nullam lacus dictum nibh.
+                        Litora nisl tellus mattis mi sagittis ornare nascetur, curae libero vel conubia pellentesque justo, 
+                        vestibulum diam id fames dis platea.
+                    </p>
+                    <div class="img-iteration img1"></div>
+                    <p>
+                        Placerat volutpat sociosqu ac nam quis sodales egestas sagittis velit, risus semper eget bibendum aliquam nisl 
+                        ultrices mi, duis commodo platea nulla vehicula urna senectus arcu. Risus eu sapien cras aptent vitae suspendisse 
+                        nisi curabitur per, hendrerit facilisis rhoncus morbi justo maecenas eros lectus fames, varius ultrices elementum 
+                        ullamcorper mi ad fringilla mattis. Fusce tristique aliquet sagittis platea scelerisque rhoncus magna diam suscipit 
+                        sodales aptent mattis iaculis dictumst luctus pharetra, aenean non feugiat eros posuere ligula convallis morbi magnis 
+                        lacus placerat eget donec penatibus fringilla.
+                    </p>
+                    <div class="img-iteration img2"></div>
+                    <p>
+                        Felis odio nunc curae diam suscipit vel nascetur, tempor montes lacinia potenti phasellus velit quam sed, nibh 
+                        lectus facilisi proin est viverra. Fusce fringilla dis vestibulum ac class elementum a, ut taciti velit tempus 
+                        varius nisi praesent nec, aliquet quis tortor iaculis malesuada diam. Ultrices felis velit hendrerit sapien congue 
+                        enim ligula a per, netus fusce natoque ad aenean venenatis mi duis ullamcorper, ante augue ut primis phasellus rhoncus 
+                        est montes.
+                    </p>
+                </article>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p class="copyright">&copy; 2018, LeCuay I don't know legal stuff</p>
+            <div class="opciones">
+                <a href="#" class="contacto">Contacto</a>
+                <a href="#" class="volver">Volver</a>
+            </div>
+            <div class="redes_sociales">
+                <a href="https://github.com/LeCuay" target="_blank">
+                    <span class="icon-github github"></span>
+                </a>
+                <a href="https://www.instagram.com/jc_chechu/" target="_blank" >
+                    <span class="icon-instagram instagram"></span>
+                </a>
+                <a href="https://steamcommunity.com/id/Cuayteron1" target="_blank">
+                    <span class="icon-steam steam"></span>
+                </a>
+                <a href="https://twitter.com/Cuayteron1" target="_blank" >
+                    <span class="icon-twitter twitter"></span>
+                </a>
+                <a href="https://discordapp.com/" target="_blank">
+                    <span class="icon-discord discord"></span>
+                </a>
+            </div>
+        </footer>
+    </div>
+    <!-- Libraries -->
+    <script src="static/js/libs/anime.js"></script>
+    <!-- Scripts -->
+    <script src="static/js/Menu.js"></script>
+    <script src="static/js/LoadScreen.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Mina");
+
+#load_screen {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #1b1941;
+    color: #b7b7b7;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-family: 'Mina', sans-serif;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    font-size: 40px;
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+}
+
+#load_screen div[class^="punto"] {
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 1em;
+    height: 1em;
+    width: 1em;
+}
+
+#load_screen .punto1 {
+    background-color: #24957C;
+    background: radial-gradient(circle, #24957C 40%, rgb(134, 47, 209));
+}
+
+#load_screen .punto2 {
+    background-color: rgb(134, 47, 209);
+    background: radial-gradient(circle, rgb(134, 45, 209) 40%, #24957C);
+}

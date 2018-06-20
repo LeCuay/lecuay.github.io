@@ -1,0 +1,201 @@
+/**
+ * Contenido Principal
+ */
+h1 {
+    color: #FFF;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.main-content {
+    background-color: inherit;
+    color: #b7b7b7 ;
+    padding: 2em 0;
+}
+
+.main-content p {
+    padding: 1em 1em;
+    text-align: justify;
+}
+
+.main-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+/**
+ * Cosas de las imágenes
+ */
+.img-iteration.front-img {
+    background-image: url("../images/front-image.jpg");
+    background-position: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 40em;
+}
+
+    .front-text {
+        -ms-flex-item-align: center;
+            align-self: center;
+        background-color: rgba(33, 2, 6, 0.5);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        width: 100%;
+    }
+
+    .img-iteration.front-img p {
+        font-size: 2em;
+        text-align: center;
+        width: 100%;
+    }
+
+.img-iteration.img1 {
+    background-image: url("../images/test2.jpg");
+    height: 15em;
+}
+
+.img-iteration.img2 {
+    background-image: url("../images/test3.jpg");
+    height: 15em;
+}
+
+/**
+* Codigo HTML
+*/
+.code-block {
+    background-color: #232323;
+    border: 1px solid #b7b7b7;
+    display: none;
+    margin: 1em 0.5em;
+}
+
+    .code {
+        color: #c1c1c1;
+        display: inline-block;
+        font-family: 'Courier New', monospace;
+        font-weight: 300;
+        height: 1em;
+        overflow: hidden;
+        width: 100%;
+        white-space: nowrap;
+    }
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px)
+and (orientation: landscape) {
+    .img-iteration.front-img {
+        height: 10em;
+    }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+
+    .img-iteration.front-img {
+        height: 40em;
+    }
+
+    .img-iteration.front-img p {
+        font-size: 2.5em;
+    }
+
+    .img-iteration.img1, .img-iteration.img2 {
+        height: 20em;
+    }
+    
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+    
+    .img-iteration.front-img {
+        height: 40em;
+    }
+
+    .img-iteration.front-img p {
+        font-size: 2.5em;
+    }
+
+    .img-iteration.img1, .img-iteration.img2 {
+        height: 30em;
+    }
+
+    .main-content {
+        padding: 2em 0.2em;
+    }
+
+    .main-content h1 {
+        font-size: 1.2em;
+    }
+
+    .main-content p {
+        padding: 1em 6em;
+        text-align: center;
+    }
+
+    /**
+    * Codigo HTML
+    */
+    .code-block {
+        display: block;
+    }
+    
+    .code {
+        width: 0;
+
+        -webkit-animation: coding 6s infinite steps(70, end);
+
+                animation: coding 6s infinite steps(70, end);
+    }
+
+    .code:last-child::after {
+        color: #c1c1c1;
+        content: "|";
+        font-family: 'Courier New', monospace;
+        font-weight: 300;
+        white-space: nowrap;
+        
+        -webkit-animation: blink 0.9s infinite;
+        
+                animation: blink 0.9s infinite;
+    }
+
+    @-webkit-keyframes coding {
+        90% {width: 100%;}
+    }
+
+    @keyframes coding {
+        90% {width: 100%;}
+    }
+
+    @-webkit-keyframes blink {
+        to{ opacity: 0; }
+    }
+
+    @keyframes blink {
+        to{ opacity: 0; }
+    }
+
+}
