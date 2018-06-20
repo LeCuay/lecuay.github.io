@@ -456,6 +456,8 @@ and (min-width : 1224px) {
             .menu-item {
                 border-bottom: none;
                 width: 100%;
+
+                animation-duration: 500ms;
             }
 
             #navigator .search_engine {
