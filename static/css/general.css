@@ -101,7 +101,7 @@ header {
         }
 
         [id^="search_section"] {
-            background-color: #01523f;
+            background-color: #005643;
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -578,7 +578,7 @@ and (min-width : 1824px) {
 }
 
 /* 
- * Specia CSS for the Banner
+ * Special CSS for the Banner
  */
 a[title*="Hosted on free web hosting 000webhost.com."] {
     display: none;

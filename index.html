@@ -47,6 +47,7 @@
             <div class="front-text">
                 <p id="front-text" class="typing-animation">Cuay's Little Garden</p>
             </div>
+            <p id="sub-front-text">Escritor de código y de artículos.</p>
         </div>
 
         <!-- Header -->
@@ -74,10 +75,10 @@
             </div>
             
             <nav class="navigator" id="navigator">
-                <a class="menu-item" href="/"><span class="icon-home"></span>Home</a>
-                <a class="menu-item" href="#"><span class="icon-book"></span>Texto Aleatorio 2</a>
-                <a class="menu-item" href="#"><span class="icon-bowl"></span>Texto Aleatorio 3</a>
-                <a class="menu-item" href="#"><span class="icon-message"></span>Texto Aleatorio 4</a>
+                <a class="menu-item" href="/"><span class="icon-home"></span>Perfil</a>
+                <a class="menu-item" href="#"><span class="icon-book"></span>Artículos</a>
+                <a class="menu-item" href="#"><span class="icon-bowl"></span>Proyectos</a>
+                <a class="menu-item" href="#"><span class="icon-message"></span>Contacto</a>
                 <a class="menu-item search_engine" id="bt_search_xl" href="#" onclick="return false"><span class="icon-magnifying-glass"></span></a>
                 <span class="menu-item dummy"></span>
                 <form id="search_section_xl" action="search.php" method="get">
@@ -95,35 +96,70 @@
         <!-- Main -->
         <main>
             <section class="main-content">
-                <h1>Escritor de código y de artículos</h1>
+                <h2>Escritor de código y de artículos</h2>
                 <article class="main-text">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit ultricies, quisque enim curae urna neque morbi
-                        semper risus, nibh et vitae cras a magnis pretium. Rutrum eget hendrerit turpis fames justo magnis 
-                        aliquet pharetra platea tempor urna enim, placerat nascetur nulla neque litora pellentesque feugiat 
-                        fringilla vehicula tellus sed. Imperdiet lobortis est ridiculus tristique in vivamus dignissim tempus, 
-                        augue netus sociosqu justo ut aenean urna pulvinar metus, arcu conubia ultricies nullam lacus dictum nibh.
-                        Litora nisl tellus mattis mi sagittis ornare nascetur, curae libero vel conubia pellentesque justo, 
-                        vestibulum diam id fames dis platea.
-                    </p>
-                    <div class="img-iteration img1"></div>
-                    <p>
-                        Placerat volutpat sociosqu ac nam quis sodales egestas sagittis velit, risus semper eget bibendum aliquam nisl 
-                        ultrices mi, duis commodo platea nulla vehicula urna senectus arcu. Risus eu sapien cras aptent vitae suspendisse 
-                        nisi curabitur per, hendrerit facilisis rhoncus morbi justo maecenas eros lectus fames, varius ultrices elementum 
-                        ullamcorper mi ad fringilla mattis. Fusce tristique aliquet sagittis platea scelerisque rhoncus magna diam suscipit 
-                        sodales aptent mattis iaculis dictumst luctus pharetra, aenean non feugiat eros posuere ligula convallis morbi magnis 
-                        lacus placerat eget donec penatibus fringilla.
-                    </p>
-                    <div class="img-iteration img2"></div>
-                    <p>
-                        Felis odio nunc curae diam suscipit vel nascetur, tempor montes lacinia potenti phasellus velit quam sed, nibh 
-                        lectus facilisi proin est viverra. Fusce fringilla dis vestibulum ac class elementum a, ut taciti velit tempus 
-                        varius nisi praesent nec, aliquet quis tortor iaculis malesuada diam. Ultrices felis velit hendrerit sapien congue 
-                        enim ligula a per, netus fusce natoque ad aenean venenatis mi duis ullamcorper, ante augue ut primis phasellus rhoncus 
-                        est montes.
-                    </p>
+                    <div class="svg">
+                        <svg id="svg-code" width="180px" height="200px">
+                            <rect width="180px" height="200px" fill="#151517"/>
+                    
+                            <line class="code orange" x1="10" x2="160" y1="20" y2="20"></line>
+                            <line class="code darkcyan" x1="10" x2="130" y1="35" y2="35"></line>
+                            <line class="code darkcyan" x1="10" x2="80" y1="50" y2="50"></line>
+                            <line class="code white" x1="85" x2="140" y1="50" y2="50"></line>
+                            <line class="code white" x1="25" x2="50" y1="65" y2="65"></line>
+                            <line class="code orange" x1="55" x2="150" y1="65" y2="65"></line>
+                            <line class="code white" x1="25" x2="50" y1="80" y2="80"></line>
+                            <line class="code orange" x1="55" x2="150" y1="80" y2="80"></line>
+                            <line class="code white" x1="25" x2="50" y1="95" y2="95"></line>
+                            <line class="code orange" x1="55" x2="150" y1="95" y2="95"></line>
+                            <line class="code darkcyan" x1="10" x2="60" y1="110" y2="110"></line>
+                            <line class="code white" x1="65" x2="130" y1="110" y2="110"></line>
+                            <line class="code darkcyan" x1="10" x2="80" y1="125" y2="125"></line>
+                            <line class="code orange" x1="85" x2="140" y1="125" y2="125"></line>
+                            <line class="code white" x1="25" x2="150" y1="140" y2="140"></line>
+                            <line class="code white" x1="25" x2="120" y1="155" y2="155"></line>
+                            <line class="code darkcyan" x1="10" x2="35" y1="170" y2="170"></line>
+                            <line class="code orange" x1="40" x2="160" y1="170" y2="170"></line>
+                        </svg>
+                        <p>
+                            Desarrollador como estudiante, trabajo y aficionado, y escritor/analista como hobby y afición.<br>
+                            Soy <strong>programador Junior</strong> de <a href="http://www.python.org/" target="_blank"><span class="important-link">Python</span></a>
+                            y <a href="http://www.java.com/" target="_blank"><span class="important-link">Java</span></a>, lenguajes que llevo trabajando unos años.<br>
+                            Pueden encontrar proyectos en los que he trabajado en mi <a href="https://github.com/LeCuay" target="_blank"><span class="important-link">GitHub</span></a>.<br>
+                            Soy amante de la programación, el software y los retos, y estoy deseando trabajar en un buen equipo.
+                        </p>
+                    </div>
+                    <div class="svg">
+                        <svg id="svg-article" width="180px" height="200px">
+                            <rect width="180px" height="200px" fill="#C8C7C7"/>
+
+                            <line class="code black" x1="40" x2="140" y1="15" y2="15"></line>
+                            <line class="code black" x1="20" x2="170" y1="35" y2="35"></line>
+                            <line class="code black" x1="10" x2="110" y1="50" y2="50"></line>
+                            <line class="code black" x1="115" x2="170" y1="50" y2="50"></line>
+                            <line class="code black" x1="10" x2="80" y1="65" y2="65"></line>
+                            <line class="code black" x1="20" x2="60" y1="80" y2="80"></line>
+                            <line class="code black" x1="65" x2="140" y1="80" y2="80"></line>
+                            <line class="code black" x1="145" x2="170" y1="80" y2="80"></line>
+                            <line class="code black" x1="10" x2="110" y1="95" y2="95"></line>
+                            <line class="code black" x1="115" x2="170" y1="95" y2="95"></line>
+                            <line class="code black" x1="10" x2="140" y1="110" y2="110"></line>
+                            <line class="code black" x1="20" x2="100" y1="125" y2="125"></line>
+                            <line class="code black" x1="105" x2="170" y1="125" y2="125"></line>
+                            <line class="code black" x1="10" x2="150" y1="140" y2="140"></line>
+                            <line class="code black" x1="155" x2="170" y1="140" y2="140"></line>
+                            <line class="code black" x1="10" x2="50" y1="155" y2="155"></line>
+                            <line class="code black" x1="130" x2="170" y1="180" y2="180"></line>
+                        </svg>
+                        <p>
+                            He escrito varios artículos de  de opinión y análisis enfocados en el ámbito del entretenimiento.<br>
+                            Adoro la literatura por lo que siempre he tenido cierta facilidad para las palabra y la expresión.<br>
+                            Pueden encontrar varios de mis <a href="#"><span class="important-link">trabajos</span></a> en la propia web.<br>
+                            Adoro escribir y le dedico tiempo siempre que puedo, por lo que un trabajo en dicho ámbito será bienvenido.
+                        </p>
+                    </div>
                 </article>
+                <div class="img-iteration img1"></div>
             </section>
         </main>
 
@@ -159,5 +195,6 @@
     <!-- Scripts -->
     <script src="static/js/Menu.js"></script>
     <script src="static/js/LoadScreen.js"></script>
+    <script src="static/js/home.js"></script>
 </body>
 </html>

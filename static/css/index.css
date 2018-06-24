@@ -1,21 +1,29 @@
 /**
  * Contenido Principal
  */
-h1 {
+h2 {
     color: #FFF;
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: center;
+    width: 100%;
 }
 
 .main-content {
     background-color: inherit;
-    color: #b7b7b7 ;
+    color: #b7b7b7;
+    display: flex;
+    flex-direction: column;
     padding: 2em 0;
 }
 
 .main-content p {
     padding: 1em 1em;
-    text-align: justify;
+    text-align: start;
+}
+
+.main-content a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .main-text {
@@ -26,6 +34,10 @@ h1 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+}
+
+.important-link {
+    border-bottom: 1px solid #24957C;
 }
 
 /**
@@ -60,6 +72,12 @@ h1 {
         width: 100%;
     }
 
+    #sub-front-text {
+        background-color: rgba(33, 2, 6, 0.5);
+        font-size: 1em;
+        text-shadow: 0 0 5px #21023C;
+    }
+
     .img-iteration.front-img p {
         font-size: 2em;
         text-align: center;
@@ -77,25 +95,31 @@ h1 {
 }
 
 /**
-* Codigo HTML
+* Codigo SVG
 */
-.code-block {
-    background-color: #232323;
-    border: 1px solid #b7b7b7;
+.svg svg {
     display: none;
-    margin: 1em 0.5em;
 }
 
-    .code {
-        color: #c1c1c1;
-        display: inline-block;
-        font-family: 'Courier New', monospace;
-        font-weight: 300;
-        height: 1em;
-        overflow: hidden;
-        width: 100%;
-        white-space: nowrap;
-    }
+.code {
+    stroke-width: 6;
+}
+
+.code.orange {
+    stroke: rgb(230, 150, 30);
+}
+
+.code.darkcyan {
+    stroke: rgb(10, 138, 138);
+}
+
+.code.white {
+    stroke: rgb(199, 199, 199);
+}
+
+.code.black {
+    stroke: rgb(26, 26, 26);
+}
 
 /* Smartphones (landscape) ----------- */
 @media only screen 
@@ -123,6 +147,33 @@ and (orientation : landscape) {
     .img-iteration.img1, .img-iteration.img2 {
         height: 20em;
     }
+
+    #sub-front-text {
+        display: none;
+    }
+
+    /**
+    * Codigo SVG
+    */
+    .svg {
+        align-self: flex-start;
+        background-color: #32045A; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 1em;
+        padding: 1em 0;
+    }
+
+        .svg svg {
+            align-self: center;
+            display: initial;
+        }
+
+        .svg p {
+            height: 20em;
+            text-align: start;
+        }
     
 }
 
@@ -131,7 +182,7 @@ and (orientation : landscape) {
 and (min-width : 1224px) {
     
     .img-iteration.front-img {
-        height: 40em;
+        height: 50em;
     }
 
     .img-iteration.front-img p {
@@ -143,11 +194,14 @@ and (min-width : 1224px) {
     }
 
     .main-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
         padding: 2em 0.2em;
     }
 
-    .main-content h1 {
-        font-size: 1.2em;
+    .main-content h2 {
+        font-size: 1.5em;
     }
 
     .main-content p {
@@ -155,47 +209,37 @@ and (min-width : 1224px) {
         text-align: center;
     }
 
+    .main-text {
+        align-self: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #sub-front-text {
+        display: none;
+    }
+
     /**
-    * Codigo HTML
+    * Codigo SVG
     */
-    .code-block {
-        display: block;
-    }
-    
-    .code {
-        width: 0;
-
-        -webkit-animation: coding 6s infinite steps(70, end);
-
-                animation: coding 6s infinite steps(70, end);
+    .svg {
+        align-self: flex-start;
+        background-color: #32045A; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 1em;
+        padding: 1em 0;
     }
 
-    .code:last-child::after {
-        color: #c1c1c1;
-        content: "|";
-        font-family: 'Courier New', monospace;
-        font-weight: 300;
-        white-space: nowrap;
-        
-        -webkit-animation: blink 0.9s infinite;
-        
-                animation: blink 0.9s infinite;
-    }
+        .svg svg {
+            align-self: center;
+            display: initial;
+        }
 
-    @-webkit-keyframes coding {
-        90% {width: 100%;}
-    }
-
-    @keyframes coding {
-        90% {width: 100%;}
-    }
-
-    @-webkit-keyframes blink {
-        to{ opacity: 0; }
-    }
-
-    @keyframes blink {
-        to{ opacity: 0; }
-    }
+        .svg p {
+            height: 20em;
+            text-align: start;
+        }
 
 }

@@ -28,6 +28,7 @@ function loading() {
     var timeLine = anime.timeline();
     var text = document.getElementById('front-text');
     var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+    var subtext = document.getElementById("sub-front-text")
     
     if(text && width >= 1024) {
         steppedEasing(60);
@@ -45,6 +46,12 @@ function loading() {
             .add({
                 targets: text,
                 width: [ {value: '100%'} ],
+                duration: 2500,
+                easing: 'steppedEasing'
+            })
+            .add({
+                targets: subtext,
+                width: [ {value: '100%'}],
                 duration: 2500,
                 easing: 'steppedEasing'
             });

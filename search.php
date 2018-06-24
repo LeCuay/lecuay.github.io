@@ -52,9 +52,9 @@
             
             <nav class="navigator" id="navigator">
                 <a class="menu-item" href="/"><span class="icon-home"></span>Home</a>
-                <a class="menu-item" href="#"><span class="icon-book"></span>Texto Aleatorio 2</a>
-                <a class="menu-item" href="#"><span class="icon-bowl"></span>Texto Aleatorio 3</a>
-                <a class="menu-item" href="#"><span class="icon-message"></span>Texto Aleatorio 4</a>
+                <a class="menu-item" href="#"><span class="icon-book"></span>Artículos</a>
+                <a class="menu-item" href="#"><span class="icon-bowl"></span>Proyectos</a>
+                <a class="menu-item" href="#"><span class="icon-message"></span>Contacto</a>
                 <a class="menu-item search_engine" id="bt_search_xl" href="#" onclick="return false"><span class="icon-magnifying-glass"></span></a>
                 <span class="menu-item dummy"></span>
                 <form id="search_section_xl" action="search.php" method="get">
