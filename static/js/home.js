@@ -1,11 +1,11 @@
-var code = Array.prototype.slice.call(document.getElementsByClassName("code"), 0);
+var code = Array.prototype.slice.call(document.querySelectorAll("svg line"), 0);
 code.forEach(function(line) {
     line.setAttribute("future-x2", line.getAttribute("x2"));
     line.setAttribute("x2", line.getAttribute("x1"));
 });
 
-function codeSVGAnimation() {
-    var code = Array.prototype.slice.call(document.getElementsByClassName("code"), 0);
+function codeSVGAnimation(element) {
+    var code = Array.prototype.slice.call(element, 0);
     code.forEach(function(line) {
         anime({
             targets: [line],
@@ -42,11 +42,21 @@ function onVisibilityChange(el, callback) {
     }
 }
 
-var activated = false;
-var handler = onVisibilityChange(document.getElementById("svg-code"), function() {
-    if (!activated && isElementInViewport(document.getElementById("svg-code"))) {
-        codeSVGAnimation();
-        activated = true;
+var svgCodeAct = false;
+var svgCode = document.getElementById("svg-code");
+var handler = onVisibilityChange(svgCode, function() {
+    if (!svgCodeAct && isElementInViewport(svgCode)) {
+        codeSVGAnimation(document.getElementsByClassName("code"));
+        svgCodeAct = true;
+    }
+});
+
+var svgArticleAct = false;
+var svgArticle = document.getElementById("svg-article");
+var handler2 = onVisibilityChange(svgArticle, function() {
+    if (!svgArticleAct && isElementInViewport(svgArticle)) {
+        codeSVGAnimation(document.getElementsByClassName("line"));
+        svgArticleAct = true;
     }
 });
 
@@ -55,9 +65,19 @@ if (window.addEventListener) {
     addEventListener('load', handler, false); 
     addEventListener('scroll', handler, false); 
     addEventListener('resize', handler, false); 
+
+    addEventListener('DOMContentLoaded', handler2, false); 
+    addEventListener('load', handler2, false); 
+    addEventListener('scroll', handler2, false); 
+    addEventListener('resize', handler2, false); 
 } else if (window.attachEvent)  {
     attachEvent('onDOMContentLoaded', handler);
     attachEvent('onload', handler);
     attachEvent('onscroll', handler);
     attachEvent('onresize', handler);
+
+    attachEvent('onDOMContentLoaded', handler2);
+    attachEvent('onload', handler2);
+    attachEvent('onscroll', handler2);
+    attachEvent('onresize', handler2);
 }

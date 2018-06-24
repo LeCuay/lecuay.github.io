@@ -11,8 +11,13 @@ h2 {
 .main-content {
     background-color: inherit;
     color: #b7b7b7;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 2em 0;
 }
 
@@ -84,16 +89,6 @@ h2 {
         width: 100%;
     }
 
-.img-iteration.img1 {
-    background-image: url("../images/test2.jpg");
-    height: 15em;
-}
-
-.img-iteration.img2 {
-    background-image: url("../images/test3.jpg");
-    height: 15em;
-}
-
 /**
 * Codigo SVG
 */
@@ -101,23 +96,31 @@ h2 {
     display: none;
 }
 
-.code {
+    .svg h3 {
+        border-bottom: 1px solid #FFF;
+        color: aliceblue;
+        display: none;
+        font-size: 1.1em;
+        margin-bottom: 1em;
+    }
+
+.code, .line {
     stroke-width: 6;
 }
 
-.code.orange {
+.code.orange, .line.orange {
     stroke: rgb(230, 150, 30);
 }
 
-.code.darkcyan {
+.code.darkcyan, .line.darkcyan {
     stroke: rgb(10, 138, 138);
 }
 
-.code.white {
+.code.white, .line.white {
     stroke: rgb(199, 199, 199);
 }
 
-.code.black {
+.code.black, .line.black {
     stroke: rgb(26, 26, 26);
 }
 
@@ -144,8 +147,40 @@ and (orientation : landscape) {
         font-size: 2.5em;
     }
 
-    .img-iteration.img1, .img-iteration.img2 {
-        height: 20em;
+    .main-content {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        padding: 2em 0.2em;
+    }
+
+    .main-content h2 {
+        font-size: 1.5em;
+    }
+
+    .main-content p {
+        padding: 1em 6em;
+        text-align: center;
+    }
+
+    .main-text {
+        -ms-flex-item-align: center;
+            align-self: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 
     #sub-front-text {
@@ -156,22 +191,53 @@ and (orientation : landscape) {
     * Codigo SVG
     */
     .svg {
-        align-self: flex-start;
+        -ms-flex-item-align: center;
+            align-self: center;
         background-color: #32045A; 
+        display: -webkit-box; 
+        display: -ms-flexbox; 
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         margin: 1em;
-        padding: 1em 0;
+        padding: 1em;
     }
 
         .svg svg {
-            align-self: center;
             display: initial;
         }
 
-        .svg p {
-            height: 20em;
+        .svg-text {
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            width: 75%;
+        }
+
+        .svg-text h3 {
+            display: inline;
+        }
+
+        .svg-text p {
+            -ms-flex-item-align: center;
+                align-self: center;
+            display: inline;
+            padding: 0;
             text-align: start;
         }
     
@@ -189,14 +255,16 @@ and (min-width : 1224px) {
         font-size: 2.5em;
     }
 
-    .img-iteration.img1, .img-iteration.img2 {
-        height: 30em;
-    }
-
     .main-content {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         padding: 2em 0.2em;
     }
 
@@ -210,9 +278,15 @@ and (min-width : 1224px) {
     }
 
     .main-text {
-        align-self: center;
-        flex-direction: row;
-        justify-content: space-between;
+        -ms-flex-item-align: center;
+            align-self: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 
     #sub-front-text {
@@ -223,23 +297,60 @@ and (min-width : 1224px) {
     * Codigo SVG
     */
     .svg {
-        align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
         background-color: #32045A; 
+        display: -webkit-box; 
+        display: -ms-flexbox; 
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         margin: 1em;
         padding: 1em 0;
     }
 
+        .svg h3 {
+            display: inline;
+        }
+
         .svg svg {
-            align-self: center;
+            -ms-flex-item-align: center;
+                align-self: center;
             display: initial;
         }
 
-        .svg p {
-            height: 20em;
-            text-align: start;
-        }
+            .svg-text {
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                padding: 1em;
+            }
+
+                .svg-text h3 {
+                    display: inline;
+                }
+
+                .svg-text p {
+                    -ms-flex-item-align: center;
+                        align-self: center;
+                    display: inline;
+                    padding: 0;
+                    text-align: start;
+                }
 
 }
