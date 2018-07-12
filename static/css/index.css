@@ -2,10 +2,10 @@
  * Contenido Principal
  */
 h2 {
+    align-self: center;
     color: #FFF;
     font-size: 1.2em;
     text-align: center;
-    width: 100%;
 }
 
 .main-content {
@@ -44,6 +44,41 @@ h2 {
 .important-link {
     border-bottom: 1px solid #24957C;
 }
+
+section.valores {
+    display: flex;
+    flex-direction: column;
+}
+
+    .valores h2 {
+        margin-bottom: 1em;
+    }
+
+    .principios {
+        align-items: flex-start;
+        background-color: rgba(0, 0, 0, 0.3);
+        counter-reset: principios;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 1em;
+    }
+
+        .principios li {
+            border-bottom: 1px solid #35469E;
+            padding: 1em 0;
+        }
+
+        .principios h3 {
+            color: #FFF;
+            font-size: 1em;
+        }
+
+        .principios h3::before {
+            counter-increment: principios;
+            color: #24957C;
+            content: counter(principios) ". "
+        }
 
 /**
  * Cosas de las imágenes
@@ -230,6 +265,7 @@ and (orientation : landscape) {
         }
 
         .svg-text h3 {
+            align-self: flex-start;
             display: inline;
         }
 
