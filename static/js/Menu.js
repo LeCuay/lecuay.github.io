@@ -123,9 +123,9 @@ function FixNav() {
 
         if (isSmartPhone()) {
             navBar.classList.remove("fixed-nav");
-            navigatorBar.style.top = 'initial';
+            navigatorBar.style.top = 'relative';
         } else {
-            navigatorBar.style.position = 'initial';
+            navigatorBar.style.position = 'relative';
         }
         navigatorBar.classList.remove("fixed-nav");
         main.style.paddingTop = '0px';

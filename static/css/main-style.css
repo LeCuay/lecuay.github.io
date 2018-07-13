@@ -302,29 +302,18 @@ and (min-width : 1224px) {
 
     /* Barra de Búsqueda */
     #navigator .search_section {
-        top: initial;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 2em;
     }
     
-    #navigator .search_bar {
-        display: initial;
-    }
-
-    #search_bar_xl {
-        width: 70%;
-    }
-
     #navigator .search_buttons {
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        justify-content: space-around;
+        flex-direction: row;
     }
 
     #navigator .search_send {
         width: 20%;
-    }
-
-    #navigator .search_cancel {
-        font-size: 2em;
     }
 
     /* Footer */
