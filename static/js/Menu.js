@@ -123,7 +123,7 @@ function FixNav() {
 
         if (isSmartPhone()) {
             navBar.classList.remove("fixed-nav");
-            navigatorBar.style.top = 'relative';
+            navigatorBar.style.top = 'initial';
         } else {
             navigatorBar.style.position = 'relative';
         }
