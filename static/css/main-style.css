@@ -1,0 +1,207 @@
+/*
+- - - Color Palette - - -
+Primary color:
+    shade 0 = #0E1E73
+    shade 1 = #35469E
+    shade 2 = #1B2C8B
+    shade 3 = #08155B
+    shade 4 = #030C3D
+
+Secondary color (1):
+    shade 0 = #400871
+    shade 1 = #692E9C
+    shade 2 = #521388
+    shade 3 = #32045A
+    shade 4 = #21023C
+
+Secondary color (2):
+    shade 0 = #006D54
+    shade 1 = #24957C
+    shade 2 = #0A8368
+    shade 3 = #005643
+    shade 4 = #003A2D
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Mina");
+
+/* Estilos Generales */
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #21023C;
+    color: #c7c7c7;
+    font-family: 'Mina', sans-serif;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+.header {
+    background-color: rgba(1, 82, 63, 0.8);
+    width: 100%;
+}
+
+/* Barra de Navegación Móvil */
+.nav-bar {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 10vh;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: .5em 1em;
+    position: relative;
+    width: 100%;
+}
+
+    .nav-bar-item {
+        cursor: pointer;
+        color: #FFF;
+        font-size: 2em;
+    }
+
+    .nav-bar-item:hover {
+        color: #b7b7b7;
+    }
+
+/* Menú de navegación */
+.navigator {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    left: -100%;
+    padding: 0 2em 1em 2em;
+    position: absolute;
+    width: 100%;
+}
+
+.navigator [class^="icon-"] {
+    margin: auto 0.5em;
+}
+
+    .menu-item {
+        border-bottom: 1px solid currentColor;
+        color: #FFF;
+        padding: .5em 1em;
+        text-align: center;
+        width: 100%;
+    }
+
+    .menu-item:hover {
+        background-color: #24957C;
+}
+
+/* Special CSS for the Fixed Nav */
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: #01523f;
+    bottom: 0;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    left: 0;
+    padding: 0.2em 1em;
+    position: static;
+}
+
+    footer a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        color: #b7b7b7;
+    }
+
+    .opciones {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        padding: 1em;
+    }
+
+    .copyright {
+        color: #b7b7b7;
+        font-size: 0.6em;
+        text-align: center;
+    }
+
+    .redes_sociales {
+        border-bottom: 1px solid white;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        padding: 1em;
+    }
+
+        /* Special CSS for the Discord img */
+        .discord {
+            -webkit-filter: brightness(0) invert(1);
+                    filter: brightness(0) invert(1);
+        }
+
+        .discord:hover {
+            -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);
+        }
+
+/* Snippets */
+
+/* Image Stuff */
+.img-iteration {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+}
