@@ -35,9 +35,9 @@ function getWidth() {
  */
 function isTablet(landscape) {
     if (landscape) {
-        return getWidth() > 768 && window.matchMedia("(orientation: landscape)").matches;
+        return getWidth() >= 768 && getWidth() <= 1024 && window.matchMedia("(orientation: landscape)").matches;
     } else {
-        return getWidth() > 768 && window.matchMedia("(orientation: portrait)").matches;
+        return getWidth() > 768 && getWidth() <= 1024;
     }
 }
 
@@ -46,7 +46,7 @@ function isTablet(landscape) {
  * @returns {Boolean} True if device is Desktop, False otherwise.
  */
 function isDesktop() {
-    return getWidth() >= 1224;
+    return getWidth() >= 1025;
 }
 
 /**
@@ -54,7 +54,7 @@ function isDesktop() {
  * @returns {Boolean} True if device is Large Desktop, False otherwise.
  */
 function isLargeDesktop() {
-    return getWidth() >= 1824;
+    return getWidth() >= 1281;
 }
 
 /**
@@ -62,5 +62,30 @@ function isLargeDesktop() {
  * @returns {Boolean} True if device is SmartPhone, False otherwise.
  */
 function isSmartPhone() {
-    return getWidth() < 1224;
+    return (getWidth() >= 320 && getWidth() <= 480) || (getWidth() >= 481 && getWidth() <= 767);
+}
+
+function isElementInViewport (el) {
+
+    var rect = el.getBoundingClientRect();
+
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+function onVisibilityChange(el, callback) {
+    var old_visible;
+    return function () {
+        var visible = isElementInViewport(el);
+        if (visible != old_visible) {
+            old_visible = visible;
+            if (typeof callback == 'function') {
+                callback();
+            }
+        }
+    }
 }

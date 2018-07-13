@@ -78,6 +78,91 @@ main section {
     stroke: rgb(26, 26, 26);
 }
 
+@media only screen 
+and (min-device-width : 767px) 
+and (max-device-width : 1024px)
+and (orientation : portrait)
+{
+    /* Presentación y SVG */
+    .presentacion {
+        align-items: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: stretch;
+    }
+
+        .presentacion h2 {
+            padding: 1em 0;
+            width: 100%;
+        }
+
+        .presentacion .svg {
+            background-color: #32045A;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin: 1em 0;
+            padding: 1em 2em;
+        }
+}
+
+/* Tablets Landscape */
+@media only screen 
+and (min-device-width : 767px) 
+and (max-device-width : 1024px)
+and (orientation : landscape)
+{
+    /* Presentación y SVG */
+    .presentacion {
+        align-items: stretch;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+        .presentacion h2 {
+            padding: 1em 0;
+            width: 100%;
+        }
+
+        .presentacion .svg {
+            background-color: #32045A;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 1em 2em;
+            width: 45%;
+        }
+}
+
+@media only screen 
+and (min-width : 1224px)
+{
+
+    /* Presentación y SVG */
+    .presentacion {
+        align-items: stretch;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+        .presentacion h2 {
+            padding: 1em 0;
+            width: 100%;
+        }
+
+        .presentacion .svg {
+            background-color: #32045A;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 1em 2em;
+            width: 45%;
+        }
+
+}
+
 /* Typing Animation */
 .typing-animation {
     overflow: hidden;

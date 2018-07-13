@@ -30,9 +30,8 @@ function loading() {
 
     var timeLine = anime.timeline();
     var text = $("#front-text");
-    var width = getWidth();
     
-    if(text && width >= 1024) {
+    if(text && !isSmartPhone()) {
         steppedEasing(60);
         text.style.width = 0;
         timeLine
