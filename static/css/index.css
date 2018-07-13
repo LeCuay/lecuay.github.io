@@ -24,6 +24,13 @@
         }
 
 /* Main */
+main {
+    align-items: space-around;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 main section {
     align-items: center;
     display: flex;
@@ -37,6 +44,7 @@ main section {
         text-align: center;
     }
 
+    /* Presentación */
     .presentacion .svg {
         align-items: center;
         display: flex;
@@ -79,6 +87,10 @@ main section {
 }
 
 /* Principios */
+.principios {
+    padding: 1em 0;
+}
+
 .principios ul {
     align-items: flex-start;
     background-color: rgba(0, 0, 0, 0.3);
@@ -86,6 +98,7 @@ main section {
     display: flex;
     flex-direction: column;
     list-style: none;
+    margin: 1em 0;
     padding: 1em;
 }
 
@@ -131,6 +144,11 @@ and (orientation : portrait)
             margin: 1em 0;
             padding: 1em 2em;
         }
+
+        /* Principios */
+        .principios {
+            padding: 1em;
+        }
 }
 
 /* Tablets Landscape */
@@ -160,6 +178,25 @@ and (orientation : landscape)
             padding: 1em 2em;
             width: 45%;
         }
+
+    /* Principios */    
+    .principios {
+        width: 100%;
+    }
+    
+    .principios ul {
+        align-items: stretch;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+        .principios li {
+            border-bottom: none;
+            border-right: 1px solid #35469E;
+            padding: 0 1em;
+            margin: 1em 0;
+            width: 50%;
+        }
 }
 
 @media only screen 
@@ -186,6 +223,25 @@ and (min-width : 1224px)
             justify-content: flex-start;
             padding: 1em 2em;
             width: 45%;
+        }
+
+    /* Principios */
+    .principios {
+        width: 100%;
+    }
+    
+    .principios ul {
+        align-items: stretch;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+        .principios li {
+            border-bottom: none;
+            border-right: 1px solid #35469E;
+            padding: 0 1em;
+            margin: 1em 0;
+            width: 50%;
         }
 
 }

@@ -289,6 +289,11 @@ and (min-device-width : 767px)
 and (max-device-width : 1024px)
 {
 
+    /* Header */
+    .header {
+        background-color: rgba(1, 82, 63, 0.9);
+    }
+    
     /* Navegador Móvil */
     .nav-bar {
         display: none;
@@ -397,6 +402,11 @@ and (max-device-width : 1024px)
 /* Desktop */
 @media only screen 
 and (min-width : 1224px) {
+
+    /* Header */
+    .header {
+        background-color: rgba(1, 82, 63, 0.9);
+    }
     
     /* Navegador Móvil */
     .nav-bar {
