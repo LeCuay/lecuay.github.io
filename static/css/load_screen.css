@@ -25,7 +25,7 @@
     z-index: 100;
 }
 
-#load_screen div[class^="punto"] {
+#load_screen div[class^="figure"] {
     border-radius: 50%;
     display: inline-block;
     margin: 0 1em;
@@ -33,12 +33,12 @@
     width: 1em;
 }
 
-#load_screen .punto1 {
+#load_screen .figure1 {
     background-color: #24957C;
     background: radial-gradient(circle, #24957C 40%, rgb(134, 47, 209));
 }
 
-#load_screen .punto2 {
+#load_screen .figure2 {
     background-color: rgb(134, 47, 209);
     background: radial-gradient(circle, rgb(134, 45, 209) 40%, #24957C);
 }

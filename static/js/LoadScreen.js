@@ -1,5 +1,5 @@
-anime ({
-    targets: ['.loader'],
+anime({
+    targets: ['.anim_container'],
     rotate: 180,
     duration: 1600,
     loop: true,
@@ -10,14 +10,17 @@ anime ({
     },
 });
 
-var load_screen = document.getElementById("load_screen");
-var body = document.getElementsByClassName("container")[0];
+// Declaring variables
+var load_screen = $("#load_screen");
+var body = $(".container");
 
 if(load_screen){
     window.addEventListener("load", loading());
 }
 
+// This function will return the number of steps
 function steppedEasing(steps) {
+    steps = parseInt(steps);
     return anime.easings['steppedEasing'] = function(progress) {
         return Math.round(progress * steps) * (1 / steps);
     };
@@ -26,9 +29,8 @@ function steppedEasing(steps) {
 function loading() {
 
     var timeLine = anime.timeline();
-    var text = document.getElementById('front-text');
-    var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-    var subtext = document.getElementById("sub-front-text")
+    var text = $("#front-text");
+    var width = getWidth();
     
     if(text && width >= 1024) {
         steppedEasing(60);
@@ -46,12 +48,6 @@ function loading() {
             .add({
                 targets: text,
                 width: [ {value: '100%'} ],
-                duration: 2500,
-                easing: 'steppedEasing'
-            })
-            .add({
-                targets: subtext,
-                width: [ {value: '100%'}],
                 duration: 2500,
                 easing: 'steppedEasing'
             });

@@ -2,19 +2,15 @@
 document.addEventListener('DOMContentLoaded', display_menu);
 
 // Obtenemos el navegador y la barra para desplegarlo
-var menu_button = document.getElementById("bt_menu");
-var navi = document.getElementById("navigator");
+var menu_button = $("#bt-menu");
+var navi = $("#navigator");
 var displayed_menu = true;
 
-// Obtendremos el header y el contenido principal
-var header = document.getElementById("header");
-var main = document.getElementsByTagName("main")[0];
-var fixedNav = header.offsetTop;
+// Obtendremos el navBar y el contenido principal
+var navBar = $(".nav-bar");
+var fixedNav = navBar.offsetTop;
+var main = $("main");
 
-// Asignamos la función al scroll
-window.onscroll = function() {FixNav()};
-
-// Asignamos la funcion a un 'onclick'
 // Usamos addEventListener y attachEvent para que todos los navegadores lo reconozcan
 if (menu_button.addEventListener) {
     menu_button.addEventListener('click', display_menu);
@@ -22,22 +18,27 @@ if (menu_button.addEventListener) {
     menu_button.attachEvent('onclick', display_menu)
 }
 
-function display_menu() {
-    // Obtenemos el tamano de la pantalla (para evitar que se ejecute en Desktop)
-    var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+if (window.addEventListener) {
+    window.addEventListener('scroll', FixNav);
+} else {
+    window.attachEvent('onscroll', FixNav);
+}
 
-    if (width < 1024) {
+function display_menu() {
+
+    if (isSmartPhone()) {
         // En caso de que Si este desplegado lo ocultamos
         if(displayed_menu) {
             // Comprobamos si hay element 'icon-cross'
-            if(typeof document.getElementsByClassName("icon-cross")[0] !== 'undefined') {
+            if($(".icon-cross") != null) {
                 anime({
-                    targets: '#bt_menu',
+                    targets: menu_button,
                     rotate: 0,
                     duration: 1000,
                     elasticity: 100,
                 });
-                document.getElementsByClassName("icon-cross")[0].className = "icon-menu";
+                $(".icon-cross").classList.add("icon-menu");
+                $(".icon-cross").classList.remove("icon-cross");
             }
             
             anime({
@@ -49,7 +50,7 @@ function display_menu() {
                 easing: 'easeInBack'
             });
             anime({
-                targets: header,
+                targets: ".header, #navigator",
                 backgroundColor: 'rgba(1, 82, 63, 0.9)',
                 duration: 500,
                 easing: 'easeInBack',
@@ -59,12 +60,13 @@ function display_menu() {
         // En caso contrario lo desplegamos
         } else {
             anime({
-                targets: '#bt_menu',
+                targets: menu_button,
                 rotate: 180,
                 duration: 1000,
                 elasticity: 100,
             });
-            document.getElementsByClassName("icon-menu")[0].className = "icon-cross";
+            $(".icon-menu").classList.add("icon-cross");
+            $(".icon-menu").classList.remove("icon-menu");
 
             anime({
                 targets: '#navigator',
@@ -75,7 +77,7 @@ function display_menu() {
                 easing: 'easeOutBack',
             });
             anime({
-                targets: header,
+                targets: ".header, #navigator",
                 backgroundColor: 'rgba(0, 109, 84, 0.9)',
                 duration: 500,
                 easing: 'easeOutBack',
@@ -87,18 +89,18 @@ function display_menu() {
 }
 
 function FixNav() {
-    var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-    var landscapeTablet = width > 768 && window.matchMedia("(orientation: landscape)").matches;
-    // Comprobamos en qué momento el header desaparece de la página
+    // Comprobamos en qué momento el navBar desaparece de la página
     if (window.pageYOffset >= fixedNav) {
         // Y le asignamos la clase
-        header.classList.add("fixed-nav");
-        main.style.paddingTop = header.offsetHeight + 'px';
+        navBar.classList.add("fixed-nav");
+        navi.classList.add("fixed-nav");
+        navi.style.top = navBar.offsetHeight + 'px';
+        main.style.paddingTop = navBar.offsetHeight + 'px';
 
-        if(landscapeTablet)
+        if(isTablet(true))
         {
             anime({
-                targets: [header, '#navigator'],
+                targets: [navBar, '#navigator'],
                 borderBottomLeftRadius: [
                     {value: '25px', duration: 400}
                 ],
@@ -109,13 +111,15 @@ function FixNav() {
             })
         }
     } else {
-        header.classList.remove("fixed-nav");
+        navBar.classList.remove("fixed-nav");
+        navi.classList.remove("fixed-nav");
         main.style.paddingTop = '0px';
+        navi.style.top = 'initial';
         
-        if(landscapeTablet)
+        if(isTablet())
         {
             anime({
-                targets: [header, '#navigator'],
+                targets: [navBar, '#navigator'],
                 borderBottomLeftRadius: [
                     {value: '0', duration: 400}
                 ],
@@ -128,47 +132,47 @@ function FixNav() {
     }
 }
 
-var search_button = document.getElementById("bt_search");
-var search_button_xl = document.getElementById("bt_search_xl");
-var search_cancel = document.getElementById("search_cancel");
-var search_cancel_xl = document.getElementById("search_cancel_xl");
-var displayed_search = false;
+// var search_button = document.getElementById("bt_search");
+// var search_button_xl = document.getElementById("bt_search_xl");
+// var search_cancel = document.getElementById("search_cancel");
+// var search_cancel_xl = document.getElementById("search_cancel_xl");
+// var displayed_search = false;
 
-if(search_button.addEventListener) {
-    search_button.addEventListener("click", display_search);
-    search_cancel.addEventListener("click", display_search);
-    search_button_xl.addEventListener("click", display_search);
-    search_cancel_xl.addEventListener("click", display_search);
-} else {
-    search_button.attachEvent('onclick', display_search);
-}
+// if(search_button.addEventListener) {
+//     search_button.addEventListener("click", display_search);
+//     search_cancel.addEventListener("click", display_search);
+//     search_button_xl.addEventListener("click", display_search);
+//     search_cancel_xl.addEventListener("click", display_search);
+// } else {
+//     search_button.attachEvent('onclick', display_search);
+// }
 
-function display_search() {
-    var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-    if (width < 1024) {
-        var search_bar = document.getElementById("search_section");
-    } else {
-        var search_bar = document.getElementById("search_section_xl");
-    }
+// function display_search() {
+//     var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+//     if (width < 1024) {
+//         var search_bar = document.getElementById("search_section");
+//     } else {
+//         var search_bar = document.getElementById("search_section_xl");
+//     }
 
-    if(displayed_search) {
-        anime({
-            targets: search_bar,
-            right: [
-                {value: '-100%', duration: 350}
-            ],
-            easing: 'easeInExpo'
-        });
-        displayed_search = false;
-    } else {
-        anime({
-            targets: search_bar,
-            right: [
-                {value: 0, duration: 500}
-            ],
-            easing: 'easeOutExpo'
-        });
-        displayed_search = true;
-    }
+//     if(displayed_search) {
+//         anime({
+//             targets: search_bar,
+//             right: [
+//                 {value: '-100%', duration: 350}
+//             ],
+//             easing: 'easeInExpo'
+//         });
+//         displayed_search = false;
+//     } else {
+//         anime({
+//             targets: search_bar,
+//             right: [
+//                 {value: 0, duration: 500}
+//             ],
+//             easing: 'easeOutExpo'
+//         });
+//         displayed_search = true;
+//     }
 
-}
+// }
