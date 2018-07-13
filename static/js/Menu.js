@@ -1,27 +1,14 @@
 // Ejecutaremos este codigo cuando el documento esta listo
 document.addEventListener('DOMContentLoaded', display_menu);
 
-// Obtenemos el navegador y la barra para desplegarlo
 var menu_button = $("#bt-menu");
-var navi = $("#navigator");
 var displayed_menu = true;
-
-// Obtendremos el navBar y el contenido principal
-var navBar = $(".nav-bar");
-var fixedNav = navBar.offsetTop;
-var main = $("main");
 
 // Usamos addEventListener y attachEvent para que todos los navegadores lo reconozcan
 if (menu_button.addEventListener) {
     menu_button.addEventListener('click', display_menu);
 } else {
     menu_button.attachEvent('onclick', display_menu)
-}
-
-if (window.addEventListener) {
-    window.addEventListener('scroll', FixNav);
-} else {
-    window.attachEvent('onscroll', FixNav);
 }
 
 function display_menu() {
@@ -88,19 +75,41 @@ function display_menu() {
     }
 }
 
+// Obtendremos el navBar y el contenido principal
+var navigatorBar = $(".navigator");
+if (isSmartPhone()) {
+    var navBar = $(".nav-bar");
+    var fixedNav = navBar.offsetTop;
+} else {
+    var fixedNav = navigatorBar.offsetTop;
+}
+var main = $("main");
+
+if (window.addEventListener) {
+    window.addEventListener('scroll', FixNav);
+} else {
+    window.attachEvent('onscroll', FixNav);
+}
+
 function FixNav() {
     // Comprobamos en qué momento el navBar desaparece de la página
     if (window.pageYOffset >= fixedNav) {
-        // Y le asignamos la clase
-        navBar.classList.add("fixed-nav");
-        navi.classList.add("fixed-nav");
-        navi.style.top = navBar.offsetHeight + 'px';
-        main.style.paddingTop = navBar.offsetHeight + 'px';
 
-        if(isTablet(true))
+        // Y le asignamos la clase
+        if (isSmartPhone()) {
+            navBar.classList.add("fixed-nav");
+            navigatorBar.style.top = navBar.offsetHeight + 'px';
+            main.style.paddingTop = navBar.offsetHeight + 'px';
+        } else {
+            main.style.paddingTop = navigatorBar.offsetHeight + 'px';
+            navigatorBar.style.position = 'fixed';
+        }
+        navigatorBar.classList.add("fixed-nav");
+        
+        if(!isSmartPhone())
         {
             anime({
-                targets: [navBar, '#navigator'],
+                targets: navigatorBar,
                 borderBottomLeftRadius: [
                     {value: '25px', duration: 400}
                 ],
@@ -111,15 +120,20 @@ function FixNav() {
             })
         }
     } else {
-        navBar.classList.remove("fixed-nav");
-        navi.classList.remove("fixed-nav");
+
+        if (isSmartPhone()) {
+            navBar.classList.remove("fixed-nav");
+            navigatorBar.style.top = 'initial';
+        } else {
+            navigatorBar.style.position = 'initial';
+        }
+        navigatorBar.classList.remove("fixed-nav");
         main.style.paddingTop = '0px';
-        navi.style.top = 'initial';
         
-        if(isTablet())
+        if(!isSmartPhone())
         {
             anime({
-                targets: [navBar, '#navigator'],
+                targets: navigatorBar,
                 borderBottomLeftRadius: [
                     {value: '0', duration: 400}
                 ],
@@ -132,47 +146,55 @@ function FixNav() {
     }
 }
 
-// var search_button = document.getElementById("bt_search");
-// var search_button_xl = document.getElementById("bt_search_xl");
-// var search_cancel = document.getElementById("search_cancel");
-// var search_cancel_xl = document.getElementById("search_cancel_xl");
-// var displayed_search = false;
+/** Dos espacios: [Menú móvil, Menú Desktop-Tablet] */
+var search_buttons = $all("[id^='bt-search'");
+var cancel_buttons = $all(".search_cancel");
+var displayed_search = false;
 
-// if(search_button.addEventListener) {
-//     search_button.addEventListener("click", display_search);
-//     search_cancel.addEventListener("click", display_search);
-//     search_button_xl.addEventListener("click", display_search);
-//     search_cancel_xl.addEventListener("click", display_search);
-// } else {
-//     search_button.attachEvent('onclick', display_search);
-// }
+search_buttons.forEach(button => {
+    if (button != null) {
+        if (button.addEventListener) {
+            button.addEventListener('click', display_search);
+        } else {
+            button.attachEvent('onclick', display_search);
+        }
+    }
+});
 
-// function display_search() {
-//     var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-//     if (width < 1024) {
-//         var search_bar = document.getElementById("search_section");
-//     } else {
-//         var search_bar = document.getElementById("search_section_xl");
-//     }
+cancel_buttons.forEach(button => {
+    if (button != null) {
+        if (button.addEventListener) {
+            button.addEventListener('click', display_search);
+        } else {
+            button.attachEvent('onclick', display_search);
+        }
+    }
+});
 
-//     if(displayed_search) {
-//         anime({
-//             targets: search_bar,
-//             right: [
-//                 {value: '-100%', duration: 350}
-//             ],
-//             easing: 'easeInExpo'
-//         });
-//         displayed_search = false;
-//     } else {
-//         anime({
-//             targets: search_bar,
-//             right: [
-//                 {value: 0, duration: 500}
-//             ],
-//             easing: 'easeOutExpo'
-//         });
-//         displayed_search = true;
-//     }
+function display_search() {
+    if (isSmartPhone()) {
+        var search_bar = $(".nav-bar .search_section");
+    } else {
+        var search_bar = $(".navigator .search_section");
+    }
 
-// }
+    if(displayed_search) {
+        anime({
+            targets: search_bar,
+            right: [
+                {value: '-100%', duration: 350}
+            ],
+            easing: 'easeInExpo'
+        });
+        displayed_search = false;
+    } else {
+        anime({
+            targets: search_bar,
+            right: [
+                {value: 0, duration: 500}
+            ],
+            easing: 'easeOutExpo'
+        });
+        displayed_search = true;
+    }
+}

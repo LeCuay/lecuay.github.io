@@ -67,6 +67,7 @@ a {
             justify-content: space-between;
     padding: .5em 1em;
     position: relative;
+    overflow: hidden;
     width: 100%;
 }
 
@@ -96,6 +97,7 @@ a {
     left: -100%;
     padding: 0 2em 1em 2em;
     position: absolute;
+    overflow: hidden;
     width: 100%;
 }
 
@@ -114,6 +116,76 @@ a {
     .menu-item:hover {
         background-color: #24957C;
 }
+
+    /* Barra de Búsqueda */
+    .search_section {
+        background-color: #005643;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            height: 100%;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            -webkit-box-pack: stretch;
+                -ms-flex-pack: stretch;
+                    justify-content: stretch;
+            position: absolute;
+            top: 0;
+            right: -100%;
+            width: 100%;
+    }
+
+        .search_bar {
+            background-color: inherit;
+            border: none;
+            color: white;
+            height: inherit;
+            padding: 0 0.5em;
+            width: 50%;
+        }
+
+        .search_buttons {
+            -ms-flex-line-pack: center;
+                align-content: center;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+            height: inherit;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            padding: 0.5em 0.2em;
+            width: 40%;
+        }
+
+        .search_send {
+            background-color: inherit;
+            border: 2px solid #24957C;
+            border-radius: 15px 15px 15px 15px;
+            color: white;
+            font-size: 0.7em;
+            width: 40%;
+        }
+
+        .search_send:hover {
+            background-color: #24957C;
+        }
+
+        .search_cancel {
+            -ms-flex-item-align: center;
+                align-self: center;
+            color: rgb(233, 52, 121);
+            cursor: pointer;
+            font-size: 2em;
+        }
 
 /* Special CSS for the Fixed Nav */
 .fixed-nav {
@@ -204,4 +276,87 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     height: 30vh;
+}
+
+/* Desktop */
+@media only screen
+and (min-width : 1224px) {
+    
+    /* Navegador Móvil */
+    .nav-bar {
+        display: none;
+    }
+
+    /* Navegador */
+    .navigator {
+        flex-direction: row;
+        justify-content: space-between;
+        left: initial;
+        padding: 0;
+        position: relative;
+    }
+
+    .menu-item {
+        border: none;
+    }
+
+    /* Barra de Búsqueda */
+    #navigator .search_section {
+        top: initial;
+    }
+    
+    #navigator .search_bar {
+        display: initial;
+    }
+
+    #search_bar_xl {
+        width: 70%;
+    }
+
+    #navigator .search_buttons {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    #navigator .search_send {
+        width: 20%;
+    }
+
+    #navigator .search_cancel {
+        font-size: 2em;
+    }
+
+    /* Footer */
+    .opciones {
+        -ms-flex-item-align: center;
+            align-self: center;
+        border-bottom: 1px solid white;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        padding: 0.5em 0;
+    }
+
+        .opciones a {
+            padding: 0 1em;
+        }
+
+    .redes_sociales {
+        -ms-flex-item-align: center;
+            align-self: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+        .redes_sociales a {
+            padding: 0 1em;
+        }
+
+
+    .copyright {
+        padding: 1.2em 0;
+        width: 100%;
+    }
 }
