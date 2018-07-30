@@ -107,6 +107,10 @@ main section {
         padding: 1em 0;
     }
 
+    .principios li:last-child {
+        border-bottom: none;
+    }
+
     .principios h3 {
         color: #FFF;
         font-size: 1em;
@@ -117,6 +121,56 @@ main section {
         color: #24957C;
         content: counter(principios) ". "
     }
+
+.trabajos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+    .trabajos ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+        .trabajos ul li {
+            align-content: center;
+            background: linear-gradient(340deg, transparent 10%, #32045A 10%, #32045A 90%, transparent 10%);
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style: none;
+            list-style-position: inside;
+            margin: 1em 0;
+            padding: 1em 0;
+        }
+        
+            .trabajos ul li div {
+                padding: 1em 2em;
+            }
+
+            .trabajos ul li h3 {
+                color: #d3d1d1;
+                display: inline-block;
+                font-size: 1em;
+                margin-bottom: 1em;
+            }
+
+            .trabajos ul li figure {
+                align-self: flex-end;
+                margin: .5em 1em 0 0;
+                max-width: 250px;
+                width: 40vw; 
+            }
+
+            
+            .trabajos ul li figure img {
+                border: 1px solid #24957C;
+                width: 100%;
+            }
 
 @media only screen 
 and (min-device-width : 767px) 
@@ -148,6 +202,48 @@ and (orientation : portrait)
         /* Principios */
         .principios {
             padding: 1em;
+        }
+
+        /* Proyectos */
+        .trabajos ul {
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        .trabajos ul li {
+            align-items: center;
+            background: linear-gradient(340deg, transparent 7%, #32045A 7%, #32045A 93%, transparent 7%);
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+        }
+
+        .trabajos ul li figure {
+            align-self: center;
+        }
+
+        .trabajos ul li:nth-child(even) {
+            background: linear-gradient(20deg, transparent 7%, #32045A 7%, #32045A 93%, transparent 7%);
+        }
+
+        .trabajos ul li div {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            padding: 1em;
+        }
+        
+        .trabajos ul li p {
+            text-align: left;
+        }
+        
+        .trabajos ul li:nth-child(even) p {
+            text-align: right;
+        }
+
+        .trabajos ul li figure {
+            max-height: 150px;
+            max-width: 150px;
         }
 }
 
@@ -192,11 +288,53 @@ and (orientation : landscape)
 
         .principios li {
             border-bottom: none;
-            border-right: 1px solid #35469E;
             padding: 0 1em;
             margin: 1em 0;
             width: 50%;
         }
+
+        .principios li:nth-child(odd) {
+            border-right: 1px solid #35469E;
+        }
+
+    .trabajos ul {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .trabajos ul li {
+        background: linear-gradient(340deg, transparent 15%, #32045A 15%, #32045A 85%, transparent 15%);
+        width: 40%;
+    }
+
+    .trabajos ul li:nth-child(even) {
+        background: linear-gradient(20deg, transparent 15%, #32045A 15%, #32045A 85%, transparent 15%);
+    }
+
+    .trabajos ul li:nth-child(even) div {
+        align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .trabajos ul li p {
+        text-align: left;
+    }
+    
+    .trabajos ul li:nth-child(even) p {
+        text-align: right;
+    }
+
+    .trabajos ul li figure {
+        max-height: 150px;
+        max-width: 150px;
+    }
+
+    .trabajos ul li:nth-child(even) figure {
+        align-self: flex-start;
+        margin: .5em 0 0 1em;
+    }
+    
 }
 
 @media only screen 
@@ -238,11 +376,56 @@ and (min-width : 1224px)
 
         .principios li {
             border-bottom: none;
-            border-right: 1px solid #35469E;
             padding: 0 1em;
             margin: 1em 0;
             width: 50%;
         }
+
+        .principios li:nth-child(odd) {
+            border-right: 1px solid #35469E;
+        }
+
+    /* Proyectos */
+    .trabajos ul {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .trabajos ul li {
+        align-items: center;
+        background: linear-gradient(340deg, transparent 7%, #32045A 7%, #32045A 93%, transparent 7%);
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+
+    .trabajos ul li figure {
+        align-self: center;
+    }
+
+    .trabajos ul li:nth-child(even) {
+        background: linear-gradient(20deg, transparent 7%, #32045A 7%, #32045A 93%, transparent 7%);
+    }
+
+    .trabajos ul li div {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+    }
+    
+    .trabajos ul li p {
+        text-align: left;
+    }
+    
+    .trabajos ul li:nth-child(even) p {
+        text-align: right;
+    }
+
+    .trabajos ul li figure {
+        max-height: 200px;
+        max-width: 200px;
+    }
 
 }
 
