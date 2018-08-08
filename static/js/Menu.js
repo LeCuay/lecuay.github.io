@@ -1,5 +1,11 @@
 // Ejecutaremos este codigo cuando el documento esta listo
-document.addEventListener('DOMContentLoaded', display_menu);
+if(document.readyState === 'complete') {
+    display_menu();
+} else {
+    document.addEventListener('DOMContentLoaded', function(){
+        display_menu();
+    });
+}
 
 var menu_button = $("#bt-menu");
 var displayed_menu = true;
