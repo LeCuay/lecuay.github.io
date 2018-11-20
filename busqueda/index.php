@@ -83,6 +83,7 @@
         <main class="main">
             <h1>Has buscado <?php echo $_GET["search_bar_xl"]; ?> </h1>
             <p>El sistema de búsqueda está en fase de pruebas, muchas gracias por su paciencia y espero finalizarlo pronto.</p>
+            <a href="/" class="volver">Volver</a>
         </main>
 
         <!-- Footer -->
@@ -104,10 +105,10 @@
 
     <!-- Libraries --> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
-    <script src="/static/js/personalSnippets.min.js"></script>
+    <script src="/static/js/personalsnippets.min.js"></script>
     <!-- Own Scripts -->
-    <script src="/static/js/LoadScreen.min.js"></script>
-    <script src="/static/js/Menu.js"></script>
+    <script src="/static/js/loadscreen.min.js"></script>
+    <script src="/static/js/menu.min.js"></script>
     <script src="/static/js/home.min.js"></script>
 </body>
 </html>
