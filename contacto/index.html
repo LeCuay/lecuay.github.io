@@ -56,7 +56,7 @@
             <!-- Barra de Navegación -->
             <div class="nav-bar">
                 <span id="bt-menu" class="nav-bar-item icon-menu"></span>
-                <span id="bt-home" class="nav-bar-item icon-home"></span>
+                <a href="/"><span id="bt-home" class="nav-bar-item icon-home"></span></a>
                 <span id="bt-search" class="nav-bar-item icon-magnifying-glass"></span>
                 <form class="search_section" action="/contacto/" method="get">
                     <input type="search" placeholder="Búsqueda" name="search_bar" id="search_bar" class="search_bar">
@@ -87,31 +87,52 @@
         <!-- Main -->
         <main class="main">
             <section class="contact-left">
-                <h2>¿Algún proyecto que comentarme?</h2>
-                <p>
-                    Si quieres que sea partícipe de algún proyecto o simplemente estás interesado en mi trabajo, puedes
-                    contactarme a través
-                    de email o dejándome un mensaje en el siguiente formulario.
-                </p>
-                <h3><a href="mailto:suso_becerra@hotmail.com?subject=Buenas, Jesús" target="_top">suso_becerra@hotmail.com</a></h3>
+                <div>
+                    <h2 class="title">¿Algún proyecto que comentarme?</h2>
+                    <p>
+                        Si quieres que sea partícipe de algún proyecto o simplemente estás interesado en mi trabajo,
+                        puedes
+                        contactarme a través
+                        de email o dejándome un mensaje en el siguiente formulario.
+                    </p>
+                </div>
+                <div>
+                    <h3><a href="mailto:suso_becerra@hotmail.com?subject=Buenas, Jesús" target="_top">suso_becerra@hotmail.com</a></h3>
+                </div>
             </section>
+            <span class="line-separator"></span>
             <section class="contact-right">
-                <form action="#" method="get">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
-                    <label for="text-proyecto">¿Qué tienes en mente para tu proyecto?</label>
-                    <textarea name="text-proyecto" id="text-proyecto" cols="30" rows="10"></textarea>
-                    <label for="text-timeline">¿Cuál es el ciclo de vida del proyecto?
-                        <br>
-                        <span class="hint">(Tiempo de
-                            desarrollo,
-                            asignación de tareas, fecha de entrega...)</span></label>
-                    <textarea name="text-timeline" id="text-timeline" cols="30" rows="10"></textarea>
-                    <label for="presupuesto">Presupuesto</label>
-                    <input type="text" name="presupuesto" id="presupuesto">
-                    <button type="submit">Enviar</button>
+                <form action="enviado/" method="post">
+                    <div class="form-group obligatory">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" placeholder="" name="nombre" id="nombre">
+                    </div>
+                    <div class="form-group obligatory">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="example@mail.net" name="email" id="email">
+                    </div>
+                    <div class="form-group obligatory">
+                        <label for="text-proyecto">¿Qué tienes en mente para tu proyecto?</label>
+                        <textarea name="text-proyecto" placeholder="Me gustaría una aplicación de gestión para mi empresa..."
+                            id="text-proyecto" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="text-timeline">¿Cuál es el ciclo de vida del proyecto?
+                            <br>
+                            <span class="hint">(Tiempo de
+                                desarrollo,
+                                asignación de tareas, fecha de entrega...)</span></label>
+                        <textarea name="text-timeline" placeholder="La entrega sería para finales de Diciembre..." id="text-timeline"
+                            cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="form-group obligatory">
+                        <label for="presupuesto">Presupuesto</label>
+                        <input type="number" step="0.01" placeholder="100,00" name="presupuesto" id="presupuesto">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-submit" type="submit">Enviar</button>
+                        <button class="btn btn-reset" type="reset">Limpiar</button>
+                    </div>
                 </form>
             </section>
         </main>

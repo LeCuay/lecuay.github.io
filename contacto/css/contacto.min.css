@@ -1,0 +1,1 @@
+.main{display:flex;flex-direction:row;justify-content:space-around}.contact-left,.contact-right{display:flex;flex-direction:column;width:45%}.contact-right form{display:flex;flex-direction:column}.hint{color:#c7c7c7;font-style:italic}
