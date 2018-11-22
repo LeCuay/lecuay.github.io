@@ -81,22 +81,8 @@
 
         <!-- Main -->
         <main class="main">
-            <?php
-                $obligatories = array($_POST["nombre"], $_POST["email"], $_POST["text-proyecto"], $_POST["presupuesto"]);
-                $num_of_obligatories = sizeof($obligatories);
-                $missing_inputs = array();
-                foreach ($obligatories as $key => $value) {
-                    if(empty($value)) {
-                        $missing_inputs[] = $obligatories[$key];
-                        unset($obligatories[$key]); 
-                    }
-                }
-                
-                if($num_of_obligatories != sizeof($obligatories)) {
-                    echo "<h2>Parece que te has dejado algunos campos sin rellenar</h2>";
-                }
-                
-            ?>
+            <p>El formulario aún está en pruebas, gracias por su paciencia.</p>
+            <a href="/" class="important-link volver">Volver</a>
         </main>
 
         <!-- Footer -->

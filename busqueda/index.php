@@ -83,7 +83,7 @@
         <main class="main">
             <h1>Has buscado <?php echo $_GET["search_bar_xl"]; ?> </h1>
             <p>El sistema de búsqueda está en fase de pruebas, muchas gracias por su paciencia y espero finalizarlo pronto.</p>
-            <a href="/" class="volver">Volver</a>
+            <a href="/" class="important-link volver">Volver</a>
         </main>
 
         <!-- Footer -->

@@ -105,16 +105,16 @@
                 <form action="enviado/" method="post">
                     <div class="form-group obligatory">
                         <label for="nombre">Nombre completo</label>
-                        <input type="text" placeholder="" name="nombre" id="nombre">
+                        <input type="text" placeholder="" name="nombre" id="nombre" required>
                     </div>
                     <div class="form-group obligatory">
                         <label for="email">Email</label>
-                        <input type="email" placeholder="example@mail.net" name="email" id="email">
+                        <input type="email" placeholder="example@mail.net" name="email" id="email" required>
                     </div>
                     <div class="form-group obligatory">
                         <label for="text-proyecto">¿Qué tienes en mente para tu proyecto?</label>
                         <textarea name="text-proyecto" placeholder="Me gustaría una aplicación de gestión para mi empresa..."
-                            id="text-proyecto" cols="30" rows="10"></textarea>
+                            id="text-proyecto" cols="30" rows="10" required></textarea>
                     </div>
                     <div class="form-group">
                         <label for="text-timeline">¿Cuál es el ciclo de vida del proyecto?
@@ -127,7 +127,7 @@
                     </div>
                     <div class="form-group obligatory">
                         <label for="presupuesto">Presupuesto</label>
-                        <input type="number" step="0.01" placeholder="100,00" name="presupuesto" id="presupuesto">
+                        <input type="number" step="0.01" placeholder="100,00" name="presupuesto" id="presupuesto" required>
                     </div>
                     <div class="form-group">
                         <button class="btn btn-submit" type="submit">Enviar</button>
