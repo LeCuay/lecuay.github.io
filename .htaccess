@@ -1,3 +1,8 @@
 # HTID:5768856: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
 php_value display_errors 1
 # DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:5768856:
+
+# Custom errors
+ErrorDocument 500 "Houston, we have a problem."
+ErrorDocument 401 /errors/error401/
+ErrorDocument 404 /errors/error404/
