@@ -89,7 +89,7 @@
         <footer class="footer">
                 <p class="copyright">&copy; 2018, LeCuay "I don't know legal stuff but still my property."</p>
                 <div class="opciones">
-                    <a href="#" class="contacto">Contacto</a>
+                    <a href="/contacto/" class="contacto">Contacto</a>
                     <a href="#" class="volver">Volver</a>
                 </div>
                 <div class="redes_sociales">
