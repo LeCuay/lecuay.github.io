@@ -15,7 +15,7 @@
     <!-- Hojas de Estilos -->
     <link rel="stylesheet" href="/static/css/load_screen.min.css">
     <link rel="stylesheet" href="/static/css/general.min.css">
-    <link rel="stylesheet" href="css/contacto.min.css">
+    <link rel="stylesheet" href="css/contacto.css">
 
     <!-- General Meta -->
     <link rel="shortcut icon" type="image/jpg" href="/static/images/front-image.jpg" />
@@ -129,7 +129,7 @@
                     </div>
                     <div class="form-group obligatory">
                         <label for="presupuesto">Presupuesto</label>
-                        <input type="number" step="0.01" placeholder="100,00" name="presupuesto" id="presupuesto" required>
+                        <input type="number" step="1" min="0" placeholder="100,00" name="presupuesto" id="presupuesto" required>
                     </div>
                     <div class="form-group">
                         <button class="btn btn-submit" type="submit">Enviar</button>
