@@ -1,0 +1,347 @@
+.main {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.contact-left, .contact-right {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 3vh 5vw;
+}
+
+.contact-left div {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 1vh 1vw;
+    text-align: center;
+}
+
+.contact-left div:first-child h2 {
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    margin-bottom: 3vh;
+}
+
+.contact-left div:last-child h3 a {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    display: block;
+    height: 100%;
+    padding: 1vh 1vw;
+}
+
+.contact-right h2 {
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    margin-bottom: 3vh;
+    text-align: center;
+}
+
+.contact-right i.hint {
+    text-align: center;
+}
+
+.contact-right form {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.contact-right form .form-group {
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 1vh 0;
+    width: 100%;
+}
+
+div.form-group:last-child {
+    border-top: 1px solid #fff;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 3vh 0;
+}
+
+.form-group input, .form-group textarea {
+    background-color: transparent;
+    border-bottom: 2px solid #35469E;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    color: #fff;
+    font-size: 1.1em;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.form-group textarea {
+    border-top: 2px solid #35469E;
+    padding: .5em;
+    resize: none;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    -webkit-filter: drop-shadow(0 0 7px #35468E);
+            filter: drop-shadow(0 0 7px #35468E);
+}
+
+.form-group input:invalid, .form-group textarea:invalid {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-filter: drop-shadow(0 0 5px #e93479);
+            filter: drop-shadow(0 0 5px #e93479);
+}
+
+.form-group.obligatory label::after {
+    color: #e93479;
+    content: " *";
+}
+
+.btn {
+    background-color: currentColor;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 2vh 5vw;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    -webkit-filter: brightness(85%);
+            filter: brightness(85%);
+}
+
+.btn.btn-submit {
+    background-color: #35469E;
+}
+
+.btn.btn-submit:hover {
+    -webkit-filter: drop-shadow(0 0 5px #35469E);
+            filter: drop-shadow(0 0 5px #35469E);
+}
+
+.btn.btn-reset {
+    background-color: #e93479;
+}
+
+.btn.btn-reset:hover {
+    -webkit-filter: drop-shadow(0 0 5px #e93479);
+            filter: drop-shadow(0 0 5px #e93479);
+}
+
+.line-separator {
+    background-color: #35469E;
+    display: inline-block;
+    height: 1px;
+    width: 80vw;
+}
+
+.hint {
+    font-style: italic;
+    font-size: 0.7em;
+}
+
+@media only screen 
+and (min-device-width : 767px) 
+and (max-device-width : 1024px)
+and (orientation : portrait)
+{
+
+    .contact-right {
+        -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+                align-items: stretch;
+        -ms-flex-item-align: stretch;
+            align-self: stretch;
+    }
+
+    .contact-right form {
+        -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+                align-items: stretch;
+    }
+
+    .btn {
+        padding: 2vh 10vw;
+    }
+}
+
+/* Tablets Landscape */
+@media only screen 
+and (min-device-width : 767px) 
+and (max-device-width : 1024px)
+and (orientation : landscape)
+{
+    .main {
+        -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+                align-items: stretch;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+    }
+
+    .contact-left, .contact-right {
+        padding: 1vh 1vw;
+    }
+
+    .contact-left {
+        width: 40vw;
+    }
+
+    .contact-left div:first-child h2 {
+        border: none;
+    }
+
+    .contact-right {
+        -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+                align-items: stretch;
+        width: 50vw;
+    }
+
+    .contact-right form {
+        -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+                align-items: stretch;
+        border: 1px solid white;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        padding: 1vh 1vw;
+    }
+
+    .form-group input, textarea {
+        font-size: 1em;
+        padding: .3em;
+    }
+
+    .line-separator {
+        display: none;
+    }
+}
+
+/* Dispositivos de mayor resolución */
+@media only screen 
+and (min-width : 1224px)
+{
+    .main {
+        -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+                align-items: stretch;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+    }
+
+    .contact-left, .contact-right {
+        padding: 1vh 1vw;
+    }
+
+    .contact-left {
+        width: 35vw;
+    }
+
+    .contact-left div:first-child h2 {
+        border: none;
+    }
+
+    .contact-right {
+        -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+                align-items: stretch;
+        width: 55vw;
+    }
+
+    .contact-right form {
+        -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+                align-items: stretch;
+        border: 1px solid white;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        padding: 1vh 1vw;
+    }
+    
+    .form-group input, textarea {
+        font-size: 1em;
+        padding: .3em;
+    }
+
+    .line-separator {
+        display: none;
+    }
+}
