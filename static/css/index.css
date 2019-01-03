@@ -63,7 +63,7 @@ main section {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 1em 1em;
+    padding: 12vh 1em 1em 1em;
 }
 
     main section h2 {
@@ -125,7 +125,7 @@ main section {
 
 /* Principios */
 .principios {
-    padding: 1em 0;
+    padding: 12vh 0 1em 0;
 }
 
 .principios ul {
@@ -240,6 +240,16 @@ main section {
                 width: 100%;
             }
 
+.contacto p {
+    text-align: center;
+}
+
+.contacto div {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin-top: 5vh;
+}
+            
 @media only screen 
 and (min-device-width : 767px) 
 and (max-device-width : 1024px)
@@ -259,6 +269,7 @@ and (orientation : portrait)
         -webkit-box-pack: stretch;
             -ms-flex-pack: stretch;
                 justify-content: stretch;
+        padding: 5vh 1em 1em 1vh;
     }
 
         .presentacion h2 {
@@ -284,7 +295,7 @@ and (orientation : portrait)
 
         /* Principios */
         .principios {
-            padding: 1em;
+            padding: 5vh 1em 1em 1vh;
         }
 
         /* Proyectos */
@@ -369,6 +380,7 @@ and (orientation : landscape)
             flex-wrap: wrap;
         -ms-flex-pack: distribute;
             justify-content: space-around;
+        padding: 5vh 1em 1em 1vh;
     }
 
         .presentacion h2 {
@@ -490,6 +502,7 @@ and (min-width : 1224px)
             flex-wrap: wrap;
         -ms-flex-pack: distribute;
             justify-content: space-around;
+        padding: 6vh 1em 1em 1vh;
     }
 
         .presentacion h2 {

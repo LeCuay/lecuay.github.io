@@ -32,6 +32,10 @@ Secondary color (2):
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #21023C;
     color: #c7c7c7;
@@ -50,9 +54,9 @@ a {
 
 /* Barra de Navegación Móvil */
 .nav-bar {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
     background-color: inherit;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -61,23 +65,33 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    height: 10vh;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    height: 8vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: .5em 1em;
     position: relative;
     overflow: hidden;
     width: 100%;
 }
 
-    .nav-bar-item {
+    .nav-bar .nav-bar-item {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
         cursor: pointer;
         color: #FFF;
-        font-size: 2em;
+        font-size: 5vh;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        width: 100%;
     }
 
-    .nav-bar-item:hover {
+    .nav-bar .nav-bar-item:hover {
         color: #b7b7b7;
     }
 
@@ -116,76 +130,6 @@ a {
     .menu-item:hover {
         background-color: #24957C;
 }
-
-    /* Barra de Búsqueda */
-    .search_section {
-        background-color: #005643;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            height: 100%;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                    flex-direction: column;
-            -ms-flex-wrap: wrap;
-                flex-wrap: wrap;
-            -webkit-box-pack: stretch;
-                -ms-flex-pack: stretch;
-                    justify-content: stretch;
-            position: absolute;
-            top: 0;
-            right: -100%;
-            width: 100%;
-    }
-
-        .search_bar {
-            background-color: inherit;
-            border: none;
-            color: white;
-            height: inherit;
-            padding: 0 0.5em;
-            width: 50%;
-        }
-
-        .search_buttons {
-            -ms-flex-line-pack: center;
-                align-content: center;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: horizontal;
-            -webkit-box-direction: normal;
-                -ms-flex-direction: row;
-                    flex-direction: row;
-            height: inherit;
-            -webkit-box-pack: justify;
-                -ms-flex-pack: justify;
-                    justify-content: space-between;
-            padding: 0.5em 0.2em;
-            width: 40%;
-        }
-
-        .search_send {
-            background-color: inherit;
-            border: 2px solid #24957C;
-            border-radius: 15px 15px 15px 15px;
-            color: white;
-            font-size: 0.7em;
-            width: 40%;
-        }
-
-        .search_send:hover {
-            background-color: #24957C;
-        }
-
-        .search_cancel {
-            -ms-flex-item-align: center;
-                align-self: center;
-            color: rgb(233, 52, 121);
-            cursor: pointer;
-            font-size: 2em;
-        }
 
 /* Special CSS for the Fixed Nav */
 .fixed-nav {
@@ -302,6 +246,9 @@ and (max-device-width : 1024px)
 
     /* Navegador */
     .navigator {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
@@ -310,37 +257,14 @@ and (max-device-width : 1024px)
             -ms-flex-pack: justify;
                 justify-content: space-between;
         left: initial;
+        height: 5vh;
         padding: 0;
         position: relative;
     }
 
     .menu-item {
         border: none;
-    }
-
-    /* Barra de Búsqueda */
-    #navigator .search_section {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        padding: 0 2em;
-    }
-    
-    #navigator .search_buttons {
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-    }
-
-    #navigator .search_send {
-        width: 20%;
+        height: 100%;
     }
 
     /* Footer */
@@ -415,6 +339,9 @@ and (min-width : 1224px) {
 
     /* Navegador */
     .navigator {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
@@ -423,37 +350,14 @@ and (min-width : 1224px) {
             -ms-flex-pack: justify;
                 justify-content: space-between;
         left: initial;
+        height: 6vh;
         padding: 0;
         position: relative;
     }
 
     .menu-item {
         border: none;
-    }
-
-    /* Barra de Búsqueda */
-    #navigator .search_section {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        padding: 0 2em;
-    }
-    
-    #navigator .search_buttons {
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-    }
-
-    #navigator .search_send {
-        width: 20%;
+        height: 100%;
     }
 
     /* Footer */

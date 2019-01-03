@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-        <title>Cuay's Little Garden</title>
+
+    <title>Cuay's Little Garden</title>
 
     <meta name="description" content="Portfolio &amp; Blog de LeCuay; desarrollador, escritor y creador de contenido.">
 
     <!-- Iconos -->
     <link rel="stylesheet" href="/static/icons/icons.min.css">
-    
+
     <!-- Hojas de Estilos -->
     <link rel="stylesheet" href="/static/css/load_screen.min.css">
     <link rel="stylesheet" href="/static/css/general.min.css">
     <link rel="stylesheet" href="/static/css/index.min.css">
-    
+
     <!-- General Meta -->
-    <link rel="shortcut icon" type="image/jpg" href="/static/images/front-image.jpg"/>
+    <link rel="shortcut icon" type="image/jpg" href="/static/images/front-image.jpg" />
     <link rel="canonical" href="https://lecuay.github.io/" />
     <meta name="publisher" content="LeCuay" />
     <meta name="copyright" content="LeCuay" />
@@ -33,8 +34,9 @@
     <meta property="og:image:secure_url" content="https://lecuay.github.io/static/images/front-image.jpg" />
     <meta property="og:image:alt" content="Portfolio Personal... y Noodle (Gorillaz)" />
     <meta property="og:description" content="Personal Portfolio">
-    
+
 </head>
+
 <body>
     <div class="container">
 
@@ -46,7 +48,7 @@
                 <div class="figure2"></div>
             </div>
         </div>
-        
+
         <!-- Header -->
         <header class="header">
 
@@ -56,45 +58,29 @@
                     <p id="front-text" class="typing-animation">Cuay's Little Garden</p>
                 </div>
             </div>
-            
+
             <!-- Barra de Navegación -->
             <div class="nav-bar">
-                <span id="bt-menu" class="nav-bar-item icon-menu"></span>
-                <a href="/"><span id="bt-home" class="nav-bar-item icon-home"></span></a>
-                <span id="bt-search" class="nav-bar-item icon-magnifying-glass"></span>
-                <form class="search_section" action="/busqueda/" method="get">
-                    <input type="search" placeholder="Búsqueda" name="search_bar" id="search_bar" class="search_bar">
-                    <div class="search_buttons">
-                        <input type="submit" value="OK" class="search_send">
-                        <span class="search_cancel icon-squared-cross"></span>
-                    </div>
-                </form>
+                <a id="bt-menu" class="nav-bar-item" onclick="false"><span class="icon-menu"></span></a>
+                <a id="bt-home" class="nav-bar-item" href="/"><span class="icon-home"></span></a>
             </div>
-            
+
             <!-- Navegador -->
             <nav id="navigator" class="navigator">
-                <a class="menu-item" href="/"><span class="icon-home"></span>Perfil</a>
-                <a class="menu-item" href="/articulos/"><span class="icon-book"></span>Artículos</a>
-                <a class="menu-item" href="/proyectos/"><span class="icon-bowl"></span>Proyectos</a>
-                <a class="menu-item" href="/contacto/"><span class="icon-message"></span>Contacto</a>
-                <a href="#" onclick="return false" id="bt-search-xl" class="menu-item"><span class="icon-magnifying-glass"></span></a>
-                <form action="/busqueda/" method="get" class="search_section">
-                    <input type="search" placeholder="Búsqueda" name="search_bar_xl" id="search_bar_xl" class="search_bar">
-                    <div class="search_buttons">
-                        <input type="submit" value="OK" class="search_send">
-                        <span class="search_cancel icon-squared-cross"></span>
-                    </div>
-                </form>
+                <a class="menu-item" href="/#presentacion"><span class="icon-home"></span>Sobre mi</a>
+                <a class="menu-item" href="/#principios"><span class="icon-book"></span>Principios</a>
+                <a class="menu-item" href="/#proyectos"><span class="icon-bowl"></span>Proyectos</a>
+                <a class="menu-item" href="/#contacto"><span class="icon-message"></span>Contacto</a>
             </nav>
         </header>
-        
+
         <!-- Main -->
         <main class="main">
-            <section class="presentacion">
+            <section class="presentacion" id="presentacion">
                 <h2>Escritor de Código y de Artículos</h2>
                 <div class="svg">
                     <svg id="svg-code" width="180px" height="200px">
-                        <rect width="180px" height="200px" fill="#151517"/>
+                        <rect width="180px" height="200px" fill="#151517" />
                         <line class="code orange" x1="10" x2="160" y1="20" y2="20"></line>
                         <line class="code darkcyan" x1="10" x2="130" y1="35" y2="35"></line>
                         <line class="code darkcyan" x1="10" x2="80" y1="50" y2="50"></line>
@@ -117,15 +103,19 @@
                     <h3>Programador como profesión</h3>
                     <p>
                         Desarrollador como estudiante, trabajo y aficionado.<br>
-                        Soy <strong>programador Junior</strong> de <a href="http://www.python.org/" target="_blank"><span class="important-link">Python</span></a>
-                        y <a href="http://www.java.com/" target="_blank"><span class="important-link">Java</span></a>, lenguajes que llevo trabajando unos años.<br>
-                        Pueden encontrar proyectos en los que he trabajado en mi <a href="https://github.com/LeCuay" target="_blank"><span class="important-link">GitHub</span></a>.<br>
-                        Soy amante de la programación, el software y los retos, y estoy deseando trabajar en un buen equipo.
+                        Soy <strong>programador Junior</strong> de <a href="http://www.python.org/" target="_blank"><span
+                                class="important-link">Python</span></a>
+                        y <a href="http://www.java.com/" target="_blank"><span class="important-link">Java</span></a>,
+                        lenguajes que llevo trabajando unos años.<br>
+                        Pueden encontrar proyectos en los que he trabajado en mi <a href="https://github.com/LeCuay"
+                            target="_blank"><span class="important-link">GitHub</span></a>.<br>
+                        Soy amante de la programación, el software y los retos, y estoy deseando trabajar en un buen
+                        equipo.
                     </p>
                 </div>
                 <div class="svg">
                     <svg id="svg-article" width="180px" height="200px">
-                        <rect width="180px" height="200px" fill="#C8C7C7"/>
+                        <rect width="180px" height="200px" fill="#C8C7C7" />
                         <line class="line black" x1="40" x2="140" y1="15" y2="15"></line>
                         <line class="line black" x1="20" x2="170" y1="35" y2="35"></line>
                         <line class="line black" x1="10" x2="110" y1="50" y2="50"></line>
@@ -148,13 +138,16 @@
                     <p>
                         Escritor por placer y fascinación.<br>
                         He escrito varios artículos de opinión y análisis enfocados en el ámbito del entretenimiento.<br>
-                        Adoro la literatura por lo que siempre he tenido cierta facilidad para las palabra y la expresión.<br>
-                        Pueden encontrar varios de mis <a href="/articulos/"><span class="important-link">trabajos</span></a> en la propia web.<br>
-                        Adoro escribir y le dedico tiempo siempre que puedo, por lo que un trabajo en dicho ámbito será bienvenido.
+                        Adoro la literatura por lo que siempre he tenido cierta facilidad para las palabra y la
+                        expresión.<br>
+                        Pueden encontrar varios de mis <a href="/articulos/"><span class="important-link">trabajos</span></a>
+                        en la propia web.<br>
+                        Adoro escribir y le dedico tiempo siempre que puedo, por lo que un trabajo en dicho ámbito será
+                        bienvenido.
                     </p>
                 </div>
             </section>
-            <section class="principios">
+            <section class="principios" id="principios">
                 <h2 class="title">Principios como Programador</h2>
                 <ul>
                     <li>
@@ -193,7 +186,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="trabajos">
+            <section class="trabajos" id="proyectos">
                 <h2 class="title">Proyectos actuales</h2>
                 <ul>
                     <li>
@@ -202,8 +195,9 @@
                             <h3 class="important-link">Script Hub Team</h3>
                             <p>
                                 Actualmente estoy colaborando con el grupo
-                                <a href="http://scripthubteam.github.io/docs/" target="_blank"><span class="important-link">ScriptHub</span></a>
-                                con el objetivo de llevar a más gente el uso de las APIs especializadas de Discord para la creación de Bots y la
+                                <a class="important-link" href="http://scripthubteam.github.io/docs/" target="_blank">ScriptHub</a>
+                                con el objetivo de llevar a más gente el uso de las APIs especializadas de Discord para
+                                la creación de Bots y la
                                 programación en general.
                             </p>
                         </div>
@@ -213,34 +207,60 @@
                         <div>
                             <h3 class="important-link">Proyecto Coraline</h3>
                             <p>
-                                También me encuentro trabajando en el proyecto Coraline, una inteligencia artificial simple cuyo objetivo
-                                es tanto de asistente como compañera, más basada en lo conversacional que en una funcionalidad como tal.
+                                Me encuentro trabajando en el proyecto Coraline, una inteligencia artificial
+                                simple cuyo objetivo
+                                es tanto de asistente como compañera, más basada en lo conversacional que en una
+                                funcionalidad como tal.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <figure><img src="/static/images/oil-and-rope.jpg" alt="Oil & Rope: Roleplay Manager"></figure>
+                        <div>
+                            <h3 class="important-link">Oil & Rope: Roleplay Manager</h3>
+                            <p>
+                                Sistema que, usando <a href="https://getbootstrap.com/" target="_blank" class="important-link">Bootstrap 4</a>, 
+                                <a href="https://laravel.com/" class="important-link" target="_blank">Laravel 5</a> y <a href="https://www.postgresql.org/" class="important-link" target="_blank">PostgreSQL</a>, 
+                                busca ayudar en la administración de herramientas para juegos de Rol (personajes, estadísticas, objetos, reglas...) haciendo uso de una base de datos 
+                                compartida con un Bot de gestión usando <a href="https://github.com/LeCuay/SimpleJavaBot" class="important-link" target="_blank">SimpleJavaBot</a>.
                             </p>
                         </div>
                     </li>
                 </ul>
             </section>
+            <section class="contacto" id="contacto">
+                    <h2 class="title">¿Algún proyecto que comentarme?</h2>
+                    <p>
+                        Si quieres que sea partícipe de algún proyecto o simplemente estás interesado en mi trabajo,
+                        puedes
+                        contactarme a través
+                        de email.
+                    </p>
+                <div>
+                    <h3><a href="mailto:suso_becerra@hotmail.com?subject=Buenas, Jesús" target="_top">suso_becerra@hotmail.com</a></h3>
+                </div>
+            </section>
         </main>
 
         <!-- Footer -->
         <footer class="footer">
-                <p class="copyright">&copy; 2018, LeCuay "I don't know legal stuff but still my property."</p>
-                <div class="opciones">
-                    <a href="/contacto/" class="contacto">Contacto</a>
-                    <a href="#" class="volver">Volver</a>
-                </div>
-                <div class="redes_sociales">
-                    <a class="icon-github github" href="https://github.com/LeCuay" target="_blank"></a>
-                    <a class="icon-steam steam" href="https://steamcommunity.com/id/Cuayteron1" target="_blank"></a>
-                    <a class="icon-twitter twitter" href="https://twitter.com/Cuayteron1" target="_blank" ></a>
-                    <a class="icon-discord discord" href="https://discordapp.com/" target="_blank"></a>
-                    <a class="icon-mail" href="mailto:suso_becerra@hotmail.com?subject=Buenas Jesús" target="_top"></a>
-                </div>
+            <p class="copyright">&copy; 2018, LeCuay "I don't know legal stuff but still my property."</p>
+            <div class="opciones">
+                <a href="/contacto/" class="contacto">Contacto</a>
+                <a href="#" class="volver">Volver</a>
+            </div>
+            <div class="redes_sociales">
+                <a class="icon-github github" href="https://github.com/LeCuay" target="_blank"></a>
+                <a class="icon-steam steam" href="https://steamcommunity.com/id/Cuayteron1" target="_blank"></a>
+                <a class="icon-twitter twitter" href="https://twitter.com/Cuayteron1" target="_blank"></a>
+                <a class="icon-discord discord" href="https://discordapp.com/" target="_blank"></a>
+                <a class="icon-mail" href="mailto:suso_becerra@hotmail.com?subject=Buenas Jesús" target="_top"></a>
+            </div>
         </footer>
     </div>
 
     <!-- Scripts -->
-    <!-- Libraries --> 
+    <!-- Libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
     <script src="/static/js/personalsnippets.min.js"></script>
     <!-- Own Scripts -->
@@ -248,4 +268,5 @@
     <script src="/static/js/menu.min.js"></script>
     <script src="/static/js/home.min.js"></script>
 </body>
+
 </html>

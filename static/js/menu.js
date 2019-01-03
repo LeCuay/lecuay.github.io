@@ -14,8 +14,17 @@ var displayed_menu = true;
 if (menu_button.addEventListener) {
     menu_button.addEventListener('click', display_menu);
 } else {
-    menu_button.attachEvent('onclick', display_menu)
+    menu_button.attachEvent('onclick', display_menu);
 }
+
+var menu_activators = $all(".menu-item");
+menu_activators.forEach(element => {
+    if(element.addEventListener) {
+        element.addEventListener('click', display_menu);
+    } else {
+        element.attachEvent('onclick', display_menu);
+    }
+});
 
 function display_menu() {
 
@@ -149,58 +158,5 @@ function FixNav() {
                 easing: 'linear',
             })
         }
-    }
-}
-
-/** Dos espacios: [Menú móvil, Menú Desktop-Tablet] */
-var search_buttons = $all("[id^='bt-search'");
-var cancel_buttons = $all(".search_cancel");
-var displayed_search = false;
-
-search_buttons.forEach(button => {
-    if (button != null) {
-        if (button.addEventListener) {
-            button.addEventListener('click', display_search);
-        } else {
-            button.attachEvent('onclick', display_search);
-        }
-    }
-});
-
-cancel_buttons.forEach(button => {
-    if (button != null) {
-        if (button.addEventListener) {
-            button.addEventListener('click', display_search);
-        } else {
-            button.attachEvent('onclick', display_search);
-        }
-    }
-});
-
-function display_search() {
-    if (isSmartPhone()) {
-        var search_bar = $(".nav-bar .search_section");
-    } else {
-        var search_bar = $(".navigator .search_section");
-    }
-
-    if(displayed_search) {
-        anime({
-            targets: search_bar,
-            right: [
-                {value: '-100%', duration: 350}
-            ],
-            easing: 'easeInExpo'
-        });
-        displayed_search = false;
-    } else {
-        anime({
-            targets: search_bar,
-            right: [
-                {value: 0, duration: 500}
-            ],
-            easing: 'easeOutExpo'
-        });
-        displayed_search = true;
     }
 }
