@@ -1,0 +1,14 @@
+// Documento general
+// Se pone todo como 'border-box'
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// Body
+body {
+    margin: 0;
+    background-color: $body-bg;
+    color: $body-color;
+}

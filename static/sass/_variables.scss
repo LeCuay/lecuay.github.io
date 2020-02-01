@@ -1,0 +1,39 @@
+// Colores básicos
+$white: #fff !default;
+$black: #000 !default;
+
+// Paleta de colores
+$colors: () !default;
+
+$thistle: #e9e0d9 !default;
+$rosy-brown: #d0b9b0 !default;
+$dark-slate-gray: #3d3944 !default;
+$dim-gray: #806464 !default;
+$gray: #988d8f !default;
+
+$colors: map-merge(
+    (
+        "thistle": $thistle,
+        "rosy-brown": $rosy-brown,
+        "dark-slate-gray": $dark-slate-gray,
+        "dim-gray": $dim-gray,
+        "gray": $gray
+    ),
+    $colors
+);
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+    (
+        "primary": $rosy-brown,
+        "secondary": $gray,
+        "light": $thistle,
+        "dark": $dark-slate-gray,
+        "extra": $dim-gray
+    ),
+    $theme-colors
+);
+
+// Configuración del <body></body>
+$body-bg: $white !default;
+$body-color: $black !default;
