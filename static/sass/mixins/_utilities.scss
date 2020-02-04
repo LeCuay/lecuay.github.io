@@ -1,0 +1,16 @@
+@mixin generate-utility($utility, $infix) {
+  $values: map-get($utility, values);
+  @each $key, $value in $values {
+    $properties: map-get($utility, property);
+    $property-class: if(map-has-key($utility, class), map-get($utility, class), nth($properties, 1));
+    $property-class: if($property-class == null, "", $property-class);
+    $property-class-modifier: if($key, if($property-class == "" and $infix == "", "", "-") + $key, "");
+
+    .#{$property-class + $property-class-modifier} {
+      @each $property in $properties {
+        // stylelint-disable-next-line declaration-no-important
+        #{$property}: $value !important;
+      }
+    }
+  }
+}

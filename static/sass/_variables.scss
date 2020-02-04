@@ -23,13 +23,19 @@ $colors: map-merge(
 );
 
 $theme-colors: () !default;
+
+$primary: $rosy-brown;
+$secondary: $gray;
+$light: $thistle;
+$dark: $dark-slate-gray;
+$extra: $dim-gray;
 $theme-colors: map-merge(
     (
         "primary": $rosy-brown,
         "secondary": $gray,
         "light": $thistle,
         "dark": $dark-slate-gray,
-        "extra": $dim-gray
+        "extra": $dim-gray,
     ),
     $theme-colors
 );
@@ -37,3 +43,44 @@ $theme-colors: map-merge(
 // Configuración del <body></body>
 $body-bg: $white !default;
 $body-color: $black !default;
+
+// Puntos de Ruptura (Mobile)
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+// Links
+$link-color: $primary;
+$link-decoration: $extra;
+$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-decoration: underline !default;
+
+// Párrafos
+$paragraph-margin-bottom: 1rem !default;
+
+// Tamaños
+$heights: () !default;
+@for $h from 1 to 101 {
+  $heights: map-merge(
+    (
+      $h + "-vh": #{$h} + "vh",
+      $h + "-pcnt": #{$h} + "%"
+    ),
+    $heights
+  )
+}
+
+$widths: () !default;
+@for $w from 1 to 101 {
+  $widths: map-merge(
+    (
+      $w + "-vw": #{$w} + "vw",
+      $w + "-pcnt": #{$w} + "%"
+    ),
+    $widths
+  )
+}

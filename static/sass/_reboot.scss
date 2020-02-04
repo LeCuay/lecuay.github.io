@@ -8,7 +8,17 @@
 
 // Body
 body {
-    margin: 0;
-    background-color: $body-bg;
-    color: $body-color;
+  margin: 0;
+  background-color: $body-bg;
+  color: $body-color;
+}
+
+// Párrafos
+p {
+  margin-top: 0;
+  margin-bottom: $paragraph-margin-bottom;
+}
+
+@each $key, $utility in $utilities {
+  @include generate-utility($utility, "");
 }

@@ -1,3 +1,16 @@
+:root {
+  --thistle: #e9e0d9;
+  --rosy-brown: #d0b9b0;
+  --dark-slate-gray: #3d3944;
+  --dim-gray: #806464;
+  --gray: #988d8f;
+  --primary: #d0b9b0;
+  --secondary: #988d8f;
+  --light: #e9e0d9;
+  --dark: #3d3944;
+  --extra: #806464;
+}
+
 *,
 *::before,
 *::after {
@@ -8,6 +21,1679 @@ body {
   margin: 0;
   background-color: #fff;
   color: #000;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.bg-primary {
+  background-color: #d0b9b0 !important;
+}
+
+.bg-secondary {
+  background-color: #988d8f !important;
+}
+
+.bg-light {
+  background-color: #e9e0d9 !important;
+}
+
+.bg-dark {
+  background-color: #3d3944 !important;
+}
+
+.bg-extra {
+  background-color: #806464 !important;
+}
+
+.bg-body {
+  background-color: #fff !important;
+}
+
+.bg-white {
+  background-color: #fff !important;
+}
+
+.bg-black {
+  background-color: #000 !important;
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+.text-primary {
+  color: #d0b9b0 !important;
+}
+
+.text-secondary {
+  color: #988d8f !important;
+}
+
+.text-light {
+  color: #e9e0d9 !important;
+}
+
+.text-dark {
+  color: #3d3944 !important;
+}
+
+.text-extra {
+  color: #806464 !important;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.text-body {
+  color: #000 !important;
+}
+
+.text-reset {
+  color: inherit !important;
+}
+
+.h-100-vh {
+  height: 100vh !important;
+}
+
+.h-100-pcnt {
+  height: 100% !important;
+}
+
+.h-99-vh {
+  height: 99vh !important;
+}
+
+.h-99-pcnt {
+  height: 99% !important;
+}
+
+.h-98-vh {
+  height: 98vh !important;
+}
+
+.h-98-pcnt {
+  height: 98% !important;
+}
+
+.h-97-vh {
+  height: 97vh !important;
+}
+
+.h-97-pcnt {
+  height: 97% !important;
+}
+
+.h-96-vh {
+  height: 96vh !important;
+}
+
+.h-96-pcnt {
+  height: 96% !important;
+}
+
+.h-95-vh {
+  height: 95vh !important;
+}
+
+.h-95-pcnt {
+  height: 95% !important;
+}
+
+.h-94-vh {
+  height: 94vh !important;
+}
+
+.h-94-pcnt {
+  height: 94% !important;
+}
+
+.h-93-vh {
+  height: 93vh !important;
+}
+
+.h-93-pcnt {
+  height: 93% !important;
+}
+
+.h-92-vh {
+  height: 92vh !important;
+}
+
+.h-92-pcnt {
+  height: 92% !important;
+}
+
+.h-91-vh {
+  height: 91vh !important;
+}
+
+.h-91-pcnt {
+  height: 91% !important;
+}
+
+.h-90-vh {
+  height: 90vh !important;
+}
+
+.h-90-pcnt {
+  height: 90% !important;
+}
+
+.h-89-vh {
+  height: 89vh !important;
+}
+
+.h-89-pcnt {
+  height: 89% !important;
+}
+
+.h-88-vh {
+  height: 88vh !important;
+}
+
+.h-88-pcnt {
+  height: 88% !important;
+}
+
+.h-87-vh {
+  height: 87vh !important;
+}
+
+.h-87-pcnt {
+  height: 87% !important;
+}
+
+.h-86-vh {
+  height: 86vh !important;
+}
+
+.h-86-pcnt {
+  height: 86% !important;
+}
+
+.h-85-vh {
+  height: 85vh !important;
+}
+
+.h-85-pcnt {
+  height: 85% !important;
+}
+
+.h-84-vh {
+  height: 84vh !important;
+}
+
+.h-84-pcnt {
+  height: 84% !important;
+}
+
+.h-83-vh {
+  height: 83vh !important;
+}
+
+.h-83-pcnt {
+  height: 83% !important;
+}
+
+.h-82-vh {
+  height: 82vh !important;
+}
+
+.h-82-pcnt {
+  height: 82% !important;
+}
+
+.h-81-vh {
+  height: 81vh !important;
+}
+
+.h-81-pcnt {
+  height: 81% !important;
+}
+
+.h-80-vh {
+  height: 80vh !important;
+}
+
+.h-80-pcnt {
+  height: 80% !important;
+}
+
+.h-79-vh {
+  height: 79vh !important;
+}
+
+.h-79-pcnt {
+  height: 79% !important;
+}
+
+.h-78-vh {
+  height: 78vh !important;
+}
+
+.h-78-pcnt {
+  height: 78% !important;
+}
+
+.h-77-vh {
+  height: 77vh !important;
+}
+
+.h-77-pcnt {
+  height: 77% !important;
+}
+
+.h-76-vh {
+  height: 76vh !important;
+}
+
+.h-76-pcnt {
+  height: 76% !important;
+}
+
+.h-75-vh {
+  height: 75vh !important;
+}
+
+.h-75-pcnt {
+  height: 75% !important;
+}
+
+.h-74-vh {
+  height: 74vh !important;
+}
+
+.h-74-pcnt {
+  height: 74% !important;
+}
+
+.h-73-vh {
+  height: 73vh !important;
+}
+
+.h-73-pcnt {
+  height: 73% !important;
+}
+
+.h-72-vh {
+  height: 72vh !important;
+}
+
+.h-72-pcnt {
+  height: 72% !important;
+}
+
+.h-71-vh {
+  height: 71vh !important;
+}
+
+.h-71-pcnt {
+  height: 71% !important;
+}
+
+.h-70-vh {
+  height: 70vh !important;
+}
+
+.h-70-pcnt {
+  height: 70% !important;
+}
+
+.h-69-vh {
+  height: 69vh !important;
+}
+
+.h-69-pcnt {
+  height: 69% !important;
+}
+
+.h-68-vh {
+  height: 68vh !important;
+}
+
+.h-68-pcnt {
+  height: 68% !important;
+}
+
+.h-67-vh {
+  height: 67vh !important;
+}
+
+.h-67-pcnt {
+  height: 67% !important;
+}
+
+.h-66-vh {
+  height: 66vh !important;
+}
+
+.h-66-pcnt {
+  height: 66% !important;
+}
+
+.h-65-vh {
+  height: 65vh !important;
+}
+
+.h-65-pcnt {
+  height: 65% !important;
+}
+
+.h-64-vh {
+  height: 64vh !important;
+}
+
+.h-64-pcnt {
+  height: 64% !important;
+}
+
+.h-63-vh {
+  height: 63vh !important;
+}
+
+.h-63-pcnt {
+  height: 63% !important;
+}
+
+.h-62-vh {
+  height: 62vh !important;
+}
+
+.h-62-pcnt {
+  height: 62% !important;
+}
+
+.h-61-vh {
+  height: 61vh !important;
+}
+
+.h-61-pcnt {
+  height: 61% !important;
+}
+
+.h-60-vh {
+  height: 60vh !important;
+}
+
+.h-60-pcnt {
+  height: 60% !important;
+}
+
+.h-59-vh {
+  height: 59vh !important;
+}
+
+.h-59-pcnt {
+  height: 59% !important;
+}
+
+.h-58-vh {
+  height: 58vh !important;
+}
+
+.h-58-pcnt {
+  height: 58% !important;
+}
+
+.h-57-vh {
+  height: 57vh !important;
+}
+
+.h-57-pcnt {
+  height: 57% !important;
+}
+
+.h-56-vh {
+  height: 56vh !important;
+}
+
+.h-56-pcnt {
+  height: 56% !important;
+}
+
+.h-55-vh {
+  height: 55vh !important;
+}
+
+.h-55-pcnt {
+  height: 55% !important;
+}
+
+.h-54-vh {
+  height: 54vh !important;
+}
+
+.h-54-pcnt {
+  height: 54% !important;
+}
+
+.h-53-vh {
+  height: 53vh !important;
+}
+
+.h-53-pcnt {
+  height: 53% !important;
+}
+
+.h-52-vh {
+  height: 52vh !important;
+}
+
+.h-52-pcnt {
+  height: 52% !important;
+}
+
+.h-51-vh {
+  height: 51vh !important;
+}
+
+.h-51-pcnt {
+  height: 51% !important;
+}
+
+.h-50-vh {
+  height: 50vh !important;
+}
+
+.h-50-pcnt {
+  height: 50% !important;
+}
+
+.h-49-vh {
+  height: 49vh !important;
+}
+
+.h-49-pcnt {
+  height: 49% !important;
+}
+
+.h-48-vh {
+  height: 48vh !important;
+}
+
+.h-48-pcnt {
+  height: 48% !important;
+}
+
+.h-47-vh {
+  height: 47vh !important;
+}
+
+.h-47-pcnt {
+  height: 47% !important;
+}
+
+.h-46-vh {
+  height: 46vh !important;
+}
+
+.h-46-pcnt {
+  height: 46% !important;
+}
+
+.h-45-vh {
+  height: 45vh !important;
+}
+
+.h-45-pcnt {
+  height: 45% !important;
+}
+
+.h-44-vh {
+  height: 44vh !important;
+}
+
+.h-44-pcnt {
+  height: 44% !important;
+}
+
+.h-43-vh {
+  height: 43vh !important;
+}
+
+.h-43-pcnt {
+  height: 43% !important;
+}
+
+.h-42-vh {
+  height: 42vh !important;
+}
+
+.h-42-pcnt {
+  height: 42% !important;
+}
+
+.h-41-vh {
+  height: 41vh !important;
+}
+
+.h-41-pcnt {
+  height: 41% !important;
+}
+
+.h-40-vh {
+  height: 40vh !important;
+}
+
+.h-40-pcnt {
+  height: 40% !important;
+}
+
+.h-39-vh {
+  height: 39vh !important;
+}
+
+.h-39-pcnt {
+  height: 39% !important;
+}
+
+.h-38-vh {
+  height: 38vh !important;
+}
+
+.h-38-pcnt {
+  height: 38% !important;
+}
+
+.h-37-vh {
+  height: 37vh !important;
+}
+
+.h-37-pcnt {
+  height: 37% !important;
+}
+
+.h-36-vh {
+  height: 36vh !important;
+}
+
+.h-36-pcnt {
+  height: 36% !important;
+}
+
+.h-35-vh {
+  height: 35vh !important;
+}
+
+.h-35-pcnt {
+  height: 35% !important;
+}
+
+.h-34-vh {
+  height: 34vh !important;
+}
+
+.h-34-pcnt {
+  height: 34% !important;
+}
+
+.h-33-vh {
+  height: 33vh !important;
+}
+
+.h-33-pcnt {
+  height: 33% !important;
+}
+
+.h-32-vh {
+  height: 32vh !important;
+}
+
+.h-32-pcnt {
+  height: 32% !important;
+}
+
+.h-31-vh {
+  height: 31vh !important;
+}
+
+.h-31-pcnt {
+  height: 31% !important;
+}
+
+.h-30-vh {
+  height: 30vh !important;
+}
+
+.h-30-pcnt {
+  height: 30% !important;
+}
+
+.h-29-vh {
+  height: 29vh !important;
+}
+
+.h-29-pcnt {
+  height: 29% !important;
+}
+
+.h-28-vh {
+  height: 28vh !important;
+}
+
+.h-28-pcnt {
+  height: 28% !important;
+}
+
+.h-27-vh {
+  height: 27vh !important;
+}
+
+.h-27-pcnt {
+  height: 27% !important;
+}
+
+.h-26-vh {
+  height: 26vh !important;
+}
+
+.h-26-pcnt {
+  height: 26% !important;
+}
+
+.h-25-vh {
+  height: 25vh !important;
+}
+
+.h-25-pcnt {
+  height: 25% !important;
+}
+
+.h-24-vh {
+  height: 24vh !important;
+}
+
+.h-24-pcnt {
+  height: 24% !important;
+}
+
+.h-23-vh {
+  height: 23vh !important;
+}
+
+.h-23-pcnt {
+  height: 23% !important;
+}
+
+.h-22-vh {
+  height: 22vh !important;
+}
+
+.h-22-pcnt {
+  height: 22% !important;
+}
+
+.h-21-vh {
+  height: 21vh !important;
+}
+
+.h-21-pcnt {
+  height: 21% !important;
+}
+
+.h-20-vh {
+  height: 20vh !important;
+}
+
+.h-20-pcnt {
+  height: 20% !important;
+}
+
+.h-19-vh {
+  height: 19vh !important;
+}
+
+.h-19-pcnt {
+  height: 19% !important;
+}
+
+.h-18-vh {
+  height: 18vh !important;
+}
+
+.h-18-pcnt {
+  height: 18% !important;
+}
+
+.h-17-vh {
+  height: 17vh !important;
+}
+
+.h-17-pcnt {
+  height: 17% !important;
+}
+
+.h-16-vh {
+  height: 16vh !important;
+}
+
+.h-16-pcnt {
+  height: 16% !important;
+}
+
+.h-15-vh {
+  height: 15vh !important;
+}
+
+.h-15-pcnt {
+  height: 15% !important;
+}
+
+.h-14-vh {
+  height: 14vh !important;
+}
+
+.h-14-pcnt {
+  height: 14% !important;
+}
+
+.h-13-vh {
+  height: 13vh !important;
+}
+
+.h-13-pcnt {
+  height: 13% !important;
+}
+
+.h-12-vh {
+  height: 12vh !important;
+}
+
+.h-12-pcnt {
+  height: 12% !important;
+}
+
+.h-11-vh {
+  height: 11vh !important;
+}
+
+.h-11-pcnt {
+  height: 11% !important;
+}
+
+.h-10-vh {
+  height: 10vh !important;
+}
+
+.h-10-pcnt {
+  height: 10% !important;
+}
+
+.h-9-vh {
+  height: 9vh !important;
+}
+
+.h-9-pcnt {
+  height: 9% !important;
+}
+
+.h-8-vh {
+  height: 8vh !important;
+}
+
+.h-8-pcnt {
+  height: 8% !important;
+}
+
+.h-7-vh {
+  height: 7vh !important;
+}
+
+.h-7-pcnt {
+  height: 7% !important;
+}
+
+.h-6-vh {
+  height: 6vh !important;
+}
+
+.h-6-pcnt {
+  height: 6% !important;
+}
+
+.h-5-vh {
+  height: 5vh !important;
+}
+
+.h-5-pcnt {
+  height: 5% !important;
+}
+
+.h-4-vh {
+  height: 4vh !important;
+}
+
+.h-4-pcnt {
+  height: 4% !important;
+}
+
+.h-3-vh {
+  height: 3vh !important;
+}
+
+.h-3-pcnt {
+  height: 3% !important;
+}
+
+.h-2-vh {
+  height: 2vh !important;
+}
+
+.h-2-pcnt {
+  height: 2% !important;
+}
+
+.h-1-vh {
+  height: 1vh !important;
+}
+
+.h-1-pcnt {
+  height: 1% !important;
+}
+
+.w-100-vw {
+  width: 100vw !important;
+}
+
+.w-100-pcnt {
+  width: 100% !important;
+}
+
+.w-99-vw {
+  width: 99vw !important;
+}
+
+.w-99-pcnt {
+  width: 99% !important;
+}
+
+.w-98-vw {
+  width: 98vw !important;
+}
+
+.w-98-pcnt {
+  width: 98% !important;
+}
+
+.w-97-vw {
+  width: 97vw !important;
+}
+
+.w-97-pcnt {
+  width: 97% !important;
+}
+
+.w-96-vw {
+  width: 96vw !important;
+}
+
+.w-96-pcnt {
+  width: 96% !important;
+}
+
+.w-95-vw {
+  width: 95vw !important;
+}
+
+.w-95-pcnt {
+  width: 95% !important;
+}
+
+.w-94-vw {
+  width: 94vw !important;
+}
+
+.w-94-pcnt {
+  width: 94% !important;
+}
+
+.w-93-vw {
+  width: 93vw !important;
+}
+
+.w-93-pcnt {
+  width: 93% !important;
+}
+
+.w-92-vw {
+  width: 92vw !important;
+}
+
+.w-92-pcnt {
+  width: 92% !important;
+}
+
+.w-91-vw {
+  width: 91vw !important;
+}
+
+.w-91-pcnt {
+  width: 91% !important;
+}
+
+.w-90-vw {
+  width: 90vw !important;
+}
+
+.w-90-pcnt {
+  width: 90% !important;
+}
+
+.w-89-vw {
+  width: 89vw !important;
+}
+
+.w-89-pcnt {
+  width: 89% !important;
+}
+
+.w-88-vw {
+  width: 88vw !important;
+}
+
+.w-88-pcnt {
+  width: 88% !important;
+}
+
+.w-87-vw {
+  width: 87vw !important;
+}
+
+.w-87-pcnt {
+  width: 87% !important;
+}
+
+.w-86-vw {
+  width: 86vw !important;
+}
+
+.w-86-pcnt {
+  width: 86% !important;
+}
+
+.w-85-vw {
+  width: 85vw !important;
+}
+
+.w-85-pcnt {
+  width: 85% !important;
+}
+
+.w-84-vw {
+  width: 84vw !important;
+}
+
+.w-84-pcnt {
+  width: 84% !important;
+}
+
+.w-83-vw {
+  width: 83vw !important;
+}
+
+.w-83-pcnt {
+  width: 83% !important;
+}
+
+.w-82-vw {
+  width: 82vw !important;
+}
+
+.w-82-pcnt {
+  width: 82% !important;
+}
+
+.w-81-vw {
+  width: 81vw !important;
+}
+
+.w-81-pcnt {
+  width: 81% !important;
+}
+
+.w-80-vw {
+  width: 80vw !important;
+}
+
+.w-80-pcnt {
+  width: 80% !important;
+}
+
+.w-79-vw {
+  width: 79vw !important;
+}
+
+.w-79-pcnt {
+  width: 79% !important;
+}
+
+.w-78-vw {
+  width: 78vw !important;
+}
+
+.w-78-pcnt {
+  width: 78% !important;
+}
+
+.w-77-vw {
+  width: 77vw !important;
+}
+
+.w-77-pcnt {
+  width: 77% !important;
+}
+
+.w-76-vw {
+  width: 76vw !important;
+}
+
+.w-76-pcnt {
+  width: 76% !important;
+}
+
+.w-75-vw {
+  width: 75vw !important;
+}
+
+.w-75-pcnt {
+  width: 75% !important;
+}
+
+.w-74-vw {
+  width: 74vw !important;
+}
+
+.w-74-pcnt {
+  width: 74% !important;
+}
+
+.w-73-vw {
+  width: 73vw !important;
+}
+
+.w-73-pcnt {
+  width: 73% !important;
+}
+
+.w-72-vw {
+  width: 72vw !important;
+}
+
+.w-72-pcnt {
+  width: 72% !important;
+}
+
+.w-71-vw {
+  width: 71vw !important;
+}
+
+.w-71-pcnt {
+  width: 71% !important;
+}
+
+.w-70-vw {
+  width: 70vw !important;
+}
+
+.w-70-pcnt {
+  width: 70% !important;
+}
+
+.w-69-vw {
+  width: 69vw !important;
+}
+
+.w-69-pcnt {
+  width: 69% !important;
+}
+
+.w-68-vw {
+  width: 68vw !important;
+}
+
+.w-68-pcnt {
+  width: 68% !important;
+}
+
+.w-67-vw {
+  width: 67vw !important;
+}
+
+.w-67-pcnt {
+  width: 67% !important;
+}
+
+.w-66-vw {
+  width: 66vw !important;
+}
+
+.w-66-pcnt {
+  width: 66% !important;
+}
+
+.w-65-vw {
+  width: 65vw !important;
+}
+
+.w-65-pcnt {
+  width: 65% !important;
+}
+
+.w-64-vw {
+  width: 64vw !important;
+}
+
+.w-64-pcnt {
+  width: 64% !important;
+}
+
+.w-63-vw {
+  width: 63vw !important;
+}
+
+.w-63-pcnt {
+  width: 63% !important;
+}
+
+.w-62-vw {
+  width: 62vw !important;
+}
+
+.w-62-pcnt {
+  width: 62% !important;
+}
+
+.w-61-vw {
+  width: 61vw !important;
+}
+
+.w-61-pcnt {
+  width: 61% !important;
+}
+
+.w-60-vw {
+  width: 60vw !important;
+}
+
+.w-60-pcnt {
+  width: 60% !important;
+}
+
+.w-59-vw {
+  width: 59vw !important;
+}
+
+.w-59-pcnt {
+  width: 59% !important;
+}
+
+.w-58-vw {
+  width: 58vw !important;
+}
+
+.w-58-pcnt {
+  width: 58% !important;
+}
+
+.w-57-vw {
+  width: 57vw !important;
+}
+
+.w-57-pcnt {
+  width: 57% !important;
+}
+
+.w-56-vw {
+  width: 56vw !important;
+}
+
+.w-56-pcnt {
+  width: 56% !important;
+}
+
+.w-55-vw {
+  width: 55vw !important;
+}
+
+.w-55-pcnt {
+  width: 55% !important;
+}
+
+.w-54-vw {
+  width: 54vw !important;
+}
+
+.w-54-pcnt {
+  width: 54% !important;
+}
+
+.w-53-vw {
+  width: 53vw !important;
+}
+
+.w-53-pcnt {
+  width: 53% !important;
+}
+
+.w-52-vw {
+  width: 52vw !important;
+}
+
+.w-52-pcnt {
+  width: 52% !important;
+}
+
+.w-51-vw {
+  width: 51vw !important;
+}
+
+.w-51-pcnt {
+  width: 51% !important;
+}
+
+.w-50-vw {
+  width: 50vw !important;
+}
+
+.w-50-pcnt {
+  width: 50% !important;
+}
+
+.w-49-vw {
+  width: 49vw !important;
+}
+
+.w-49-pcnt {
+  width: 49% !important;
+}
+
+.w-48-vw {
+  width: 48vw !important;
+}
+
+.w-48-pcnt {
+  width: 48% !important;
+}
+
+.w-47-vw {
+  width: 47vw !important;
+}
+
+.w-47-pcnt {
+  width: 47% !important;
+}
+
+.w-46-vw {
+  width: 46vw !important;
+}
+
+.w-46-pcnt {
+  width: 46% !important;
+}
+
+.w-45-vw {
+  width: 45vw !important;
+}
+
+.w-45-pcnt {
+  width: 45% !important;
+}
+
+.w-44-vw {
+  width: 44vw !important;
+}
+
+.w-44-pcnt {
+  width: 44% !important;
+}
+
+.w-43-vw {
+  width: 43vw !important;
+}
+
+.w-43-pcnt {
+  width: 43% !important;
+}
+
+.w-42-vw {
+  width: 42vw !important;
+}
+
+.w-42-pcnt {
+  width: 42% !important;
+}
+
+.w-41-vw {
+  width: 41vw !important;
+}
+
+.w-41-pcnt {
+  width: 41% !important;
+}
+
+.w-40-vw {
+  width: 40vw !important;
+}
+
+.w-40-pcnt {
+  width: 40% !important;
+}
+
+.w-39-vw {
+  width: 39vw !important;
+}
+
+.w-39-pcnt {
+  width: 39% !important;
+}
+
+.w-38-vw {
+  width: 38vw !important;
+}
+
+.w-38-pcnt {
+  width: 38% !important;
+}
+
+.w-37-vw {
+  width: 37vw !important;
+}
+
+.w-37-pcnt {
+  width: 37% !important;
+}
+
+.w-36-vw {
+  width: 36vw !important;
+}
+
+.w-36-pcnt {
+  width: 36% !important;
+}
+
+.w-35-vw {
+  width: 35vw !important;
+}
+
+.w-35-pcnt {
+  width: 35% !important;
+}
+
+.w-34-vw {
+  width: 34vw !important;
+}
+
+.w-34-pcnt {
+  width: 34% !important;
+}
+
+.w-33-vw {
+  width: 33vw !important;
+}
+
+.w-33-pcnt {
+  width: 33% !important;
+}
+
+.w-32-vw {
+  width: 32vw !important;
+}
+
+.w-32-pcnt {
+  width: 32% !important;
+}
+
+.w-31-vw {
+  width: 31vw !important;
+}
+
+.w-31-pcnt {
+  width: 31% !important;
+}
+
+.w-30-vw {
+  width: 30vw !important;
+}
+
+.w-30-pcnt {
+  width: 30% !important;
+}
+
+.w-29-vw {
+  width: 29vw !important;
+}
+
+.w-29-pcnt {
+  width: 29% !important;
+}
+
+.w-28-vw {
+  width: 28vw !important;
+}
+
+.w-28-pcnt {
+  width: 28% !important;
+}
+
+.w-27-vw {
+  width: 27vw !important;
+}
+
+.w-27-pcnt {
+  width: 27% !important;
+}
+
+.w-26-vw {
+  width: 26vw !important;
+}
+
+.w-26-pcnt {
+  width: 26% !important;
+}
+
+.w-25-vw {
+  width: 25vw !important;
+}
+
+.w-25-pcnt {
+  width: 25% !important;
+}
+
+.w-24-vw {
+  width: 24vw !important;
+}
+
+.w-24-pcnt {
+  width: 24% !important;
+}
+
+.w-23-vw {
+  width: 23vw !important;
+}
+
+.w-23-pcnt {
+  width: 23% !important;
+}
+
+.w-22-vw {
+  width: 22vw !important;
+}
+
+.w-22-pcnt {
+  width: 22% !important;
+}
+
+.w-21-vw {
+  width: 21vw !important;
+}
+
+.w-21-pcnt {
+  width: 21% !important;
+}
+
+.w-20-vw {
+  width: 20vw !important;
+}
+
+.w-20-pcnt {
+  width: 20% !important;
+}
+
+.w-19-vw {
+  width: 19vw !important;
+}
+
+.w-19-pcnt {
+  width: 19% !important;
+}
+
+.w-18-vw {
+  width: 18vw !important;
+}
+
+.w-18-pcnt {
+  width: 18% !important;
+}
+
+.w-17-vw {
+  width: 17vw !important;
+}
+
+.w-17-pcnt {
+  width: 17% !important;
+}
+
+.w-16-vw {
+  width: 16vw !important;
+}
+
+.w-16-pcnt {
+  width: 16% !important;
+}
+
+.w-15-vw {
+  width: 15vw !important;
+}
+
+.w-15-pcnt {
+  width: 15% !important;
+}
+
+.w-14-vw {
+  width: 14vw !important;
+}
+
+.w-14-pcnt {
+  width: 14% !important;
+}
+
+.w-13-vw {
+  width: 13vw !important;
+}
+
+.w-13-pcnt {
+  width: 13% !important;
+}
+
+.w-12-vw {
+  width: 12vw !important;
+}
+
+.w-12-pcnt {
+  width: 12% !important;
+}
+
+.w-11-vw {
+  width: 11vw !important;
+}
+
+.w-11-pcnt {
+  width: 11% !important;
+}
+
+.w-10-vw {
+  width: 10vw !important;
+}
+
+.w-10-pcnt {
+  width: 10% !important;
+}
+
+.w-9-vw {
+  width: 9vw !important;
+}
+
+.w-9-pcnt {
+  width: 9% !important;
+}
+
+.w-8-vw {
+  width: 8vw !important;
+}
+
+.w-8-pcnt {
+  width: 8% !important;
+}
+
+.w-7-vw {
+  width: 7vw !important;
+}
+
+.w-7-pcnt {
+  width: 7% !important;
+}
+
+.w-6-vw {
+  width: 6vw !important;
+}
+
+.w-6-pcnt {
+  width: 6% !important;
+}
+
+.w-5-vw {
+  width: 5vw !important;
+}
+
+.w-5-pcnt {
+  width: 5% !important;
+}
+
+.w-4-vw {
+  width: 4vw !important;
+}
+
+.w-4-pcnt {
+  width: 4% !important;
+}
+
+.w-3-vw {
+  width: 3vw !important;
+}
+
+.w-3-pcnt {
+  width: 3% !important;
+}
+
+.w-2-vw {
+  width: 2vw !important;
+}
+
+.w-2-pcnt {
+  width: 2% !important;
+}
+
+.w-1-vw {
+  width: 1vw !important;
+}
+
+.w-1-pcnt {
+  width: 1% !important;
 }
 
 /*# sourceMappingURL=theme.css.map */

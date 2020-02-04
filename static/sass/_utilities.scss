@@ -1,0 +1,45 @@
+// Utilities
+// Sistema para generar de manera dinámica todas la clases que deriven de múltiples variables.
+
+
+$utilities: () !default;
+
+$utilities: map-merge(
+  (
+    "background-color": (
+      property: background-color,
+      class: bg,
+      values: map-merge(
+        $theme-colors,
+        (
+          "body": $body-bg,
+          "white": $white,
+          "black": $black,
+          "transparent": transparent
+        )
+      )
+    ),
+    "color": (
+      property: color,
+      class: text,
+      values: map-merge(
+        $theme-colors,
+        (
+          "white": $white,
+          "body": $body-color,
+          "reset": inherit
+        )
+      )
+    ),
+    "height": (
+      property: height,
+      class: h,
+      values: $heights
+    ),
+    "width": (
+      property: width,
+      class: w,
+      values: $widths
+    )
+  ),
+  $utilities);
