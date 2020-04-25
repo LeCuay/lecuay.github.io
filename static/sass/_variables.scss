@@ -44,6 +44,24 @@ $theme-colors: map-merge(
 $body-bg: $light !default;
 $body-color: $black !default;
 
+// Spacing
+$spacer: 1rem !default;
+$spacers: (
+  "0": 0,
+  "1": $spacer * 0.25,
+  "2": $spacer * 0.5,
+  "3": $spacer * 0.75,
+  "4": $spacer,
+  "5": $spacer * 1.25,
+  "6": $spacer * 1.5,
+  "7": $spacer * 1.75,
+  "8": $spacer * 2,
+  "9": $spacer * 2.25,
+  "10": $spacer * 2.5,
+  "11": $spacer * 2.75,
+  "12": $spacer * 3,
+) !default;
+
 // Puntos de Ruptura (Mobile)
 $grid-breakpoints: (
   xs: 0,
@@ -74,6 +92,11 @@ $font-size-base: 1rem !default;
 $font-size-sm: $font-size-base * 0.875 !default;
 $font-size-lg: $font-size-base * 1.25 !default;
 
+$hr-height: $spacer * 0.1;
+$hr-margin-y: $spacer !default;
+$hr-color: $extra !default;
+$hr-opacity: 0.25 !default;
+
 $text-aligns: () !default;
 $text-aligns: map-merge(
   $text-aligns,
@@ -84,7 +107,38 @@ $text-aligns: map-merge(
     "right": right,
     "center": center,
     "justify": justify,
-    "justify-all": justify-all
+    "justify-all": justify-all,
+  )
+);
+
+$text-decorations: () !default;
+$text-decorations: map-merge(
+  $text-decorations,
+  (
+    "none": none,
+    "underline": underline,
+    "overline": overline,
+    "line-through": line-through,
+  )
+);
+
+$font-weights: () !default;
+$font-weights: map-merge(
+  $font-weights,
+  (
+    "normal": normal,
+    "bold": bold,
+    "lighter": lighter,
+    "bolder": bolder,
+    "100": 100,
+    "200": 200,
+    "300": 300,
+    "400": 400,
+    "500": 500,
+    "600": 600,
+    "700": 700,
+    "800": 800,
+    "900": 900,
   )
 );
 
@@ -102,6 +156,16 @@ $widths: () !default;
   $widths: map-merge(
     ($w + "-vw": #{$w} + "vw", $w + "-pcnt": #{$w} + "%"),
     $widths
+  );
+}
+
+$stroke-widths: () !default;
+@for $strk from 1 to 101 {
+  $stroke-widths: map-merge(
+    (
+      $strk: #{$strk},
+    ),
+    $stroke-widths
   );
 }
 
@@ -180,24 +244,6 @@ $align-selfs: map-merge(
     "stretch": stretch,
   )
 );
-
-// Spacing
-$spacer: 1rem !default;
-$spacers: (
-  "0": 0,
-  "1": $spacer * .25,
-  "2": $spacer * .5,
-  "3": $spacer * .75,
-  "4": $spacer,
-  "5": $spacer * 1.25,
-  "6": $spacer * 1.5,
-  "7": $spacer * 1.75,
-  "8": $spacer * 2,
-  "9": $spacer * 2.25,
-  "10": $spacer * 2.5,
-  "11": $spacer * 2.75,
-  "12": $spacer * 3,
-) !default;
 
 // Navbar
 $navbar-padding-y: $spacer !default;

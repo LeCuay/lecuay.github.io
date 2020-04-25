@@ -10,6 +10,10 @@
   font-size: $font-size-root;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 // Body
 body {
   margin: 0;
@@ -19,6 +23,18 @@ body {
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba($color: $black, $alpha: 0);
+}
+
+hr {
+  background-color: currentColor;
+  border: 0;
+  color: $hr-color;
+  margin: $hr-margin-y $spacer;
+  opacity: $hr-opacity;
+}
+
+hr:not([size]) {
+  height: $hr-height;
 }
 
 // Párrafos
@@ -53,4 +69,8 @@ a {
     color: $link-hover-color;
     text-decoration: $link-hover-decoration;
   }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
 }
