@@ -1,0 +1,22 @@
+.navbar {
+  align-items: map-get($align-items, "center");
+  display: map-get($displays, "flex");
+  flex-direction: map-get($flex-directions, "row");
+  justify-content: map-get($justify-contents, "around");
+  padding-bottom: $navbar-padding-y;
+  padding-left: $navbar-padding-x;
+  padding-right: $navbar-padding-x;
+  padding-top: $navbar-padding-y;
+}
+
+.nav-link {
+  color: $white;
+  display: map-get($displays, "block");
+  text-align: map-get($text-aligns, "center");
+  text-decoration: none;
+  width: 100%;
+
+  &:hover {
+    color: $light;
+  }
+}

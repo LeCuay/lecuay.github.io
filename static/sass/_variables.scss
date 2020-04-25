@@ -41,7 +41,7 @@ $theme-colors: map-merge(
 );
 
 // Configuración del <body></body>
-$body-bg: $white !default;
+$body-bg: $light !default;
 $body-color: $black !default;
 
 // Puntos de Ruptura (Mobile)
@@ -180,6 +180,28 @@ $align-selfs: map-merge(
     "stretch": stretch,
   )
 );
+
+// Spacing
+$spacer: 1rem !default;
+$spacers: (
+  "0": 0,
+  "1": $spacer * .25,
+  "2": $spacer * .5,
+  "3": $spacer * .75,
+  "4": $spacer,
+  "5": $spacer * 1.25,
+  "6": $spacer * 1.5,
+  "7": $spacer * 1.75,
+  "8": $spacer * 2,
+  "9": $spacer * 2.25,
+  "10": $spacer * 2.5,
+  "11": $spacer * 2.75,
+  "12": $spacer * 3,
+) !default;
+
+// Navbar
+$navbar-padding-y: $spacer !default;
+$navbar-padding-x: null !default;
 
 // Animations
 $cursor-color: $dim-gray;
