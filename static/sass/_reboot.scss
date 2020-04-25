@@ -6,11 +6,19 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-size: $font-size-root;
+}
+
 // Body
 body {
   margin: 0;
   background-color: $body-bg;
   color: $body-color;
+  font-family: $font-family-sans-serif;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba($color: $black, $alpha: 0);
 }
 
 // Párrafos
@@ -21,4 +29,28 @@ p {
 
 @each $key, $utility in $utilities {
   @include generate-utility($utility, "");
+}
+
+.presentation-header {
+  background-image: url("/static/media/img/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  #presentation-text-container {
+    background-color: rgba($black, .2) !important;
+    color: $white;
+    font-size: $font-size-lg * 2;
+  }
+}
+
+// Links
+a {
+  color: $link-color;
+  text-decoration: $link-decoration;
+
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
 }

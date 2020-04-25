@@ -12,14 +12,14 @@ $dim-gray: #806464 !default;
 $gray: #988d8f !default;
 
 $colors: map-merge(
-    (
-        "thistle": $thistle,
-        "rosy-brown": $rosy-brown,
-        "dark-slate-gray": $dark-slate-gray,
-        "dim-gray": $dim-gray,
-        "gray": $gray
-    ),
-    $colors
+  (
+    "thistle": $thistle,
+    "rosy-brown": $rosy-brown,
+    "dark-slate-gray": $dark-slate-gray,
+    "dim-gray": $dim-gray,
+    "gray": $gray,
+  ),
+  $colors
 );
 
 $theme-colors: () !default;
@@ -30,14 +30,14 @@ $light: $thistle;
 $dark: $dark-slate-gray;
 $extra: $dim-gray;
 $theme-colors: map-merge(
-    (
-        "primary": $rosy-brown,
-        "secondary": $gray,
-        "light": $thistle,
-        "dark": $dark-slate-gray,
-        "extra": $dim-gray,
-    ),
-    $theme-colors
+  (
+    "primary": $rosy-brown,
+    "secondary": $gray,
+    "light": $thistle,
+    "dark": $dark-slate-gray,
+    "extra": $dim-gray,
+  ),
+  $theme-colors
 );
 
 // Configuración del <body></body>
@@ -50,37 +50,138 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl: 1200px
+  xl: 1200px,
 ) !default;
 
 // Links
 $link-color: $primary;
-$link-decoration: $extra;
+$link-decoration: underline !default;
 $link-hover-color: darken($link-color, 15%) !default;
-$link-hover-decoration: underline !default;
+$link-hover-decoration: none !default;
 
 // Párrafos
 $paragraph-margin-bottom: 1rem !default;
+
+// Tipografía
+$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+  "Liberation Mono", "Courier New", monospace !default;
+$font-family-base: var(--bs-font-sans-serif) !default;
+$font-size-root: null !default;
+$font-size-base: 1rem !default;
+$font-size-sm: $font-size-base * 0.875 !default;
+$font-size-lg: $font-size-base * 1.25 !default;
+
+$text-aligns: () !default;
+$text-aligns: map-merge(
+  $text-aligns,
+  (
+    "start": start,
+    "end": end,
+    "left": left,
+    "right": right,
+    "center": center,
+    "justify": justify,
+    "justify-all": justify-all
+  )
+);
 
 // Tamaños
 $heights: () !default;
 @for $h from 1 to 101 {
   $heights: map-merge(
-    (
-      $h + "-vh": #{$h} + "vh",
-      $h + "-pcnt": #{$h} + "%"
-    ),
+    ($h + "-vh": #{$h} + "vh", $h + "-pcnt": #{$h} + "%"),
     $heights
-  )
+  );
 }
 
 $widths: () !default;
 @for $w from 1 to 101 {
   $widths: map-merge(
-    (
-      $w + "-vw": #{$w} + "vw",
-      $w + "-pcnt": #{$w} + "%"
-    ),
+    ($w + "-vw": #{$w} + "vw", $w + "-pcnt": #{$w} + "%"),
     $widths
-  )
+  );
 }
+
+// Displays
+$displays: () !default;
+$displays: map-merge(
+  $displays,
+  (
+    "none": none,
+    "inline": inline,
+    "inline-block": inline-block,
+    "block": block,
+    "flex": flex,
+    "inline-flex": inline-flex,
+  )
+);
+
+// Flex properties
+$flex-directions: () !default;
+$flex-directions: map-merge(
+  $flex-directions,
+  (
+    "row": row,
+    "row-reverse": row-reverse,
+    "column": column,
+    "column-reverse": column-reverse,
+  )
+);
+
+$justify-contents: () !default;
+$justify-contents: map-merge(
+  $justify-contents,
+  (
+    "start": flex-start,
+    "end": flex-end,
+    "center": center,
+    "between": space-between,
+    "around": space-around,
+  )
+);
+
+$align-contents: () !default;
+$align-contents: map-merge(
+  $align-contents,
+  (
+    "start": flex-start,
+    "end": flex-end,
+    "center": center,
+    "between": space-between,
+    "around": space-around,
+    "stretch": stretch,
+  )
+);
+
+$align-items: () !default;
+$align-items: map-merge(
+  $align-items,
+  (
+    "start": flex-start,
+    "end": flex-end,
+    "center": center,
+    "baseline": baseline,
+    "stretch": stretch,
+  )
+);
+
+$align-selfs: () !default;
+$align-selfs: map-merge(
+  $align-selfs,
+  (
+    "auto": auto,
+    "start": flex-start,
+    "end": flex-end,
+    "center": center,
+    "baseline": baseline,
+    "stretch": stretch,
+  )
+);
+
+// Animations
+$cursor-color: $dim-gray;
+$typing-steps: 40;
+$typing-seconds: 2.5s;

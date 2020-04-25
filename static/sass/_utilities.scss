@@ -1,7 +1,6 @@
 // Utilities
 // Sistema para generar de manera dinámica todas la clases que deriven de múltiples variables.
 
-
 $utilities: () !default;
 
 $utilities: map-merge(
@@ -9,37 +8,79 @@ $utilities: map-merge(
     "background-color": (
       property: background-color,
       class: bg,
-      values: map-merge(
-        $theme-colors,
-        (
-          "body": $body-bg,
-          "white": $white,
-          "black": $black,
-          "transparent": transparent
-        )
-      )
+      values:
+        map-merge(
+          $theme-colors,
+          (
+            "body": $body-bg,
+            "white": $white,
+            "black": $black,
+            "transparent": transparent,
+          )
+        ),
     ),
     "color": (
       property: color,
       class: text,
-      values: map-merge(
-        $theme-colors,
-        (
-          "white": $white,
-          "body": $body-color,
-          "reset": inherit
-        )
-      )
+      values:
+        map-merge(
+          $theme-colors,
+          (
+            "white": $white,
+            "body": $body-color,
+            "reset": inherit,
+          )
+        ),
+    ),
+    "text-align": (
+      responsive: true,
+      property: text-align,
+      class: text,
+      values: $text-aligns
+    ),
+    "display": (
+      responsive: true,
+      print: true,
+      property: display,
+      class: d,
+      values: $displays,
     ),
     "height": (
       property: height,
       class: h,
-      values: $heights
+      values: $heights,
     ),
     "width": (
       property: width,
       class: w,
-      values: $widths
-    )
+      values: $widths,
+    ),
+    "flex-direction": (
+      responsive: true,
+      property: flex-direction,
+      class: flex,
+      values: $flex-directions,
+    ),
+    "align-content": (
+      responsive: true,
+      property: align-content,
+      values: $align-contents,
+    ),
+    "align-items": (
+      responsive: true,
+      property: align-items,
+      values: $align-items,
+    ),
+    "align-self": (
+      responsive: true,
+      property: align-self,
+      values: $align-selfs,
+    ),
+    "justify-content": (
+      responsive: true,
+      property: justify-content,
+      values: $justify-contents,
+    ),
   ),
-  $utilities);
+  $utilities
+);
