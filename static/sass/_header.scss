@@ -1,0 +1,12 @@
+.presentation-header {
+    background-image: url("/static/media/img/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    #presentation-text-container {
+      background-color: rgba($black, .2) !important;
+      color: $white;
+      font-size: $font-size-lg * 2;
+    }
+  }

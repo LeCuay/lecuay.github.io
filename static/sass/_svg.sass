@@ -1,0 +1,8 @@
+$extra-colors: ("black": $black, "darkcyan": darkcyan, "orange": orange, "white": $white)
+@each $key, $color in map-merge($theme-colors, $extra-colors)
+  .strk-color-#{$key}
+    stroke: $color
+
+@each $key, $width in $stroke-widths
+  .strk-width-#{$key}
+    stroke-width: $width
