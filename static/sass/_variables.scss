@@ -51,39 +51,6 @@ $spacers: (
   "12": $spacer * 3,
 ) !default;
 
-$text-aligns: (
-  "start": start,
-  "end": end,
-  "left": left,
-  "right": right,
-  "center": center,
-  "justify": justify,
-  "justify-all": justify-all,
-);
-
-$text-decorations: (
-  "none": none,
-  "underline": underline,
-  "overline": overline,
-  "line-through": line-through,
-);
-
-$font-weights: (
-  "normal": normal,
-  "bold": bold,
-  "lighter": lighter,
-  "bolder": bolder,
-  "100": 100,
-  "200": 200,
-  "300": 300,
-  "400": 400,
-  "500": 500,
-  "600": 600,
-  "700": 700,
-  "800": 800,
-  "900": 900,
-);
-
 // SVG Properties
 $stroke-widths: () !default;
 @for $strk from 1 to 101 {

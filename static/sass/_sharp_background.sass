@@ -1,0 +1,5 @@
+@each $key, $color in $theme-colors
+  .bg-#{$key}-sharp
+    background: linear-gradient(30deg, transparent 60%, $color 40%, $color 65%, transparent)
+  .bg-#{$key}-sharp-inverted
+    background: linear-gradient(-30deg, transparent 60%, $color 40%, $color 65%, transparent)

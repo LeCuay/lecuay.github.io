@@ -11,6 +11,78 @@
   font-size: 2.5rem;
 }
 
+.bg-primary-sharp {
+  background: linear-gradient(30deg, transparent 60%, #d0b9b0 40%, #d0b9b0 65%, transparent);
+}
+
+.bg-primary-sharp-inverted {
+  background: linear-gradient(-30deg, transparent 60%, #d0b9b0 40%, #d0b9b0 65%, transparent);
+}
+
+.bg-secondary-sharp {
+  background: linear-gradient(30deg, transparent 60%, #988d8f 40%, #988d8f 65%, transparent);
+}
+
+.bg-secondary-sharp-inverted {
+  background: linear-gradient(-30deg, transparent 60%, #988d8f 40%, #988d8f 65%, transparent);
+}
+
+.bg-success-sharp {
+  background: linear-gradient(30deg, transparent 60%, #28a745 40%, #28a745 65%, transparent);
+}
+
+.bg-success-sharp-inverted {
+  background: linear-gradient(-30deg, transparent 60%, #28a745 40%, #28a745 65%, transparent);
+}
+
+.bg-info-sharp {
+  background: linear-gradient(30deg, transparent 60%, #17a2b8 40%, #17a2b8 65%, transparent);
+}
+
+.bg-info-sharp-inverted {
+  background: linear-gradient(-30deg, transparent 60%, #17a2b8 40%, #17a2b8 65%, transparent);
+}
+
+.bg-warning-sharp {
+  background: linear-gradient(30deg, transparent 60%, #ffc107 40%, #ffc107 65%, transparent);
+}
+
+.bg-warning-sharp-inverted {
+  background: linear-gradient(-30deg, transparent 60%, #ffc107 40%, #ffc107 65%, transparent);
+}
+
+.bg-danger-sharp {
+  background: linear-gradient(30deg, transparent 60%, #dc3545 40%, #dc3545 65%, transparent);
+}
+
+.bg-danger-sharp-inverted {
+  background: linear-gradient(-30deg, transparent 60%, #dc3545 40%, #dc3545 65%, transparent);
+}
+
+.bg-light-sharp {
+  background: linear-gradient(30deg, transparent 60%, #e9e0d9 40%, #e9e0d9 65%, transparent);
+}
+
+.bg-light-sharp-inverted {
+  background: linear-gradient(-30deg, transparent 60%, #e9e0d9 40%, #e9e0d9 65%, transparent);
+}
+
+.bg-dark-sharp {
+  background: linear-gradient(30deg, transparent 60%, #3d3944 40%, #3d3944 65%, transparent);
+}
+
+.bg-dark-sharp-inverted {
+  background: linear-gradient(-30deg, transparent 60%, #3d3944 40%, #3d3944 65%, transparent);
+}
+
+.bg-extra-sharp {
+  background: linear-gradient(30deg, transparent 60%, #806464 40%, #806464 65%, transparent);
+}
+
+.bg-extra-sharp-inverted {
+  background: linear-gradient(-30deg, transparent 60%, #806464 40%, #806464 65%, transparent);
+}
+
 .strk-color-primary {
   stroke: #d0b9b0;
 }
