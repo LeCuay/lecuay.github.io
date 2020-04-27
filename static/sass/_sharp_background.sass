@@ -1,5 +1,21 @@
-@each $key, $color in $theme-colors
-  .bg-#{$key}-sharp
-    background: linear-gradient(30deg, transparent 60%, $color 40%, $color 65%, transparent)
-  .bg-#{$key}-sharp-inverted
-    background: linear-gradient(-30deg, transparent 60%, $color 40%, $color 65%, transparent)
+@each $breakpoint in map-keys($grid-breakpoints)
+  @include media-breakpoint-up($breakpoint)
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints)
+    @each $key, $color in $theme-colors
+      .bg#{$infix}-#{$key}-sharp-left
+        background: linear-gradient(30deg, transparent 60%, $color 40%, $color 65%, transparent)
+      .bg#{$infix}-#{$key}-sharp-left-nofade
+        background: linear-gradient(30deg, transparent 60%, $color 40%, $color 65%)
+      .bg#{$infix}-#{$key}-sharp-left-inverted
+        background: linear-gradient(-30deg, transparent, $color 65%, $color 40%, transparent 60%)
+      .bg#{$infix}-#{$key}-sharp-left-inverted-nofade
+        background: linear-gradient(-30deg, $color 65%, $color 40%, transparent 60%)
+      .bg#{$infix}-#{$key}-sharp-right
+        background: linear-gradient(-30deg, transparent 60%, $color 40%, $color 65%, transparent)
+      .bg#{$infix}-#{$key}-sharp-right-nofade
+        background: linear-gradient(-30deg, transparent 60%, $color 40%, $color 65%)
+      .bg#{$infix}-#{$key}-sharp-right-inverted
+        background: linear-gradient(30deg, transparent, $color 65%, $color 40%, transparent 60%)
+      .bg#{$infix}-#{$key}-sharp-right-inverted-nofade
+        background: linear-gradient(30deg, $color 65%, $color 40%, transparent 60%)
+

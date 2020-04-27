@@ -1,2 +1,6 @@
 html
-  font-family: 2vh
+  font-size: 2vh
+
+@media screen and (max-width: map-get($grid-breakpoints, "md")) and (orientation: landscape)
+  html
+    font-size: initial

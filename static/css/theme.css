@@ -1,4 +1,13 @@
 @charset "UTF-8";
+html {
+  font-size: 2vh;
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  html {
+    font-size: initial;
+  }
+}
 .presentation-header {
   background-image: url("/static/media/img/background.jpg");
   background-position: center;
@@ -11,78 +20,1450 @@
   font-size: 2.5rem;
 }
 
-.bg-primary-sharp {
+.bg-primary-sharp-left {
   background: linear-gradient(30deg, transparent 60%, #d0b9b0 40%, #d0b9b0 65%, transparent);
 }
 
-.bg-primary-sharp-inverted {
+.bg-primary-sharp-left-nofade {
+  background: linear-gradient(30deg, transparent 60%, #d0b9b0 40%, #d0b9b0 65%);
+}
+
+.bg-primary-sharp-left-inverted {
+  background: linear-gradient(-30deg, transparent, #d0b9b0 65%, #d0b9b0 40%, transparent 60%);
+}
+
+.bg-primary-sharp-left-inverted-nofade {
+  background: linear-gradient(-30deg, #d0b9b0 65%, #d0b9b0 40%, transparent 60%);
+}
+
+.bg-primary-sharp-right {
   background: linear-gradient(-30deg, transparent 60%, #d0b9b0 40%, #d0b9b0 65%, transparent);
 }
 
-.bg-secondary-sharp {
+.bg-primary-sharp-right-nofade {
+  background: linear-gradient(-30deg, transparent 60%, #d0b9b0 40%, #d0b9b0 65%);
+}
+
+.bg-primary-sharp-right-inverted {
+  background: linear-gradient(30deg, transparent, #d0b9b0 65%, #d0b9b0 40%, transparent 60%);
+}
+
+.bg-primary-sharp-right-inverted-nofade {
+  background: linear-gradient(30deg, #d0b9b0 65%, #d0b9b0 40%, transparent 60%);
+}
+
+.bg-secondary-sharp-left {
   background: linear-gradient(30deg, transparent 60%, #988d8f 40%, #988d8f 65%, transparent);
 }
 
-.bg-secondary-sharp-inverted {
+.bg-secondary-sharp-left-nofade {
+  background: linear-gradient(30deg, transparent 60%, #988d8f 40%, #988d8f 65%);
+}
+
+.bg-secondary-sharp-left-inverted {
+  background: linear-gradient(-30deg, transparent, #988d8f 65%, #988d8f 40%, transparent 60%);
+}
+
+.bg-secondary-sharp-left-inverted-nofade {
+  background: linear-gradient(-30deg, #988d8f 65%, #988d8f 40%, transparent 60%);
+}
+
+.bg-secondary-sharp-right {
   background: linear-gradient(-30deg, transparent 60%, #988d8f 40%, #988d8f 65%, transparent);
 }
 
-.bg-success-sharp {
+.bg-secondary-sharp-right-nofade {
+  background: linear-gradient(-30deg, transparent 60%, #988d8f 40%, #988d8f 65%);
+}
+
+.bg-secondary-sharp-right-inverted {
+  background: linear-gradient(30deg, transparent, #988d8f 65%, #988d8f 40%, transparent 60%);
+}
+
+.bg-secondary-sharp-right-inverted-nofade {
+  background: linear-gradient(30deg, #988d8f 65%, #988d8f 40%, transparent 60%);
+}
+
+.bg-success-sharp-left {
   background: linear-gradient(30deg, transparent 60%, #28a745 40%, #28a745 65%, transparent);
 }
 
-.bg-success-sharp-inverted {
+.bg-success-sharp-left-nofade {
+  background: linear-gradient(30deg, transparent 60%, #28a745 40%, #28a745 65%);
+}
+
+.bg-success-sharp-left-inverted {
+  background: linear-gradient(-30deg, transparent, #28a745 65%, #28a745 40%, transparent 60%);
+}
+
+.bg-success-sharp-left-inverted-nofade {
+  background: linear-gradient(-30deg, #28a745 65%, #28a745 40%, transparent 60%);
+}
+
+.bg-success-sharp-right {
   background: linear-gradient(-30deg, transparent 60%, #28a745 40%, #28a745 65%, transparent);
 }
 
-.bg-info-sharp {
+.bg-success-sharp-right-nofade {
+  background: linear-gradient(-30deg, transparent 60%, #28a745 40%, #28a745 65%);
+}
+
+.bg-success-sharp-right-inverted {
+  background: linear-gradient(30deg, transparent, #28a745 65%, #28a745 40%, transparent 60%);
+}
+
+.bg-success-sharp-right-inverted-nofade {
+  background: linear-gradient(30deg, #28a745 65%, #28a745 40%, transparent 60%);
+}
+
+.bg-info-sharp-left {
   background: linear-gradient(30deg, transparent 60%, #17a2b8 40%, #17a2b8 65%, transparent);
 }
 
-.bg-info-sharp-inverted {
+.bg-info-sharp-left-nofade {
+  background: linear-gradient(30deg, transparent 60%, #17a2b8 40%, #17a2b8 65%);
+}
+
+.bg-info-sharp-left-inverted {
+  background: linear-gradient(-30deg, transparent, #17a2b8 65%, #17a2b8 40%, transparent 60%);
+}
+
+.bg-info-sharp-left-inverted-nofade {
+  background: linear-gradient(-30deg, #17a2b8 65%, #17a2b8 40%, transparent 60%);
+}
+
+.bg-info-sharp-right {
   background: linear-gradient(-30deg, transparent 60%, #17a2b8 40%, #17a2b8 65%, transparent);
 }
 
-.bg-warning-sharp {
+.bg-info-sharp-right-nofade {
+  background: linear-gradient(-30deg, transparent 60%, #17a2b8 40%, #17a2b8 65%);
+}
+
+.bg-info-sharp-right-inverted {
+  background: linear-gradient(30deg, transparent, #17a2b8 65%, #17a2b8 40%, transparent 60%);
+}
+
+.bg-info-sharp-right-inverted-nofade {
+  background: linear-gradient(30deg, #17a2b8 65%, #17a2b8 40%, transparent 60%);
+}
+
+.bg-warning-sharp-left {
   background: linear-gradient(30deg, transparent 60%, #ffc107 40%, #ffc107 65%, transparent);
 }
 
-.bg-warning-sharp-inverted {
+.bg-warning-sharp-left-nofade {
+  background: linear-gradient(30deg, transparent 60%, #ffc107 40%, #ffc107 65%);
+}
+
+.bg-warning-sharp-left-inverted {
+  background: linear-gradient(-30deg, transparent, #ffc107 65%, #ffc107 40%, transparent 60%);
+}
+
+.bg-warning-sharp-left-inverted-nofade {
+  background: linear-gradient(-30deg, #ffc107 65%, #ffc107 40%, transparent 60%);
+}
+
+.bg-warning-sharp-right {
   background: linear-gradient(-30deg, transparent 60%, #ffc107 40%, #ffc107 65%, transparent);
 }
 
-.bg-danger-sharp {
+.bg-warning-sharp-right-nofade {
+  background: linear-gradient(-30deg, transparent 60%, #ffc107 40%, #ffc107 65%);
+}
+
+.bg-warning-sharp-right-inverted {
+  background: linear-gradient(30deg, transparent, #ffc107 65%, #ffc107 40%, transparent 60%);
+}
+
+.bg-warning-sharp-right-inverted-nofade {
+  background: linear-gradient(30deg, #ffc107 65%, #ffc107 40%, transparent 60%);
+}
+
+.bg-danger-sharp-left {
   background: linear-gradient(30deg, transparent 60%, #dc3545 40%, #dc3545 65%, transparent);
 }
 
-.bg-danger-sharp-inverted {
+.bg-danger-sharp-left-nofade {
+  background: linear-gradient(30deg, transparent 60%, #dc3545 40%, #dc3545 65%);
+}
+
+.bg-danger-sharp-left-inverted {
+  background: linear-gradient(-30deg, transparent, #dc3545 65%, #dc3545 40%, transparent 60%);
+}
+
+.bg-danger-sharp-left-inverted-nofade {
+  background: linear-gradient(-30deg, #dc3545 65%, #dc3545 40%, transparent 60%);
+}
+
+.bg-danger-sharp-right {
   background: linear-gradient(-30deg, transparent 60%, #dc3545 40%, #dc3545 65%, transparent);
 }
 
-.bg-light-sharp {
+.bg-danger-sharp-right-nofade {
+  background: linear-gradient(-30deg, transparent 60%, #dc3545 40%, #dc3545 65%);
+}
+
+.bg-danger-sharp-right-inverted {
+  background: linear-gradient(30deg, transparent, #dc3545 65%, #dc3545 40%, transparent 60%);
+}
+
+.bg-danger-sharp-right-inverted-nofade {
+  background: linear-gradient(30deg, #dc3545 65%, #dc3545 40%, transparent 60%);
+}
+
+.bg-light-sharp-left {
   background: linear-gradient(30deg, transparent 60%, #e9e0d9 40%, #e9e0d9 65%, transparent);
 }
 
-.bg-light-sharp-inverted {
+.bg-light-sharp-left-nofade {
+  background: linear-gradient(30deg, transparent 60%, #e9e0d9 40%, #e9e0d9 65%);
+}
+
+.bg-light-sharp-left-inverted {
+  background: linear-gradient(-30deg, transparent, #e9e0d9 65%, #e9e0d9 40%, transparent 60%);
+}
+
+.bg-light-sharp-left-inverted-nofade {
+  background: linear-gradient(-30deg, #e9e0d9 65%, #e9e0d9 40%, transparent 60%);
+}
+
+.bg-light-sharp-right {
   background: linear-gradient(-30deg, transparent 60%, #e9e0d9 40%, #e9e0d9 65%, transparent);
 }
 
-.bg-dark-sharp {
+.bg-light-sharp-right-nofade {
+  background: linear-gradient(-30deg, transparent 60%, #e9e0d9 40%, #e9e0d9 65%);
+}
+
+.bg-light-sharp-right-inverted {
+  background: linear-gradient(30deg, transparent, #e9e0d9 65%, #e9e0d9 40%, transparent 60%);
+}
+
+.bg-light-sharp-right-inverted-nofade {
+  background: linear-gradient(30deg, #e9e0d9 65%, #e9e0d9 40%, transparent 60%);
+}
+
+.bg-dark-sharp-left {
   background: linear-gradient(30deg, transparent 60%, #3d3944 40%, #3d3944 65%, transparent);
 }
 
-.bg-dark-sharp-inverted {
+.bg-dark-sharp-left-nofade {
+  background: linear-gradient(30deg, transparent 60%, #3d3944 40%, #3d3944 65%);
+}
+
+.bg-dark-sharp-left-inverted {
+  background: linear-gradient(-30deg, transparent, #3d3944 65%, #3d3944 40%, transparent 60%);
+}
+
+.bg-dark-sharp-left-inverted-nofade {
+  background: linear-gradient(-30deg, #3d3944 65%, #3d3944 40%, transparent 60%);
+}
+
+.bg-dark-sharp-right {
   background: linear-gradient(-30deg, transparent 60%, #3d3944 40%, #3d3944 65%, transparent);
 }
 
-.bg-extra-sharp {
+.bg-dark-sharp-right-nofade {
+  background: linear-gradient(-30deg, transparent 60%, #3d3944 40%, #3d3944 65%);
+}
+
+.bg-dark-sharp-right-inverted {
+  background: linear-gradient(30deg, transparent, #3d3944 65%, #3d3944 40%, transparent 60%);
+}
+
+.bg-dark-sharp-right-inverted-nofade {
+  background: linear-gradient(30deg, #3d3944 65%, #3d3944 40%, transparent 60%);
+}
+
+.bg-extra-sharp-left {
   background: linear-gradient(30deg, transparent 60%, #806464 40%, #806464 65%, transparent);
 }
 
-.bg-extra-sharp-inverted {
+.bg-extra-sharp-left-nofade {
+  background: linear-gradient(30deg, transparent 60%, #806464 40%, #806464 65%);
+}
+
+.bg-extra-sharp-left-inverted {
+  background: linear-gradient(-30deg, transparent, #806464 65%, #806464 40%, transparent 60%);
+}
+
+.bg-extra-sharp-left-inverted-nofade {
+  background: linear-gradient(-30deg, #806464 65%, #806464 40%, transparent 60%);
+}
+
+.bg-extra-sharp-right {
   background: linear-gradient(-30deg, transparent 60%, #806464 40%, #806464 65%, transparent);
 }
 
+.bg-extra-sharp-right-nofade {
+  background: linear-gradient(-30deg, transparent 60%, #806464 40%, #806464 65%);
+}
+
+.bg-extra-sharp-right-inverted {
+  background: linear-gradient(30deg, transparent, #806464 65%, #806464 40%, transparent 60%);
+}
+
+.bg-extra-sharp-right-inverted-nofade {
+  background: linear-gradient(30deg, #806464 65%, #806464 40%, transparent 60%);
+}
+
+@media (min-width: 576px) {
+  .bg-sm-primary-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #d0b9b0 40%, #d0b9b0 65%, transparent);
+  }
+
+  .bg-sm-primary-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #d0b9b0 40%, #d0b9b0 65%);
+  }
+
+  .bg-sm-primary-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #d0b9b0 65%, #d0b9b0 40%, transparent 60%);
+  }
+
+  .bg-sm-primary-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #d0b9b0 65%, #d0b9b0 40%, transparent 60%);
+  }
+
+  .bg-sm-primary-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #d0b9b0 40%, #d0b9b0 65%, transparent);
+  }
+
+  .bg-sm-primary-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #d0b9b0 40%, #d0b9b0 65%);
+  }
+
+  .bg-sm-primary-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #d0b9b0 65%, #d0b9b0 40%, transparent 60%);
+  }
+
+  .bg-sm-primary-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #d0b9b0 65%, #d0b9b0 40%, transparent 60%);
+  }
+
+  .bg-sm-secondary-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #988d8f 40%, #988d8f 65%, transparent);
+  }
+
+  .bg-sm-secondary-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #988d8f 40%, #988d8f 65%);
+  }
+
+  .bg-sm-secondary-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #988d8f 65%, #988d8f 40%, transparent 60%);
+  }
+
+  .bg-sm-secondary-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #988d8f 65%, #988d8f 40%, transparent 60%);
+  }
+
+  .bg-sm-secondary-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #988d8f 40%, #988d8f 65%, transparent);
+  }
+
+  .bg-sm-secondary-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #988d8f 40%, #988d8f 65%);
+  }
+
+  .bg-sm-secondary-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #988d8f 65%, #988d8f 40%, transparent 60%);
+  }
+
+  .bg-sm-secondary-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #988d8f 65%, #988d8f 40%, transparent 60%);
+  }
+
+  .bg-sm-success-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #28a745 40%, #28a745 65%, transparent);
+  }
+
+  .bg-sm-success-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #28a745 40%, #28a745 65%);
+  }
+
+  .bg-sm-success-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #28a745 65%, #28a745 40%, transparent 60%);
+  }
+
+  .bg-sm-success-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #28a745 65%, #28a745 40%, transparent 60%);
+  }
+
+  .bg-sm-success-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #28a745 40%, #28a745 65%, transparent);
+  }
+
+  .bg-sm-success-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #28a745 40%, #28a745 65%);
+  }
+
+  .bg-sm-success-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #28a745 65%, #28a745 40%, transparent 60%);
+  }
+
+  .bg-sm-success-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #28a745 65%, #28a745 40%, transparent 60%);
+  }
+
+  .bg-sm-info-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #17a2b8 40%, #17a2b8 65%, transparent);
+  }
+
+  .bg-sm-info-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #17a2b8 40%, #17a2b8 65%);
+  }
+
+  .bg-sm-info-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #17a2b8 65%, #17a2b8 40%, transparent 60%);
+  }
+
+  .bg-sm-info-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #17a2b8 65%, #17a2b8 40%, transparent 60%);
+  }
+
+  .bg-sm-info-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #17a2b8 40%, #17a2b8 65%, transparent);
+  }
+
+  .bg-sm-info-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #17a2b8 40%, #17a2b8 65%);
+  }
+
+  .bg-sm-info-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #17a2b8 65%, #17a2b8 40%, transparent 60%);
+  }
+
+  .bg-sm-info-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #17a2b8 65%, #17a2b8 40%, transparent 60%);
+  }
+
+  .bg-sm-warning-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #ffc107 40%, #ffc107 65%, transparent);
+  }
+
+  .bg-sm-warning-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #ffc107 40%, #ffc107 65%);
+  }
+
+  .bg-sm-warning-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #ffc107 65%, #ffc107 40%, transparent 60%);
+  }
+
+  .bg-sm-warning-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #ffc107 65%, #ffc107 40%, transparent 60%);
+  }
+
+  .bg-sm-warning-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #ffc107 40%, #ffc107 65%, transparent);
+  }
+
+  .bg-sm-warning-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #ffc107 40%, #ffc107 65%);
+  }
+
+  .bg-sm-warning-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #ffc107 65%, #ffc107 40%, transparent 60%);
+  }
+
+  .bg-sm-warning-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #ffc107 65%, #ffc107 40%, transparent 60%);
+  }
+
+  .bg-sm-danger-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #dc3545 40%, #dc3545 65%, transparent);
+  }
+
+  .bg-sm-danger-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #dc3545 40%, #dc3545 65%);
+  }
+
+  .bg-sm-danger-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #dc3545 65%, #dc3545 40%, transparent 60%);
+  }
+
+  .bg-sm-danger-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #dc3545 65%, #dc3545 40%, transparent 60%);
+  }
+
+  .bg-sm-danger-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #dc3545 40%, #dc3545 65%, transparent);
+  }
+
+  .bg-sm-danger-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #dc3545 40%, #dc3545 65%);
+  }
+
+  .bg-sm-danger-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #dc3545 65%, #dc3545 40%, transparent 60%);
+  }
+
+  .bg-sm-danger-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #dc3545 65%, #dc3545 40%, transparent 60%);
+  }
+
+  .bg-sm-light-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #e9e0d9 40%, #e9e0d9 65%, transparent);
+  }
+
+  .bg-sm-light-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #e9e0d9 40%, #e9e0d9 65%);
+  }
+
+  .bg-sm-light-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #e9e0d9 65%, #e9e0d9 40%, transparent 60%);
+  }
+
+  .bg-sm-light-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #e9e0d9 65%, #e9e0d9 40%, transparent 60%);
+  }
+
+  .bg-sm-light-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #e9e0d9 40%, #e9e0d9 65%, transparent);
+  }
+
+  .bg-sm-light-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #e9e0d9 40%, #e9e0d9 65%);
+  }
+
+  .bg-sm-light-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #e9e0d9 65%, #e9e0d9 40%, transparent 60%);
+  }
+
+  .bg-sm-light-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #e9e0d9 65%, #e9e0d9 40%, transparent 60%);
+  }
+
+  .bg-sm-dark-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #3d3944 40%, #3d3944 65%, transparent);
+  }
+
+  .bg-sm-dark-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #3d3944 40%, #3d3944 65%);
+  }
+
+  .bg-sm-dark-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #3d3944 65%, #3d3944 40%, transparent 60%);
+  }
+
+  .bg-sm-dark-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #3d3944 65%, #3d3944 40%, transparent 60%);
+  }
+
+  .bg-sm-dark-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #3d3944 40%, #3d3944 65%, transparent);
+  }
+
+  .bg-sm-dark-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #3d3944 40%, #3d3944 65%);
+  }
+
+  .bg-sm-dark-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #3d3944 65%, #3d3944 40%, transparent 60%);
+  }
+
+  .bg-sm-dark-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #3d3944 65%, #3d3944 40%, transparent 60%);
+  }
+
+  .bg-sm-extra-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #806464 40%, #806464 65%, transparent);
+  }
+
+  .bg-sm-extra-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #806464 40%, #806464 65%);
+  }
+
+  .bg-sm-extra-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #806464 65%, #806464 40%, transparent 60%);
+  }
+
+  .bg-sm-extra-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #806464 65%, #806464 40%, transparent 60%);
+  }
+
+  .bg-sm-extra-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #806464 40%, #806464 65%, transparent);
+  }
+
+  .bg-sm-extra-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #806464 40%, #806464 65%);
+  }
+
+  .bg-sm-extra-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #806464 65%, #806464 40%, transparent 60%);
+  }
+
+  .bg-sm-extra-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #806464 65%, #806464 40%, transparent 60%);
+  }
+}
+@media (min-width: 768px) {
+  .bg-md-primary-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #d0b9b0 40%, #d0b9b0 65%, transparent);
+  }
+
+  .bg-md-primary-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #d0b9b0 40%, #d0b9b0 65%);
+  }
+
+  .bg-md-primary-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #d0b9b0 65%, #d0b9b0 40%, transparent 60%);
+  }
+
+  .bg-md-primary-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #d0b9b0 65%, #d0b9b0 40%, transparent 60%);
+  }
+
+  .bg-md-primary-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #d0b9b0 40%, #d0b9b0 65%, transparent);
+  }
+
+  .bg-md-primary-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #d0b9b0 40%, #d0b9b0 65%);
+  }
+
+  .bg-md-primary-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #d0b9b0 65%, #d0b9b0 40%, transparent 60%);
+  }
+
+  .bg-md-primary-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #d0b9b0 65%, #d0b9b0 40%, transparent 60%);
+  }
+
+  .bg-md-secondary-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #988d8f 40%, #988d8f 65%, transparent);
+  }
+
+  .bg-md-secondary-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #988d8f 40%, #988d8f 65%);
+  }
+
+  .bg-md-secondary-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #988d8f 65%, #988d8f 40%, transparent 60%);
+  }
+
+  .bg-md-secondary-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #988d8f 65%, #988d8f 40%, transparent 60%);
+  }
+
+  .bg-md-secondary-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #988d8f 40%, #988d8f 65%, transparent);
+  }
+
+  .bg-md-secondary-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #988d8f 40%, #988d8f 65%);
+  }
+
+  .bg-md-secondary-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #988d8f 65%, #988d8f 40%, transparent 60%);
+  }
+
+  .bg-md-secondary-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #988d8f 65%, #988d8f 40%, transparent 60%);
+  }
+
+  .bg-md-success-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #28a745 40%, #28a745 65%, transparent);
+  }
+
+  .bg-md-success-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #28a745 40%, #28a745 65%);
+  }
+
+  .bg-md-success-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #28a745 65%, #28a745 40%, transparent 60%);
+  }
+
+  .bg-md-success-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #28a745 65%, #28a745 40%, transparent 60%);
+  }
+
+  .bg-md-success-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #28a745 40%, #28a745 65%, transparent);
+  }
+
+  .bg-md-success-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #28a745 40%, #28a745 65%);
+  }
+
+  .bg-md-success-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #28a745 65%, #28a745 40%, transparent 60%);
+  }
+
+  .bg-md-success-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #28a745 65%, #28a745 40%, transparent 60%);
+  }
+
+  .bg-md-info-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #17a2b8 40%, #17a2b8 65%, transparent);
+  }
+
+  .bg-md-info-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #17a2b8 40%, #17a2b8 65%);
+  }
+
+  .bg-md-info-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #17a2b8 65%, #17a2b8 40%, transparent 60%);
+  }
+
+  .bg-md-info-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #17a2b8 65%, #17a2b8 40%, transparent 60%);
+  }
+
+  .bg-md-info-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #17a2b8 40%, #17a2b8 65%, transparent);
+  }
+
+  .bg-md-info-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #17a2b8 40%, #17a2b8 65%);
+  }
+
+  .bg-md-info-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #17a2b8 65%, #17a2b8 40%, transparent 60%);
+  }
+
+  .bg-md-info-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #17a2b8 65%, #17a2b8 40%, transparent 60%);
+  }
+
+  .bg-md-warning-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #ffc107 40%, #ffc107 65%, transparent);
+  }
+
+  .bg-md-warning-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #ffc107 40%, #ffc107 65%);
+  }
+
+  .bg-md-warning-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #ffc107 65%, #ffc107 40%, transparent 60%);
+  }
+
+  .bg-md-warning-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #ffc107 65%, #ffc107 40%, transparent 60%);
+  }
+
+  .bg-md-warning-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #ffc107 40%, #ffc107 65%, transparent);
+  }
+
+  .bg-md-warning-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #ffc107 40%, #ffc107 65%);
+  }
+
+  .bg-md-warning-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #ffc107 65%, #ffc107 40%, transparent 60%);
+  }
+
+  .bg-md-warning-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #ffc107 65%, #ffc107 40%, transparent 60%);
+  }
+
+  .bg-md-danger-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #dc3545 40%, #dc3545 65%, transparent);
+  }
+
+  .bg-md-danger-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #dc3545 40%, #dc3545 65%);
+  }
+
+  .bg-md-danger-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #dc3545 65%, #dc3545 40%, transparent 60%);
+  }
+
+  .bg-md-danger-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #dc3545 65%, #dc3545 40%, transparent 60%);
+  }
+
+  .bg-md-danger-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #dc3545 40%, #dc3545 65%, transparent);
+  }
+
+  .bg-md-danger-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #dc3545 40%, #dc3545 65%);
+  }
+
+  .bg-md-danger-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #dc3545 65%, #dc3545 40%, transparent 60%);
+  }
+
+  .bg-md-danger-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #dc3545 65%, #dc3545 40%, transparent 60%);
+  }
+
+  .bg-md-light-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #e9e0d9 40%, #e9e0d9 65%, transparent);
+  }
+
+  .bg-md-light-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #e9e0d9 40%, #e9e0d9 65%);
+  }
+
+  .bg-md-light-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #e9e0d9 65%, #e9e0d9 40%, transparent 60%);
+  }
+
+  .bg-md-light-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #e9e0d9 65%, #e9e0d9 40%, transparent 60%);
+  }
+
+  .bg-md-light-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #e9e0d9 40%, #e9e0d9 65%, transparent);
+  }
+
+  .bg-md-light-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #e9e0d9 40%, #e9e0d9 65%);
+  }
+
+  .bg-md-light-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #e9e0d9 65%, #e9e0d9 40%, transparent 60%);
+  }
+
+  .bg-md-light-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #e9e0d9 65%, #e9e0d9 40%, transparent 60%);
+  }
+
+  .bg-md-dark-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #3d3944 40%, #3d3944 65%, transparent);
+  }
+
+  .bg-md-dark-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #3d3944 40%, #3d3944 65%);
+  }
+
+  .bg-md-dark-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #3d3944 65%, #3d3944 40%, transparent 60%);
+  }
+
+  .bg-md-dark-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #3d3944 65%, #3d3944 40%, transparent 60%);
+  }
+
+  .bg-md-dark-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #3d3944 40%, #3d3944 65%, transparent);
+  }
+
+  .bg-md-dark-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #3d3944 40%, #3d3944 65%);
+  }
+
+  .bg-md-dark-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #3d3944 65%, #3d3944 40%, transparent 60%);
+  }
+
+  .bg-md-dark-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #3d3944 65%, #3d3944 40%, transparent 60%);
+  }
+
+  .bg-md-extra-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #806464 40%, #806464 65%, transparent);
+  }
+
+  .bg-md-extra-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #806464 40%, #806464 65%);
+  }
+
+  .bg-md-extra-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #806464 65%, #806464 40%, transparent 60%);
+  }
+
+  .bg-md-extra-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #806464 65%, #806464 40%, transparent 60%);
+  }
+
+  .bg-md-extra-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #806464 40%, #806464 65%, transparent);
+  }
+
+  .bg-md-extra-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #806464 40%, #806464 65%);
+  }
+
+  .bg-md-extra-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #806464 65%, #806464 40%, transparent 60%);
+  }
+
+  .bg-md-extra-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #806464 65%, #806464 40%, transparent 60%);
+  }
+}
+@media (min-width: 992px) {
+  .bg-lg-primary-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #d0b9b0 40%, #d0b9b0 65%, transparent);
+  }
+
+  .bg-lg-primary-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #d0b9b0 40%, #d0b9b0 65%);
+  }
+
+  .bg-lg-primary-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #d0b9b0 65%, #d0b9b0 40%, transparent 60%);
+  }
+
+  .bg-lg-primary-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #d0b9b0 65%, #d0b9b0 40%, transparent 60%);
+  }
+
+  .bg-lg-primary-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #d0b9b0 40%, #d0b9b0 65%, transparent);
+  }
+
+  .bg-lg-primary-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #d0b9b0 40%, #d0b9b0 65%);
+  }
+
+  .bg-lg-primary-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #d0b9b0 65%, #d0b9b0 40%, transparent 60%);
+  }
+
+  .bg-lg-primary-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #d0b9b0 65%, #d0b9b0 40%, transparent 60%);
+  }
+
+  .bg-lg-secondary-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #988d8f 40%, #988d8f 65%, transparent);
+  }
+
+  .bg-lg-secondary-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #988d8f 40%, #988d8f 65%);
+  }
+
+  .bg-lg-secondary-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #988d8f 65%, #988d8f 40%, transparent 60%);
+  }
+
+  .bg-lg-secondary-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #988d8f 65%, #988d8f 40%, transparent 60%);
+  }
+
+  .bg-lg-secondary-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #988d8f 40%, #988d8f 65%, transparent);
+  }
+
+  .bg-lg-secondary-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #988d8f 40%, #988d8f 65%);
+  }
+
+  .bg-lg-secondary-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #988d8f 65%, #988d8f 40%, transparent 60%);
+  }
+
+  .bg-lg-secondary-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #988d8f 65%, #988d8f 40%, transparent 60%);
+  }
+
+  .bg-lg-success-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #28a745 40%, #28a745 65%, transparent);
+  }
+
+  .bg-lg-success-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #28a745 40%, #28a745 65%);
+  }
+
+  .bg-lg-success-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #28a745 65%, #28a745 40%, transparent 60%);
+  }
+
+  .bg-lg-success-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #28a745 65%, #28a745 40%, transparent 60%);
+  }
+
+  .bg-lg-success-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #28a745 40%, #28a745 65%, transparent);
+  }
+
+  .bg-lg-success-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #28a745 40%, #28a745 65%);
+  }
+
+  .bg-lg-success-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #28a745 65%, #28a745 40%, transparent 60%);
+  }
+
+  .bg-lg-success-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #28a745 65%, #28a745 40%, transparent 60%);
+  }
+
+  .bg-lg-info-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #17a2b8 40%, #17a2b8 65%, transparent);
+  }
+
+  .bg-lg-info-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #17a2b8 40%, #17a2b8 65%);
+  }
+
+  .bg-lg-info-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #17a2b8 65%, #17a2b8 40%, transparent 60%);
+  }
+
+  .bg-lg-info-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #17a2b8 65%, #17a2b8 40%, transparent 60%);
+  }
+
+  .bg-lg-info-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #17a2b8 40%, #17a2b8 65%, transparent);
+  }
+
+  .bg-lg-info-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #17a2b8 40%, #17a2b8 65%);
+  }
+
+  .bg-lg-info-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #17a2b8 65%, #17a2b8 40%, transparent 60%);
+  }
+
+  .bg-lg-info-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #17a2b8 65%, #17a2b8 40%, transparent 60%);
+  }
+
+  .bg-lg-warning-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #ffc107 40%, #ffc107 65%, transparent);
+  }
+
+  .bg-lg-warning-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #ffc107 40%, #ffc107 65%);
+  }
+
+  .bg-lg-warning-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #ffc107 65%, #ffc107 40%, transparent 60%);
+  }
+
+  .bg-lg-warning-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #ffc107 65%, #ffc107 40%, transparent 60%);
+  }
+
+  .bg-lg-warning-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #ffc107 40%, #ffc107 65%, transparent);
+  }
+
+  .bg-lg-warning-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #ffc107 40%, #ffc107 65%);
+  }
+
+  .bg-lg-warning-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #ffc107 65%, #ffc107 40%, transparent 60%);
+  }
+
+  .bg-lg-warning-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #ffc107 65%, #ffc107 40%, transparent 60%);
+  }
+
+  .bg-lg-danger-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #dc3545 40%, #dc3545 65%, transparent);
+  }
+
+  .bg-lg-danger-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #dc3545 40%, #dc3545 65%);
+  }
+
+  .bg-lg-danger-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #dc3545 65%, #dc3545 40%, transparent 60%);
+  }
+
+  .bg-lg-danger-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #dc3545 65%, #dc3545 40%, transparent 60%);
+  }
+
+  .bg-lg-danger-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #dc3545 40%, #dc3545 65%, transparent);
+  }
+
+  .bg-lg-danger-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #dc3545 40%, #dc3545 65%);
+  }
+
+  .bg-lg-danger-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #dc3545 65%, #dc3545 40%, transparent 60%);
+  }
+
+  .bg-lg-danger-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #dc3545 65%, #dc3545 40%, transparent 60%);
+  }
+
+  .bg-lg-light-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #e9e0d9 40%, #e9e0d9 65%, transparent);
+  }
+
+  .bg-lg-light-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #e9e0d9 40%, #e9e0d9 65%);
+  }
+
+  .bg-lg-light-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #e9e0d9 65%, #e9e0d9 40%, transparent 60%);
+  }
+
+  .bg-lg-light-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #e9e0d9 65%, #e9e0d9 40%, transparent 60%);
+  }
+
+  .bg-lg-light-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #e9e0d9 40%, #e9e0d9 65%, transparent);
+  }
+
+  .bg-lg-light-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #e9e0d9 40%, #e9e0d9 65%);
+  }
+
+  .bg-lg-light-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #e9e0d9 65%, #e9e0d9 40%, transparent 60%);
+  }
+
+  .bg-lg-light-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #e9e0d9 65%, #e9e0d9 40%, transparent 60%);
+  }
+
+  .bg-lg-dark-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #3d3944 40%, #3d3944 65%, transparent);
+  }
+
+  .bg-lg-dark-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #3d3944 40%, #3d3944 65%);
+  }
+
+  .bg-lg-dark-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #3d3944 65%, #3d3944 40%, transparent 60%);
+  }
+
+  .bg-lg-dark-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #3d3944 65%, #3d3944 40%, transparent 60%);
+  }
+
+  .bg-lg-dark-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #3d3944 40%, #3d3944 65%, transparent);
+  }
+
+  .bg-lg-dark-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #3d3944 40%, #3d3944 65%);
+  }
+
+  .bg-lg-dark-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #3d3944 65%, #3d3944 40%, transparent 60%);
+  }
+
+  .bg-lg-dark-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #3d3944 65%, #3d3944 40%, transparent 60%);
+  }
+
+  .bg-lg-extra-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #806464 40%, #806464 65%, transparent);
+  }
+
+  .bg-lg-extra-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #806464 40%, #806464 65%);
+  }
+
+  .bg-lg-extra-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #806464 65%, #806464 40%, transparent 60%);
+  }
+
+  .bg-lg-extra-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #806464 65%, #806464 40%, transparent 60%);
+  }
+
+  .bg-lg-extra-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #806464 40%, #806464 65%, transparent);
+  }
+
+  .bg-lg-extra-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #806464 40%, #806464 65%);
+  }
+
+  .bg-lg-extra-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #806464 65%, #806464 40%, transparent 60%);
+  }
+
+  .bg-lg-extra-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #806464 65%, #806464 40%, transparent 60%);
+  }
+}
+@media (min-width: 1200px) {
+  .bg-xl-primary-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #d0b9b0 40%, #d0b9b0 65%, transparent);
+  }
+
+  .bg-xl-primary-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #d0b9b0 40%, #d0b9b0 65%);
+  }
+
+  .bg-xl-primary-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #d0b9b0 65%, #d0b9b0 40%, transparent 60%);
+  }
+
+  .bg-xl-primary-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #d0b9b0 65%, #d0b9b0 40%, transparent 60%);
+  }
+
+  .bg-xl-primary-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #d0b9b0 40%, #d0b9b0 65%, transparent);
+  }
+
+  .bg-xl-primary-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #d0b9b0 40%, #d0b9b0 65%);
+  }
+
+  .bg-xl-primary-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #d0b9b0 65%, #d0b9b0 40%, transparent 60%);
+  }
+
+  .bg-xl-primary-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #d0b9b0 65%, #d0b9b0 40%, transparent 60%);
+  }
+
+  .bg-xl-secondary-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #988d8f 40%, #988d8f 65%, transparent);
+  }
+
+  .bg-xl-secondary-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #988d8f 40%, #988d8f 65%);
+  }
+
+  .bg-xl-secondary-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #988d8f 65%, #988d8f 40%, transparent 60%);
+  }
+
+  .bg-xl-secondary-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #988d8f 65%, #988d8f 40%, transparent 60%);
+  }
+
+  .bg-xl-secondary-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #988d8f 40%, #988d8f 65%, transparent);
+  }
+
+  .bg-xl-secondary-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #988d8f 40%, #988d8f 65%);
+  }
+
+  .bg-xl-secondary-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #988d8f 65%, #988d8f 40%, transparent 60%);
+  }
+
+  .bg-xl-secondary-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #988d8f 65%, #988d8f 40%, transparent 60%);
+  }
+
+  .bg-xl-success-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #28a745 40%, #28a745 65%, transparent);
+  }
+
+  .bg-xl-success-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #28a745 40%, #28a745 65%);
+  }
+
+  .bg-xl-success-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #28a745 65%, #28a745 40%, transparent 60%);
+  }
+
+  .bg-xl-success-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #28a745 65%, #28a745 40%, transparent 60%);
+  }
+
+  .bg-xl-success-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #28a745 40%, #28a745 65%, transparent);
+  }
+
+  .bg-xl-success-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #28a745 40%, #28a745 65%);
+  }
+
+  .bg-xl-success-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #28a745 65%, #28a745 40%, transparent 60%);
+  }
+
+  .bg-xl-success-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #28a745 65%, #28a745 40%, transparent 60%);
+  }
+
+  .bg-xl-info-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #17a2b8 40%, #17a2b8 65%, transparent);
+  }
+
+  .bg-xl-info-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #17a2b8 40%, #17a2b8 65%);
+  }
+
+  .bg-xl-info-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #17a2b8 65%, #17a2b8 40%, transparent 60%);
+  }
+
+  .bg-xl-info-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #17a2b8 65%, #17a2b8 40%, transparent 60%);
+  }
+
+  .bg-xl-info-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #17a2b8 40%, #17a2b8 65%, transparent);
+  }
+
+  .bg-xl-info-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #17a2b8 40%, #17a2b8 65%);
+  }
+
+  .bg-xl-info-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #17a2b8 65%, #17a2b8 40%, transparent 60%);
+  }
+
+  .bg-xl-info-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #17a2b8 65%, #17a2b8 40%, transparent 60%);
+  }
+
+  .bg-xl-warning-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #ffc107 40%, #ffc107 65%, transparent);
+  }
+
+  .bg-xl-warning-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #ffc107 40%, #ffc107 65%);
+  }
+
+  .bg-xl-warning-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #ffc107 65%, #ffc107 40%, transparent 60%);
+  }
+
+  .bg-xl-warning-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #ffc107 65%, #ffc107 40%, transparent 60%);
+  }
+
+  .bg-xl-warning-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #ffc107 40%, #ffc107 65%, transparent);
+  }
+
+  .bg-xl-warning-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #ffc107 40%, #ffc107 65%);
+  }
+
+  .bg-xl-warning-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #ffc107 65%, #ffc107 40%, transparent 60%);
+  }
+
+  .bg-xl-warning-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #ffc107 65%, #ffc107 40%, transparent 60%);
+  }
+
+  .bg-xl-danger-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #dc3545 40%, #dc3545 65%, transparent);
+  }
+
+  .bg-xl-danger-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #dc3545 40%, #dc3545 65%);
+  }
+
+  .bg-xl-danger-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #dc3545 65%, #dc3545 40%, transparent 60%);
+  }
+
+  .bg-xl-danger-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #dc3545 65%, #dc3545 40%, transparent 60%);
+  }
+
+  .bg-xl-danger-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #dc3545 40%, #dc3545 65%, transparent);
+  }
+
+  .bg-xl-danger-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #dc3545 40%, #dc3545 65%);
+  }
+
+  .bg-xl-danger-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #dc3545 65%, #dc3545 40%, transparent 60%);
+  }
+
+  .bg-xl-danger-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #dc3545 65%, #dc3545 40%, transparent 60%);
+  }
+
+  .bg-xl-light-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #e9e0d9 40%, #e9e0d9 65%, transparent);
+  }
+
+  .bg-xl-light-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #e9e0d9 40%, #e9e0d9 65%);
+  }
+
+  .bg-xl-light-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #e9e0d9 65%, #e9e0d9 40%, transparent 60%);
+  }
+
+  .bg-xl-light-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #e9e0d9 65%, #e9e0d9 40%, transparent 60%);
+  }
+
+  .bg-xl-light-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #e9e0d9 40%, #e9e0d9 65%, transparent);
+  }
+
+  .bg-xl-light-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #e9e0d9 40%, #e9e0d9 65%);
+  }
+
+  .bg-xl-light-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #e9e0d9 65%, #e9e0d9 40%, transparent 60%);
+  }
+
+  .bg-xl-light-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #e9e0d9 65%, #e9e0d9 40%, transparent 60%);
+  }
+
+  .bg-xl-dark-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #3d3944 40%, #3d3944 65%, transparent);
+  }
+
+  .bg-xl-dark-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #3d3944 40%, #3d3944 65%);
+  }
+
+  .bg-xl-dark-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #3d3944 65%, #3d3944 40%, transparent 60%);
+  }
+
+  .bg-xl-dark-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #3d3944 65%, #3d3944 40%, transparent 60%);
+  }
+
+  .bg-xl-dark-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #3d3944 40%, #3d3944 65%, transparent);
+  }
+
+  .bg-xl-dark-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #3d3944 40%, #3d3944 65%);
+  }
+
+  .bg-xl-dark-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #3d3944 65%, #3d3944 40%, transparent 60%);
+  }
+
+  .bg-xl-dark-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #3d3944 65%, #3d3944 40%, transparent 60%);
+  }
+
+  .bg-xl-extra-sharp-left {
+    background: linear-gradient(30deg, transparent 60%, #806464 40%, #806464 65%, transparent);
+  }
+
+  .bg-xl-extra-sharp-left-nofade {
+    background: linear-gradient(30deg, transparent 60%, #806464 40%, #806464 65%);
+  }
+
+  .bg-xl-extra-sharp-left-inverted {
+    background: linear-gradient(-30deg, transparent, #806464 65%, #806464 40%, transparent 60%);
+  }
+
+  .bg-xl-extra-sharp-left-inverted-nofade {
+    background: linear-gradient(-30deg, #806464 65%, #806464 40%, transparent 60%);
+  }
+
+  .bg-xl-extra-sharp-right {
+    background: linear-gradient(-30deg, transparent 60%, #806464 40%, #806464 65%, transparent);
+  }
+
+  .bg-xl-extra-sharp-right-nofade {
+    background: linear-gradient(-30deg, transparent 60%, #806464 40%, #806464 65%);
+  }
+
+  .bg-xl-extra-sharp-right-inverted {
+    background: linear-gradient(30deg, transparent, #806464 65%, #806464 40%, transparent 60%);
+  }
+
+  .bg-xl-extra-sharp-right-inverted-nofade {
+    background: linear-gradient(30deg, #806464 65%, #806464 40%, transparent 60%);
+  }
+}
 .strk-color-primary {
   stroke: #d0b9b0;
 }
