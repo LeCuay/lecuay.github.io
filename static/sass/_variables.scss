@@ -62,6 +62,17 @@ $stroke-widths: () !default;
   );
 }
 
+$sizes: (
+  "25vh": 25vh,
+  "50vh": 50vh,
+  "75vh": 75vh,
+  "100vh": 100vh,
+  "25vw": 25vw,
+  "50vw": 50vw,
+  "75vw": 75vw,
+  "100vw": 100vw
+);
+
 // Animations
 $cursor-color: $dim-gray;
 $typing-steps: 40;
