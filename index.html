@@ -53,11 +53,32 @@
     <!-- End Nav -->
 
     <header
-      class="masterhead d-flex flex-column align-items-stretch justify-content-start px-4 pt-4"
+      class="masterhead d-flex flex-column align-items-stretch justify-content-start px-4 pt-4 pt-md-0"
     >
-      <h1 style="opacity: 90%" class="display-1 bg-dark trsharp px-3 py-3">
-        Dev, Photographer, Person.
-      </h1>
+      <div class="d-block d-md-none">
+        <div
+          style="
+            background: linear-gradient(
+              45deg,
+              rgb(33, 37, 41, 0.9) 80%,
+              transparent 20%
+            );
+          "
+        >
+          <h1 class="display-1 px-3 py-3">
+            Dev,<br />
+            Photographer,<br />
+            Person.
+          </h1>
+        </div>
+      </div>
+      <div class="d-none d-md-block">
+        <h1 class="display-1 px-3 py-3">
+          Dev,<br />
+          Photographer,<br />
+          Person.
+        </h1>
+      </div>
     </header>
 
     <main></main>
