@@ -13,49 +13,51 @@
     <title>Cuay's Little Garden</title>
   </head>
   <body>
-    <header class="masterhead">
-      <!-- Nav -->
-      <nav
-        class="navbar navbar-expand-lg navbar-dark bg-transparent px-lg-3 px-xl-4"
-      >
-        <div class="container-fluid">
-          <a href="#" class="navbar-brand">
-            <img
-              src="./static/img/LogoSimpleWhite.png"
-              alt="Logo LeCuay"
-              width="50"
-              height="50"
-              class="d-inline-block align-middle"
-            />
-            LeCuay
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarLeCuayContent"
-            aria-controls="navbarLeCuayContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarLeCuayContent">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a
-                  href="index.html"
-                  aria-current="page"
-                  class="nav-link active"
-                >
-                  Home
-                </a>
-              </li>
-            </ul>
-          </div>
+    <!-- Nav -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark px-lg-3 px-xl-4 sticky-top"
+    >
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">
+          <img
+            src="./static/img/LogoSimpleWhite.png"
+            alt="Logo LeCuay"
+            width="50"
+            height="50"
+            class="d-inline-block align-middle"
+          />
+          LeCuay
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarLeCuayContent"
+          aria-controls="navbarLeCuayContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarLeCuayContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" aria-current="page" class="nav-link active">
+                Home
+              </a>
+            </li>
+          </ul>
         </div>
-      </nav>
-      <!-- End Nav -->
+      </div>
+    </nav>
+    <!-- End Nav -->
+
+    <header
+      class="masterhead d-flex flex-column align-items-stretch justify-content-start px-4 pt-4"
+    >
+      <h1 style="opacity: 90%" class="display-1 bg-dark trsharp px-3 py-3">
+        Dev, Photographer, Person.
+      </h1>
     </header>
 
     <main></main>
@@ -67,5 +69,8 @@
       integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Utils -->
+    <script src="./static/js/navUtils.js"></script>
   </body>
 </html>

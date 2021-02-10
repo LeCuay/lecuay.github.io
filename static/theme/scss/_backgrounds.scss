@@ -1,0 +1,21 @@
+@import "../../bootstrap/scss/functions";
+@import "../../bootstrap/scss/variables";
+
+@each $color, $value in $theme-colors {
+  .bg-#{$color}.trsharp {
+    background: linear-gradient(45deg, $value 80%, transparent 20%) !important;
+  }
+  .bg-#{$color}.brsharp {
+    background: linear-gradient(135deg, $value 80%, transparent 20%) !important;
+  }
+  .bg-#{$color}.tlsharp {
+    background: linear-gradient(-45deg, $value 80%, transparent 20%) !important;
+  }
+  .bg-#{$color}.blsharp {
+    background: linear-gradient(
+      -135deg,
+      $value 80%,
+      transparent 20%
+    ) !important;
+  }
+}
