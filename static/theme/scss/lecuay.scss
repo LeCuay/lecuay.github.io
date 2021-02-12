@@ -2,3 +2,6 @@
 @import "./backgrounds";
 @import "./masterhead";
 @import "../../bootstrap/scss/bootstrap";
+html {
+  scroll-behavior: smooth;
+}

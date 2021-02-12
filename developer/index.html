@@ -6,11 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Favicon -->
-    <link
-      rel="shortcut icon"
-      href="/static/img/favicon.ico"
-      type="image/x-icon"
-    />
+    <link rel="icon" href="/static/img/LogoSimpleWhite.png" type="image/png" />
     <!-- Bootstrap -->
     <link rel="stylesheet" href="/static/theme/css/lecuay.css" />
     <!-- Font Awesome -->
@@ -22,15 +18,6 @@
     />
 
     <title>Cuay's Little Garden</title>
-    <style>
-      .custom-trshap {
-        background: linear-gradient(
-          45deg,
-          rgb(33, 37, 41, 0.9) 80%,
-          transparent 20%
-        );
-      }
-    </style>
   </head>
   <body>
     <!-- Nav -->
@@ -62,10 +49,10 @@
         <div class="collapse navbar-collapse" id="navbarLeCuayContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="/" aria-current="page" class="nav-link active">Home</a>
+              <a href="/" aria-current="page" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="/developer/" aria-current="page" class="nav-link">
+              <a href="/developer/" aria-current="page" class="nav-link active">
                 Code Developer
               </a>
             </li>
@@ -80,70 +67,25 @@
     </nav>
     <!-- End Nav -->
 
-    <header class="masterhead container-fluid px-4 pt-5 mb-sm-5 min-vh-100">
-      <div class="custom-trshap">
-        <h1 class="display-1 px-3 py-3">
-          Dev,<br />
-          Photographer,<br />
-          Person.
-        </h1>
-      </div>
-      <a
-        style="bottom: 2vh"
-        class="d-sm-none btn btn-outline-light btn-lg position-absolute"
-        href="#about"
-      >
-        <i class="fa-2x fas fa-arrow-down"></i>
-      </a>
-    </header>
-
-    <main class="container pb-5">
-      <h2 class="text-center fw-lighter" id="about">
-        What would you like to know?
-      </h2>
-      <hr class="mx-5" />
-      <div class="row justify-content-around">
-        <div class="col-12 col-lg-6 col-xl-4">
-          <a
-            href="/developer/"
-            class="btn btn-lg bg-dark btn-complete brsharp w-100"
-          >
-            <i class="fas fa-laptop-code"></i><br />
-            Developer
-          </a>
-        </div>
-        <div class="col-12 col-lg-6 col-xl-4 mt-4 mt-lg-0">
-          <a
-            href="/photography/"
-            class="btn btn-lg bg-dark btn-complete tlsharp w-100"
-          >
-            <i class="fas fa-camera"></i><br />
-            Photographer
-          </a>
-        </div>
-        <div class="col-12 col-lg-6 col-xl-4 mt-4 mt-xl-0">
-          <a
-            href="/person/"
-            class="btn btn-lg bg-dark btn-complete trsharp w-100"
-          >
-            <i class="fas fa-video"></i><br />
-            Vlogger
-          </a>
-        </div>
+    <main>
+      <div class="row">
+        <section class="col bg-dark blsharp">
+          <h3 class="text-info ms-5">Developer</h3>
+          <p class="text-end ms-5 pe-2">
+            I write code since I was 16.<br />
+            I've tried everything. From programming languages (such as
+            <strong>Java</strong>, <strong>Python</strong>,
+            <strong>PHP</strong>...) to relational and non relational databases
+            (<strong>MongoDB</strong>, <strong>PostgreSQL</strong>,
+            <strong>MySQL</strong>, <strong>Oracle</strong>...).<br />
+          </p>
+          <p class="ms-5">
+            This is <em>my hobby, my pasion, my job.</em><br />
+            And when you combine those you get amazing results.
+          </p>
+        </section>
       </div>
     </main>
-    <footer class="container-fluid bg-primary py-3">
-      <div class="row align-items-center">
-        <div class="col-6">
-          <p class="text-end mb-0">LeCuay &copy;</p>
-        </div>
-        <div class="col-6">
-          <a href="mailto:suso.becerra98@gmail.com" class="text-light">
-            <i class="fas fa-mail-bulk"></i>
-          </a>
-        </div>
-      </div>
-    </footer>
 
     <!-- Bootstrap Bundle with Popper -->
     <script
@@ -157,8 +99,5 @@
       integrity="sha512-UwcC/iaz5ziHX7V6LjSKaXgCuRRqbTp1QHpbOJ4l1nw2/boCfZ2KlFIqBUA/uRVF0onbREnY9do8rM/uT/ilqw=="
       crossorigin="anonymous"
     ></script>
-
-    <!-- Utils -->
-    <script src="./static/js/utils.js"></script>
   </body>
 </html>
