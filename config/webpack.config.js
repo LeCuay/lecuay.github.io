@@ -1,14 +1,21 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-BASE_PATH = path.resolve(__dirname, '../..');
-PUBLIC_PATH = path.join(BASE_PATH, 'public/');
+BASE_PATH = path.resolve(__dirname, '../');
+PUBLIC_PATH = path.join(BASE_PATH, 'docs/');
 
 module.exports = [
   {
     name: 'main',
     entry: {
       main: './src/index.tsx',
+    },
+    output: {
+      path: path.join(PUBLIC_PATH, 'vendor/'),
+      filename: '[name].bundle.js',
+      publicPath: '/vendor/',
+      clean: true,
     },
     module: {
       rules: [
@@ -19,41 +26,17 @@ module.exports = [
         },
         {
           test: /\.(scss)$/,
-          use: [
-            {
-              loader: 'style-loader', // Inyecta el CSS en la página
-            },
-            {
-              loader: 'css-loader', // Traduce CSS en módulos CommonJS
-            },
-            // FIXME: npm audit resolves vulnerable packages
-            // {
-            //   loader: 'postcss-loader', // Accions PostCSS
-            //   options: {
-            //     postcssOptions: {
-            //       plugins: () => [require('precss'), require('autoprefixer')],
-            //     },
-            //   },
-            // },
-            {
-              loader: 'sass-loader', // Compila Sass en CSS
-            },
-          ],
+          use: ['style-loader', 'css-loader', 'sass-loader'],
         },
       ],
     },
     resolve: {
-      extensions: ['.tsx', '.js', '.scss'],
+      extensions: ['.ts', '.tsx', '.js', '.jsx', '.scss'],
     },
   },
   {
     name: 'dev',
     mode: 'development',
-    output: {
-      path: path.join(BASE_PATH, 'dist/'),
-      filename: '[name].bundle.js',
-      publicPath: '/dist/',
-    },
     devtool: 'eval-source-map',
     devServer: {
       static: {
@@ -64,11 +47,19 @@ module.exports = [
   {
     name: 'prod',
     mode: 'production',
-    output: {
-      path: path.join(PUBLIC_PATH, 'vendor/'),
-      filename: '[name].bundle.js',
-      publicPath: '/vendor/',
-    },
     devtool: false,
+    module: {
+      rules: [
+        {
+          test: /\.(scss)$/,
+          use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+        },
+      ],
+    },
+    plugins: [
+      new MiniCssExtractPlugin({
+        filename: 'lecuay.css',
+      }),
+    ],
   },
 ];
