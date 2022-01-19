@@ -1,0 +1,32 @@
+@import '~bootstrap/scss/mixins.scss';
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+
+  animation-name: typing;
+  animation-duration: 2.75s;
+  animation-timing-function: steps(40, end);
+}
+
+.typewriter::after {
+  content: '|';
+  animation-name: cursor-blink;
+  animation-duration: 0.75s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes cursor-blink {
+  to {
+    opacity: 0;
+  }
+}

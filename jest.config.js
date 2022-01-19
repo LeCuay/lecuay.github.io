@@ -1,6 +1,7 @@
 module.exports = {
   moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx', 'scss'],
   moduleNameMapper: {
-    '^.+\\.(css|less|scss)$': 'babel-jest',
+    '\\.(jpg|jpeg)$': '<rootDir>/src/__mocks__/fileMock.js',
+    '\\.(css|less)$': '<rootDir>/src/__mocks__/fileMock.js',
   },
 };

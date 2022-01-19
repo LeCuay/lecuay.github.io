@@ -1,14 +1,37 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+
+import BGImage from 'static/img/background.jpg';
+
+const HeaderStyle: CSSProperties = {
+  height: '100vh',
+  width: '100vw',
+  backgroundImage: `url(${BGImage})`,
+  backgroundRepeat: 'no-repeat',
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+};
 
 const Header = () => {
   return (
-    <header>
-      <h1 className="text-center">
-        Cuay&rsquo;s Little Garden
-        <br />
-        <small className="small text-muted">Work in progress</small>
-      </h1>
-    </header>
+    <Container
+      as="header"
+      fluid={true}
+      className="px-0 mx-0"
+      style={HeaderStyle}
+    >
+      <Row className="g-0 align-items-center h-100">
+        <div
+          className="d-flex justify-content-center"
+          style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}
+        >
+          <h1 className="typewriter text-center text-light py-3">
+            Cuay&#39;s Little Garden
+          </h1>
+        </div>
+      </Row>
+    </Container>
   );
 };
 

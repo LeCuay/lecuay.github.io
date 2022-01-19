@@ -3,6 +3,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 BASE_PATH = path.resolve(__dirname, '../');
+SOURCE_PATH = path.join(BASE_PATH, 'src/');
 PUBLIC_PATH = path.join(BASE_PATH, 'docs/');
 
 module.exports = [
@@ -17,6 +18,11 @@ module.exports = [
       publicPath: '/vendor/',
       clean: true,
     },
+    plugins: [
+      new MiniCssExtractPlugin({
+        filename: 'css/littlegarden.css',
+      }),
+    ],
     module: {
       rules: [
         {
@@ -26,12 +32,26 @@ module.exports = [
         },
         {
           test: /\.(scss)$/,
-          use: ['style-loader', 'css-loader', 'sass-loader'],
+          use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+        },
+        {
+          test: /\.(png|svg|jpg|jpeg|gif)$/i,
+          type: 'asset/resource',
+          generator: {
+            filename: 'img/[name][ext][query]',
+          },
         },
       ],
     },
     resolve: {
       extensions: ['.ts', '.tsx', '.js', '.jsx', '.scss'],
+      alias: {
+        components: path.join(SOURCE_PATH, 'components/'),
+        static: path.join(SOURCE_PATH, 'static/'),
+      },
+    },
+    performance: {
+      assetFilter: (assetFilename) => !/\.(map|css)$/.test(assetFilename),
     },
   },
   {
@@ -43,23 +63,11 @@ module.exports = [
         directory: PUBLIC_PATH,
       },
     },
+    optimization: { moduleIds: 'named' },
   },
   {
     name: 'prod',
     mode: 'production',
     devtool: false,
-    module: {
-      rules: [
-        {
-          test: /\.(scss)$/,
-          use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
-        },
-      ],
-    },
-    plugins: [
-      new MiniCssExtractPlugin({
-        filename: 'lecuay.css',
-      }),
-    ],
   },
 ];

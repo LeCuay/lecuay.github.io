@@ -1,14 +1,16 @@
-import React, { Suspense } from 'react';
+import React, { lazy, Suspense } from 'react';
 
 import 'bootstrap';
 import '../scss/littlegarden.scss';
 
-const Header = React.lazy(() => import('./Header'));
+import Loader from './Loader';
+
+const Header = lazy(() => import('components/Header'));
 
 const Main: React.FC = () => {
   return (
     <>
-      <Suspense fallback={<p>Cargando...</p>}>
+      <Suspense fallback={<Loader />}>
         <Header />
       </Suspense>
       <main></main>
