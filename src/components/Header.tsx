@@ -1,4 +1,4 @@
-import React, { CSSProperties } from 'react';
+import React, { CSSProperties, FC } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
@@ -6,14 +6,13 @@ import BGImage from 'static/img/background.jpg';
 
 const HeaderStyle: CSSProperties = {
   height: '100vh',
-  width: '100vw',
   backgroundImage: `url(${BGImage})`,
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
   backgroundPosition: 'center',
 };
 
-const Header = () => {
+const Header: FC = () => {
   return (
     <Container
       as="header"

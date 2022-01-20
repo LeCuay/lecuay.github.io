@@ -14,9 +14,10 @@ module.exports = [
     },
     output: {
       path: path.join(PUBLIC_PATH, 'vendor/'),
-      filename: '[name].bundle.js',
+      filename: 'littlegarden.bundle.js',
       publicPath: '/vendor/',
       clean: true,
+      chunkFilename: '[name].[contenthash:8].bundle.js',
     },
     plugins: [
       new MiniCssExtractPlugin({
@@ -51,7 +52,7 @@ module.exports = [
       },
     },
     performance: {
-      assetFilter: (assetFilename) => !/\.(map|css)$/.test(assetFilename),
+      assetFilter: (assetFilename) => !/\.(map|css|png)$/.test(assetFilename),
     },
   },
   {

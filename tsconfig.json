@@ -3,7 +3,7 @@
     "target": "ES3",
     "lib": ["DOM", "ES2020"],
     "jsx": "react",
-    "module": "commonjs",
+    "module": "ESNext",
     "moduleResolution": "node",
     "sourceMap": true,
     "outDir": "./vendor/",

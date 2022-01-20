@@ -1,22 +1,32 @@
-import React, { lazy, Suspense } from 'react';
+import React, { FC, Fragment, Suspense, lazy } from 'react';
 
 import 'bootstrap';
 import '../scss/littlegarden.scss';
 
 import Loader from './Loader';
 
-const Header = lazy(() => import('components/Header'));
+const Header: FC = lazy(
+  () => import(/* webpackChunkName: "header" */ 'components/Header'),
+);
+const NavMenu: FC = lazy(
+  () => import(/* webpackChunkName: "navmenu" */ 'components/NavMenu'),
+);
+const Main: FC = lazy(
+  /* webpackChunkName: "main" */ () => import('components/Main'),
+);
 
-const Main: React.FC = () => {
+const App: FC = () => {
   return (
-    <>
-      <Suspense fallback={<Loader />}>
+    <Fragment>
+      <Suspense fallback={<Loader text="Cargando cabecera..." />}>
         <Header />
+        <NavMenu />
       </Suspense>
-      <main></main>
-      <footer></footer>
-    </>
+      <Suspense fallback={<Loader text="Cargando contenido..." />}>
+        <Main />
+      </Suspense>
+    </Fragment>
   );
 };
 
-export default Main;
+export default App;

@@ -2,6 +2,10 @@ $seal-brown: #452111ff;
 $pale-silver: #d9cbc7ff;
 $liver-dogs: #b36837ff;
 
-$body-bg: $pale-silver;
+$primary: $liver-dogs;
+$secondary: $seal-brown;
+$light: $pale-silver;
+
+$body-bg: $light;
 
 @import '~bootstrap/scss/variables.scss';
