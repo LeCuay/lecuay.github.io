@@ -26,6 +26,7 @@ const NavMenu: FC = () => {
         >
           <Nav activeKey="/">
             <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/#about">Sobre mí</Nav.Link>
             <NavDropdown title="Desarrollador" id="developerDropdown">
               <NavDropdown.Item disabled={true} href="/developer/projects">
                 Proyectos
@@ -42,7 +43,6 @@ const NavMenu: FC = () => {
                 Series
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/#about">Sobre mí</Nav.Link>
             <Nav.Link href="/#contact">Contacto</Nav.Link>
           </Nav>
         </Navbar.Collapse>
