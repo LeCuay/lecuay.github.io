@@ -14,12 +14,17 @@ function drawChart() {
   var options = {
     title: "¿Hubo rol?",
     height: 350,
-    // noDataPattern: {
-    //   backgroundColor: "black",
-    //   color: "lightgrey",
-    // },
+    width: "100%",
     calendar: {
-      cellSize: 16,
+      underYearSpace: 10,
+      yearLabel: {
+        fontName: 'Sans-serif',
+        fontSize: 32,
+        color: 'black',
+        bold: true,
+        italic: true
+      },
+      cellSize: window.innerWidth > 960 ? 16 : 12,
       dayOfWeekLabel: {
         fontName: "Sans-serif",
         fontSize: 12,

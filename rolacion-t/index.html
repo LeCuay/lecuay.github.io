@@ -1,10 +1,103 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cuay's Little Garden</title>
+
+    <!-- General Meta -->
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="/static/media/img/space-cowboy.jpg"
+    />
+    <link rel="canonical" href="https://lecuay.github.io/" />
+    <meta name="publisher" content="LeCuay" />
+    <meta name="copyright" content="LeCuay" />
+    <meta
+      itemprop="name"
+      content="Portofilio - LeCuay / Programador &amp; Escritor."
+    />
+    <meta
+      itemprop="description"
+      content="Portfolio &amp; Blog de LeCuay; desarrollador, escritor y creador de contenido."
+    />
+    <meta
+      itemprop="image"
+      content="https://lecuay.github.io/static/media/img/space-cowboy.jpg"
+    />
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:title" content="Cuay's Little Garden" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lecuay.github.io/" />
+    <meta
+      property="og:image"
+      content="https://lecuay.github.io/static/media/img/space-cowboy.jpg"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://lecuay.github.io/static/media/img/space-cowboy.jpg"
+    />
+    <meta
+      property="og:image:alt"
+      content="Portfolio Personal... y Noodle (Gorillaz)"
+    />
+    <meta property="og:description" content="Personal Portfolio" />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="/static/css/theme.css" />
+  </head>
+  <body>
+    <main>
+      <!-- Rolacion't -->
+      <section id="rolacion-t" class="min-vh-100">
+        <h2 class="text-center font-weight-lighter">
+          Estadísticas de las partidas de rol
+        </h2>
+        <hr />
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="d-flex" id="calendar_basic"></div>
+          </div>
+        </div>
+        <div class="row justify-content-around">
+          <div
+            class="col-12 col-lg-6 d-lg-flex justify-content-center"
+          >
+            <div id="donutchart_2024"></div>
+          </div>
+          <div
+            class="col-12 col-lg-6 d-lg-flex justify-content-center"
+          >
+            <div id="donutchart_2023"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Bootstrap JS -->
     <script
-      type="text/javascript"
-      src="https://www.gstatic.com/charts/loader.js"
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
     ></script>
-    <script type="text/javascript">
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Charts -->
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script>
       const rolDays = [
         [new Date(2023, 9, 1), 5],
         [new Date(2023, 9, 8), 5],
@@ -59,13 +152,7 @@
         [new Date(2024, 8, 8), 0],
       ];
     </script>
-  </head>
-  <body>
-    <div id="calendar_basic" style="width: 900px; height: 350px"></div>
-    <div id="donutchart_2024" style="width: 900px; height: 500px"></div>
-    <div id="donutchart_2023" style="width: 900px; height: 500px"></div>
-
-    <script src="./js/dateChart.js"></script>
-    <script src="./js/donutChart.js"></script>
+    <script src="../static/js/dateChart.js"></script>
+    <script src="../static/js/donutChart.js"></script>
   </body>
 </html>
