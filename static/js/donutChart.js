@@ -1,12 +1,13 @@
 google.charts.load("current", { packages: ["corechart"] });
-google.charts.setOnLoadCallback(() => drawChart(2024));
-google.charts.setOnLoadCallback(() => drawChart(2023));
+google.charts.setOnLoadCallback(() => drawDonut(2025));
+google.charts.setOnLoadCallback(() => drawDonut(2024));
+google.charts.setOnLoadCallback(() => drawDonut(2023));
 
 /**
  *
  * @param {number} year El año por el que filtrar.
  */
-function drawChart(year) {
+function drawDonut(year) {
   var data = google.visualization.arrayToDataTable([
     ["¿Hubo rol?", "Porcentaje de días"],
     [

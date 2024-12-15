@@ -1,14 +1,20 @@
 google.charts.load("current", { packages: ["calendar"] });
-google.charts.setOnLoadCallback(drawChart);
+google.charts.setOnLoadCallback(() => drawCalendar(2025));
+google.charts.setOnLoadCallback(() => drawCalendar(2024));
+google.charts.setOnLoadCallback(() => drawCalendar(2023));
 
-function drawChart() {
+/**
+ *
+ * @param {number} year El año por el que filtrar.
+ */
+function drawCalendar(year) {
   var dataTable = new google.visualization.DataTable();
   dataTable.addColumn({ type: "date", id: "Fecha" });
   dataTable.addColumn({ type: "number", id: "Horas" });
-  dataTable.addRows(rolDays);
+  dataTable.addRows(rolDays.filter(([date, _hours]) => date.getFullYear() === year));
 
   var chart = new google.visualization.Calendar(
-    document.getElementById("calendar_basic")
+    document.getElementById(`calendar_${year}`)
   );
 
   /**
