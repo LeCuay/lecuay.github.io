@@ -11,7 +11,7 @@ function drawCalendar(year) {
   var dataTable = new google.visualization.DataTable();
   dataTable.addColumn({ type: "date", id: "Fecha" });
   dataTable.addColumn({ type: "number", id: "Horas" });
-  dataTable.addRows(rolDays.filter(([date, _hours]) => date.getFullYear() === year));
+  dataTable.addRows(rolDays.filter(([date, _hours]) => date.getFullYear() === year).map(([date, hours]) => [date, hours]));
 
   var chart = new google.visualization.Calendar(
     document.getElementById(`calendar_${year}`)
