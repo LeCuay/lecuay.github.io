@@ -15,7 +15,7 @@ function blame(year) {
 
   const dataTable = google.visualization.arrayToDataTable([
     ["¿Quién faltó?", "¿Cuántas veces?", { role: "style" }],
-    ...blameData,
+    ...[...blameData, ["La vida", rolDays.filter(([date, hours, personName]) => date.getFullYear() === year && hours === 0 && !personName).length, "lightgrey"]],
   ]);
 
   const options = {
