@@ -11,18 +11,18 @@ function drawDonut(year) {
   var data = google.visualization.arrayToDataTable([
     ["¿Hubo rol?", "Porcentaje de días"],
     [
-      "Más de 3 horas",
+      "4 horas o más",
       rolDays.filter(
-        ([date, hours]) => date.getFullYear() === year && hours > 3
+        ([date, hours]) => date.getFullYear() === year && hours >= 4
       ).length,
     ],
     [
-      "3 horas o menos",
+      "menos de 4 horas",
       rolDays.filter(
         ([date, hours]) =>
           date.getFullYear() === year &&
           date.getDay() === 0 &&
-          hours <= 3 &&
+          hours < 4 &&
           hours !== 0
       ).length,
     ],
