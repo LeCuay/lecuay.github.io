@@ -10,14 +10,14 @@ function blame(year) {
     const count = rolDays.filter(
       /**
        *
-       * @param {[Date, number, string | Array<string>]} param0 - The date, hours played and person that missed
+       * @param {[Date, number, string | Array<string> | undefined]} param0 - The date, hours played and person that missed
        * @returns {boolean}
        */
       ([date, hours, personName]) => {
         if (typeof personName === "string") {
           personName = [personName];
         }
-        return date.getFullYear() === year && hours === 0 && personName.includes(person)
+        return date.getFullYear() === year && hours === 0 && personName?.includes(person)
       }
     ).length;
     return [person, count, colors[index]];
