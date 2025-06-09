@@ -6,9 +6,19 @@ function blame(year) {
   const colors = ["lightgrey", "lightgreen", "darkred", "#ffcc00", "lightblue"];
 
   const blameData = persons.map((person, index) => {
+    /** @type {number} */
     const count = rolDays.filter(
-      ([date, hours, personName]) =>
-        date.getFullYear() === year && hours === 0 && personName === person
+      /**
+       *
+       * @param {[Date, number, string | Array<string>]} param0 - The date, hours played and person that missed
+       * @returns {boolean}
+       */
+      ([date, hours, personName]) => {
+        if (typeof personName === "string") {
+          personName = [personName];
+        }
+        return date.getFullYear() === year && hours === 0 && personName.includes(person)
+      }
     ).length;
     return [person, count, colors[index]];
   });
