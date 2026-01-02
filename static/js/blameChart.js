@@ -1,4 +1,5 @@
 google.charts.load('current', { packages: ['corechart'] });
+google.charts.setOnLoadCallback(() => blame(2026));
 google.charts.setOnLoadCallback(() => blame(2025));
 
 function blame(year) {

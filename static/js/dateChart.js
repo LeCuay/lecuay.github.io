@@ -1,4 +1,5 @@
 google.charts.load("current", { packages: ["calendar"] });
+google.charts.setOnLoadCallback(() => drawCalendar(2026));
 google.charts.setOnLoadCallback(() => drawCalendar(2025));
 google.charts.setOnLoadCallback(() => drawCalendar(2024));
 google.charts.setOnLoadCallback(() => drawCalendar(2023));

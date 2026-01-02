@@ -1,4 +1,5 @@
 google.charts.load("current", { packages: ["corechart"] });
+google.charts.setOnLoadCallback(() => drawDonut(2026));
 google.charts.setOnLoadCallback(() => drawDonut(2025));
 google.charts.setOnLoadCallback(() => drawDonut(2024));
 google.charts.setOnLoadCallback(() => drawDonut(2023));
