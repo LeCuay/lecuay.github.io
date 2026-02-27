@@ -1,3 +1,5 @@
+const randomPick = (min, max) => Math.random() * (max - min) + min;
+
 document.addEventListener("DOMContentLoaded", () => {
   const allGIFs = [
     "purpleOcean", "bucketRainAnime", "shore", "waterWorld", "thunder",
@@ -16,14 +18,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const thoughtsEl = document.getElementById("thoughts");
 
-  const randomTop = Math.random() * (max - min) + min;
+  const randomTop = randomPick(min, max);
   thoughtsEl.style.top = `${randomTop}%`;
 
-  const randomLeft = Math.random() * (max - min) + min;
+  const randomLeft = randomPick(min, max);
   thoughtsEl.style.left = `${randomLeft}%`;
 });
 
 document.addEventListener("DOMContentLoaded", () => {
+  const thoughtsEl = document.getElementById("thoughts");
+
   const paragraphs = document.querySelectorAll("p.poem");
   const poems = [];
   for (const paragraph of paragraphs) {
@@ -31,5 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   const poem = poems[Math.floor(Math.random() * poems.length)];
 
-  document.getElementById("thoughts").innerHTML = poem;
+  thoughtsEl.innerHTML = poem;
+
+  if (poem.includes("¿Otra vez tú?")) {
+    thoughtsEl.style.right = "20%";
+  }
 });
